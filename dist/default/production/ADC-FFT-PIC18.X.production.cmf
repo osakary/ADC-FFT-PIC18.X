@@ -11,54 +11,55 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\osaka\AppData\Local\Temp\s5rg.obj
+$C:\Users\osaka\AppData\Local\Temp\s47c.obj
 end_init CODE 0 0 0 4 1
 idloc IDLOC 0 200000 200000 8 1
 config CONFIG 0 300000 300000 E 1
 $dist/default/production\ADC-FFT-PIC18.X.production.obj
 mediumconst MEDIUMCONST 0 79FE 79FE 602 1
-text11 CODE 0 6BF4 6BF4 C 1
-text10 CODE 0 6BE6 6BE6 4 1
-text9 CODE 0 6D4E 6D4E 58 1
-text8 CODE 0 6CAA 6CAA 4E 1
-text7 CODE 0 6BEA 6BEA A 1
-text6 CODE 0 6C26 6C26 26 1
-text5 CODE 0 6CF8 6CF8 56 1
+text11 CODE 0 6BDA 6BDA C 1
+text10 CODE 0 6BCC 6BCC 4 1
+text9 CODE 0 6D34 6D34 58 1
+text8 CODE 0 6C90 6C90 4E 1
+text7 CODE 0 6BD0 6BD0 A 1
+text6 CODE 0 6C0C 6C0C 26 1
+text5 CODE 0 6CDE 6CDE 56 1
 text4 CODE 0 7272 7272 78C 1
-text3 CODE 0 6C00 6C00 12 1
-text2 CODE 0 6C12 6C12 14 1
-text1 CODE 0 6C76 6C76 34 1
-text0 CODE 0 6DA6 6DA6 4CC 1
+text3 CODE 0 6BE6 6BE6 12 1
+text2 CODE 0 6BF8 6BF8 14 1
+text1 CODE 0 6C5C 6C5C 34 1
+text0 CODE 0 6D8C 6D8C 4E6 1
 cstackCOMRAM COMRAM 1 1 1 59 1
 cstackBANK0 BANK0 1 E5 E5 E 1
 bssBANK1 BANK1 1 100 100 80 1
 bssBANK0 BANK0 1 60 60 85 1
 bssCOMRAM COMRAM 1 5A 5A 4 1
-cinit CODE 0 6C4C 6C4C 2A 1
+cinit CODE 0 6C32 6C32 2A 1
+nvBANK0 BANK0 1 F3 F3 4 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-BANK0 0000F3-0000FF 1
+BANK0 0000F7-0000FF 1
 BANK1 000180-0001FF 1
 BANK2 000200-0002FF 1
 BANK3 000300-0003FF 1
 BANK4 000400-0004FF 1
 BANK5 000500-0005FF 1
 BIGRAM 00005E-00005F 1
-BIGRAM 0000F3-0000FF 1
+BIGRAM 0000F7-0000FF 1
 BIGRAM 000180-0005FF 1
-CODE 000004-006BE5 1
+CODE 000004-006BCB 1
 COMRAM 00005E-00005F 1
-CONST 000004-006BE5 1
+CONST 000004-006BCB 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 000600-006BE5 1
-RAM 0000F3-0000FF 1
+MEDIUMCONST 000600-006BCB 1
+RAM 0000F7-0000FF 1
 RAM 000180-0005FF 1
 SFR 000F38-000FFF 1
-SMALLCONST 000600-006BE5 1
+SMALLCONST 000600-006BCB 1
 STACK 000180-0005FF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -74,151 +75,153 @@ STACK 000180-0005FF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\ADC-FFT-PIC18.X.production.obj
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c":22 6BE6 text10 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c":24 6BE6 text10 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c":25 6BE8 text10 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcread.c":24 6BEA text7 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcread.c":26 6BEA text7 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcbusy.c":26 6BF4 text11 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcbusy.c":28 6BF4 text11 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":14 6C00 text3 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":16 6C02 text3 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":18 6C06 text3 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":19 6C08 text3 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":20 6C0A text3 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":23 6C0C text3 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":24 6C10 text3 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":183 6C12 text2 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":184 6C12 text2 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":185 6C16 text2 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":186 6C1C text2 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":188 6C24 text2 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":15 6C26 text6 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":37 6C26 text6 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":38 6C32 text6 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":39 6C3A text6 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":52 6C42 text6 CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":1983 6C4C cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":1985 6C4C cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":1988 6C4C cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2022 6C4C cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2023 6C50 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2024 6C52 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2025 6C52 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2026 6C54 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2027 6C56 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2030 6C58 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2031 6C5C cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2032 6C5E cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2033 6C5E cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2034 6C60 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2035 6C62 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2038 6C64 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2039 6C66 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2040 6C68 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2041 6C6A cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2047 6C6C cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2049 6C6C cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2050 6C6E cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2051 6C70 cinit CODE
-"C:\Users\osaka\AppData\Local\Temp\s5rg.":2052 6C72 cinit CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":189 6C76 text1 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":190 6C76 text1 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":191 6C80 text1 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":190 6C98 text1 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":193 6CA6 text1 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":190 6CA8 text1 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":305 6CAA text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":309 6CAC text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":310 6CB0 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":311 6CB4 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":313 6CB8 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":315 6CBE text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":319 6CC2 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":321 6CEA text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":323 6CEE text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":324 6CF0 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":325 6CF2 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":326 6CF4 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":327 6CF4 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":328 6CF6 text8 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":15 6CF8 text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":119 6CF8 text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":121 6D08 text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":122 6D0C text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":123 6D1C text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":124 6D26 text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":125 6D30 text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":128 6D3C text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":129 6D4C text5 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":124 6D4E text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":126 6D50 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":127 6D54 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":129 6D58 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":130 6D5A text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":132 6D5C text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":134 6D60 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":135 6D62 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":138 6D64 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":139 6D66 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":141 6D68 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":142 6D6C text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":143 6D70 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":144 6D70 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":146 6D72 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":147 6D74 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":149 6D76 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":150 6D78 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":154 6D7A text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":155 6D7E text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":156 6D82 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":157 6D82 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":159 6D84 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":160 6D88 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":161 6D8C text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":162 6D8C text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":164 6D8E text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":165 6D92 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":167 6DA0 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":168 6DA2 text9 CODE
-"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":169 6DA4 text9 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":38 6DA6 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":40 6DA6 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":41 6DAA text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":42 6DAE text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":43 6DB4 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":44 6DB6 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":46 6DB8 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":47 6DBE text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":48 6DC2 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":58 6DCE text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":59 6DDC text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":66 6DE6 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":80 6DF4 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":81 6E00 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":83 6E1E text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":86 6E22 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":91 6E2C text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":92 6E44 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":95 6E6E text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":81 6E94 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":98 6E9C text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":102 6EC0 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":103 6ECC text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":105 6EEA text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":107 6FC0 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":108 6FD8 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":110 6FF0 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":112 701C text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":115 70BA text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":116 7136 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":117 7174 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":120 71A6 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":121 71D8 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":114 7218 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":125 7226 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":103 7250 text0 CODE
-"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":128 7258 text0 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c":22 6BCC text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c":24 6BCC text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c":25 6BCE text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcread.c":24 6BD0 text7 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcread.c":26 6BD0 text7 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcbusy.c":26 6BDA text11 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcbusy.c":28 6BDA text11 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":14 6BE6 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":16 6BE8 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":18 6BEC text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":19 6BEE text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":20 6BF0 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":23 6BF2 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c":24 6BF6 text3 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":184 6BF8 text2 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":185 6BF8 text2 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":186 6BFC text2 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":187 6C02 text2 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":189 6C0A text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":15 6C0C text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":37 6C0C text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":38 6C18 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":39 6C20 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":52 6C28 text6 CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":1992 6C32 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":1994 6C32 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":1997 6C32 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2031 6C32 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2032 6C36 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2033 6C38 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2034 6C38 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2035 6C3A cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2036 6C3C cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2039 6C3E cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2040 6C42 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2041 6C44 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2042 6C44 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2043 6C46 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2044 6C48 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2047 6C4A cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2048 6C4C cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2049 6C4E cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2050 6C50 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2056 6C52 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2058 6C52 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2059 6C54 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2060 6C56 cinit CODE
+"C:\Users\osaka\AppData\Local\Temp\s47c.":2061 6C58 cinit CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":190 6C5C text1 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":191 6C5C text1 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":192 6C66 text1 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":191 6C7E text1 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":194 6C8C text1 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":191 6C8E text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":305 6C90 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":309 6C92 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":310 6C96 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":311 6C9A text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":313 6C9E text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":315 6CA4 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":319 6CA8 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":321 6CD0 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":323 6CD4 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":324 6CD6 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":325 6CD8 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":326 6CDA text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":327 6CDA text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c":328 6CDC text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":15 6CDE text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":119 6CDE text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":121 6CEE text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":122 6CF2 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":123 6D02 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":124 6D0C text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":125 6D16 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":128 6D22 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":129 6D32 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":124 6D34 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":126 6D36 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":127 6D3A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":129 6D3E text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":130 6D40 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":132 6D42 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":134 6D46 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":135 6D48 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":138 6D4A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":139 6D4C text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":141 6D4E text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":142 6D52 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":143 6D56 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":144 6D56 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":146 6D58 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":147 6D5A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":149 6D5C text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":150 6D5E text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":154 6D60 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":155 6D64 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":156 6D68 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":157 6D68 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":159 6D6A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":160 6D6E text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":161 6D72 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":162 6D72 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":164 6D74 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":165 6D78 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":167 6D86 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":168 6D88 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c":169 6D8A text9 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":38 6D8C text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":40 6D8C text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":41 6D8E text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":42 6D92 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":43 6D96 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":44 6D9C text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":45 6D9E text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":47 6DA0 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":48 6DA6 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":49 6DAA text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":51 6DB6 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":59 6DCE text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":60 6DDC text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":67 6DE6 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":81 6DF4 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":82 6E00 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":84 6E1E text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":87 6E22 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":92 6E2C text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":93 6E44 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":96 6E6E text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":82 6E94 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":99 6E9C text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":103 6EC0 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":104 6ECC text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":106 6EEA text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":108 6FC0 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":109 6FD8 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":111 6FF0 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":113 701C text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":116 70BA text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":117 7136 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":118 7174 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":121 71A6 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":122 71D8 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":115 7218 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":126 7226 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":104 7250 text0 CODE
+"C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\main pic18.c":129 7258 text0 CODE
 "C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\fft.c":155 7272 text4 CODE
 "C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\fft.c":157 7272 text4 CODE
 "C:\Users\osaka\MPLABXProjects\ADC-FFT-PIC18.X\fft.c":160 7282 text4 CODE
@@ -310,10 +313,10 @@ _LATC F8B 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@m 11 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@n 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 _data 60 0 BANK0 1 bssBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
-_main 6DA6 0 CODE 0 text0 dist/default/production\ADC-FFT-PIC18.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\osaka\AppData\Local\Temp\s5rg.obj
-start 0 0 CODE 0 init C:\Users\osaka\AppData\Local\Temp\s5rg.obj
-__end_of_sendIntArray 6CAA 0 CODE 0 text1 dist/default/production\ADC-FFT-PIC18.X.production.obj
+_main 6D8C 0 CODE 0 text0 dist/default/production\ADC-FFT-PIC18.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\osaka\AppData\Local\Temp\s47c.obj
+start 0 0 CODE 0 init C:\Users\osaka\AppData\Local\Temp\s47c.obj
+__end_of_sendIntArray 6C90 0 CODE 0 text1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 _TRISC F94 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hirdata 0 0 CODE 0 irdata dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -321,9 +324,10 @@ __HRAM 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __LRAM 1 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lconfig 300000 0 CONFIG 0 config dist/default/production\ADC-FFT-PIC18.X.production.obj
-_sendChar 6C12 0 CODE 0 text2 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__CFG_FOSC$INTIO7 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
+_sendChar 6BF8 0 CODE 0 text2 dist/default/production\ADC-FFT-PIC18.X.production.obj
 main@i EB 0 BANK0 1 cstackBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
-_ConvertADC 6BE6 0 CODE 0 text10 dist/default/production\ADC-FFT-PIC18.X.production.obj
+_ConvertADC 6BCC 0 CODE 0 text10 dist/default/production\ADC-FFT-PIC18.X.production.obj
 main@k F1 0 BANK0 1 cstackBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 OpenADC@config3 2 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -356,7 +360,7 @@ _ADCON2 FC0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 _PIE1bits F9D 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ADC-FFT-PIC18.X.production.obj
-_sendIntArray 6C76 0 CODE 0 text1 dist/default/production\ADC-FFT-PIC18.X.production.obj
+_sendIntArray 6C5C 0 CODE 0 text1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 _PIR1bits F9E 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ADC-FFT-PIC18.X.production.obj
 __end_of_fix_fft 79FE 0 CODE 0 text4 dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -388,31 +392,31 @@ __Habs1 0 0 ABS 0 abs1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Labs1 0 0 ABS 0 abs1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 _ADRESL FC3 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@ti 35 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
-__CFG_FOSC$ECHPIO6 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __size_of_sendChar 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@wi 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@fr D 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@nn 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
+_baud_rate F3 0 BANK0 1 nvBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hdata 0 0 ABS 0 data dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ldata 0 0 ABS 0 data dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@mr 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
-stackhi 5FF 0 ABS 0 - C:\Users\osaka\AppData\Local\Temp\s5rg.obj
+stackhi 5FF 0 ABS 0 - C:\Users\osaka\AppData\Local\Temp\s47c.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __pcstackBANK0 E5 0 BANK0 1 cstackBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htemp 0 0 COMRAM 1 temp dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\ADC-FFT-PIC18.X.production.obj
-stacklo 180 0 ABS 0 - C:\Users\osaka\AppData\Local\Temp\s5rg.obj
+stacklo 180 0 ABS 0 - C:\Users\osaka\AppData\Local\Temp\s47c.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\ADC-FFT-PIC18.X.production.obj
-___lmul 6CF8 0 CODE 0 text5 dist/default/production\ADC-FFT-PIC18.X.production.obj
+___lmul 6CDE 0 CODE 0 text5 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hinit 0 0 CODE 0 init dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Linit 0 0 CODE 0 init dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\ADC-FFT-PIC18.X.production.obj
-___wmul 6C26 0 CODE 0 text6 dist/default/production\ADC-FFT-PIC18.X.production.obj
+___wmul 6C0C 0 CODE 0 text6 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@qr 27 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __end_of_main 7272 0 CODE 0 text0 dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -420,19 +424,23 @@ __Lrbss 0 0 COMRAM 1 rbss dist/default/production\ADC-FFT-PIC18.X.production.obj
 __size_of_ConvertADC 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext 0 0 ABS 0 text dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext 0 0 ABS 0 text dist/default/production\ADC-FFT-PIC18.X.production.obj
-__end_of_BusyADC 6C00 0 CODE 0 text11 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__end_of_BusyADC 6BE6 0 CODE 0 text11 dist/default/production\ADC-FFT-PIC18.X.production.obj
 ___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 ___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@tr 33 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
-end_of_initialization 6C6C 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
+end_of_initialization 6C52 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
 _SPBRGH1 FB0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 fix_fft@wr 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 ___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
+__pnvBANK0 F3 0 BANK0 1 nvBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 ___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
+_TRISAbits F92 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 _TRISCbits F94 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
-_ReadADC 6BEA 0 CODE 0 text7 dist/default/production\ADC-FFT-PIC18.X.production.obj
-_OpenADC 6CAA 0 CODE 0 text8 dist/default/production\ADC-FFT-PIC18.X.production.obj
-_BusyADC 6BF4 0 CODE 0 text11 dist/default/production\ADC-FFT-PIC18.X.production.obj
+_ReadADC 6BD0 0 CODE 0 text7 dist/default/production\ADC-FFT-PIC18.X.production.obj
+_OpenADC 6C90 0 CODE 0 text8 dist/default/production\ADC-FFT-PIC18.X.production.obj
+_BusyADC 6BDA 0 CODE 0 text11 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\ADC-FFT-PIC18.X.production.obj
 __size_of_Write1USART 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -449,7 +457,7 @@ __Hbank3 0 0 ABS 0 bank3 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lbank3 0 0 ABS 0 bank3 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hbank4 0 0 ABS 0 bank4 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lbank4 0 0 ABS 0 bank4 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__end_of___lmul 6D4E 0 CODE 0 text5 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__end_of___lmul 6D34 0 CODE 0 text5 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hbank5 0 0 ABS 0 bank5 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lbank5 0 0 ABS 0 bank5 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -460,42 +468,42 @@ __Ltext0 0 0 ABS 0 text0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __size_of_BusyADC 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext1 0 0 ABS 0 text1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext1 0 0 ABS 0 text1 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext0 6DA6 0 CODE 0 text0 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext0 6D8C 0 CODE 0 text0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext2 0 0 ABS 0 text2 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext2 0 0 ABS 0 text2 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext1 6C76 0 CODE 0 text1 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext1 6C5C 0 CODE 0 text1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext3 0 0 ABS 0 text3 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext3 0 0 ABS 0 text3 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext2 6C12 0 CODE 0 text2 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext2 6BF8 0 CODE 0 text2 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext4 0 0 ABS 0 text4 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext4 0 0 ABS 0 text4 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext3 6C00 0 CODE 0 text3 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext3 6BE6 0 CODE 0 text3 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext5 0 0 ABS 0 text5 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext5 0 0 ABS 0 text5 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __ptext4 7272 0 CODE 0 text4 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext6 0 0 ABS 0 text6 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext6 0 0 ABS 0 text6 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext5 6CF8 0 CODE 0 text5 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext5 6CDE 0 CODE 0 text5 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext7 0 0 ABS 0 text7 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext7 0 0 ABS 0 text7 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext6 6C26 0 CODE 0 text6 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext6 6C0C 0 CODE 0 text6 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
-__end_of_ConvertADC 6BEA 0 CODE 0 text10 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__end_of_ConvertADC 6BD0 0 CODE 0 text10 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext8 0 0 ABS 0 text8 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext8 0 0 ABS 0 text8 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext7 6BEA 0 CODE 0 text7 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext7 6BD0 0 CODE 0 text7 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __pbssCOMRAM 5A 0 COMRAM 1 bssCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext9 0 0 ABS 0 text9 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext9 0 0 ABS 0 text9 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext8 6CAA 0 CODE 0 text8 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext9 6D4E 0 CODE 0 text9 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext8 6C90 0 CODE 0 text8 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext9 6D34 0 CODE 0 text9 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\ADC-FFT-PIC18.X.production.obj
 main@adc_value E5 0 BANK0 1 cstackBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
-_Open1USART 6D4E 0 CODE 0 text9 dist/default/production\ADC-FFT-PIC18.X.production.obj
+_Open1USART 6D34 0 CODE 0 text9 dist/default/production\ADC-FFT-PIC18.X.production.obj
 _OSCTUNEbits F9B 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
-__end_of__initialization 6C6C 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
+__end_of__initialization 6C52 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
 __CFG_PRICLKEN$OFF 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hidata 0 0 CODE 0 idata dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lidata 0 0 CODE 0 idata dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -504,7 +512,7 @@ __Lrdata 0 0 COMRAM 1 rdata dist/default/production\ADC-FFT-PIC18.X.production.o
 __size_of_sendIntArray 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hidloc 200008 0 IDLOC 0 idloc dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lidloc 200000 0 IDLOC 0 idloc dist/default/production\ADC-FFT-PIC18.X.production.obj
-__end_of_ReadADC 6BF4 0 CODE 0 text7 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__end_of_ReadADC 6BDA 0 CODE 0 text7 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hstack 0 0 STACK 2 stack dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lstack 0 0 STACK 2 stack dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hparam 0 0 ABS 0 rparam dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -530,9 +538,9 @@ __Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\ADC-FFT-PIC18.X.production.o
 ?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hcinit 0 0 ABS 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lcinit 0 0 ABS 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
-__pcinit 6C4C 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ramtop 600 0 RAM 0 ramtop C:\Users\osaka\AppData\Local\Temp\s5rg.obj
-__mediumconst 79FE 0 MEDIUMCONST 0 mediumconst C:\Users\osaka\AppData\Local\Temp\s5rg.obj
+__pcinit 6C32 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ramtop 600 0 RAM 0 ramtop C:\Users\osaka\AppData\Local\Temp\s47c.obj
+__mediumconst 79FE 0 MEDIUMCONST 0 mediumconst C:\Users\osaka\AppData\Local\Temp\s47c.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hconst 0 0 CODE 0 const dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lconst 0 0 CODE 0 const dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -542,23 +550,23 @@ __end_of_Sinewave 7FFF 0 MEDIUMCONST 0 mediumconst dist/default/production\ADC-F
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__end_of_Write1USART 6C12 0 CODE 0 text3 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__end_of_Write1USART 6BF8 0 CODE 0 text3 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext10 0 0 ABS 0 text10 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext10 6BE6 0 CODE 0 text10 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext10 6BCC 0 CODE 0 text10 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Htext11 0 0 ABS 0 text11 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Ltext11 0 0 ABS 0 text11 dist/default/production\ADC-FFT-PIC18.X.production.obj
-__ptext11 6BF4 0 CODE 0 text11 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__ptext11 6BDA 0 CODE 0 text11 dist/default/production\ADC-FFT-PIC18.X.production.obj
 _RCSTA1bits FAB 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 _TXSTA1bits FAC 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 _ADCON0bits FC2 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\osaka\AppData\Local\Temp\s5rg.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\osaka\AppData\Local\Temp\s47c.obj
 fix_fft@istep 23 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\osaka\AppData\Local\Temp\s5rg.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\osaka\AppData\Local\Temp\s47c.obj
 _OSCCONbits FD3 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 _INTCONbits FF2 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hend_init 4 0 CODE 0 end_init dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -566,28 +574,28 @@ __Lend_init 0 0 CODE 0 end_init dist/default/production\ADC-FFT-PIC18.X.producti
 ?_ReadADC 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __size_of_fix_fft 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 OpenADC@config2 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\osaka\AppData\Local\Temp\s5rg.obj
-__end_of_OpenADC 6CF8 0 CODE 0 text8 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\osaka\AppData\Local\Temp\s47c.obj
+__end_of_OpenADC 6CDE 0 CODE 0 text8 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __size_of___wmul 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\ADC-FFT-PIC18.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\osaka\AppData\Local\Temp\s5rg.obj
+__accesstop 60 0 ABS 0 - C:\Users\osaka\AppData\Local\Temp\s47c.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\ADC-FFT-PIC18.X.production.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\ADC-FFT-PIC18.X.production.obj
 __CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
-intlevel0 0 0 CODE 0 text C:\Users\osaka\AppData\Local\Temp\s5rg.obj
-intlevel1 0 0 CODE 0 text C:\Users\osaka\AppData\Local\Temp\s5rg.obj
-__end_of_sendChar 6C26 0 CODE 0 text2 dist/default/production\ADC-FFT-PIC18.X.production.obj
-intlevel2 0 0 CODE 0 text C:\Users\osaka\AppData\Local\Temp\s5rg.obj
-intlevel3 0 0 CODE 0 text C:\Users\osaka\AppData\Local\Temp\s5rg.obj
+intlevel0 0 0 CODE 0 text C:\Users\osaka\AppData\Local\Temp\s47c.obj
+intlevel1 0 0 CODE 0 text C:\Users\osaka\AppData\Local\Temp\s47c.obj
+__end_of_sendChar 6C0C 0 CODE 0 text2 dist/default/production\ADC-FFT-PIC18.X.production.obj
+intlevel2 0 0 CODE 0 text C:\Users\osaka\AppData\Local\Temp\s47c.obj
+intlevel3 0 0 CODE 0 text C:\Users\osaka\AppData\Local\Temp\s47c.obj
 __size_of___lmul 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
-__end_of___wmul 6C4C 0 CODE 0 text6 dist/default/production\ADC-FFT-PIC18.X.production.obj
-start_initialization 6C4C 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
-__end_of_Open1USART 6DA6 0 CODE 0 text9 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__end_of___wmul 6C32 0 CODE 0 text6 dist/default/production\ADC-FFT-PIC18.X.production.obj
+start_initialization 6C32 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
+__end_of_Open1USART 6D8C 0 CODE 0 text9 dist/default/production\ADC-FFT-PIC18.X.production.obj
 sendIntArray@size 4 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 __size_of_ReadADC 0 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
-__initialization 6C4C 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
-_Write1USART 6C00 0 CODE 0 text3 dist/default/production\ADC-FFT-PIC18.X.production.obj
+__initialization 6C32 0 CODE 0 cinit dist/default/production\ADC-FFT-PIC18.X.production.obj
+_Write1USART 6BE6 0 CODE 0 text3 dist/default/production\ADC-FFT-PIC18.X.production.obj
 __activetblptr 2 0 ABS 0 - dist/default/production\ADC-FFT-PIC18.X.production.obj
 ___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
 ___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\ADC-FFT-PIC18.X.production.obj
@@ -623,18 +631,18 @@ mediumconst 0 79FE 79FE 602 1
 config 0 300000 300000 E 1
 idloc 0 200000 200000 8 1
 cstackCOMRAM 1 1 1 5D 1
-bssBANK0 1 60 60 93 1
+bssBANK0 1 60 60 97 1
 bssBANK1 1 100 100 80 1
 text4 0 7272 7272 78C 1
-text0 0 6DA6 6DA6 4CC 1
-text9 0 6D4E 6D4E 58 1
-text5 0 6CF8 6CF8 56 1
-text8 0 6CAA 6CAA 4E 1
-text1 0 6C76 6C76 34 1
-cinit 0 6C4C 6C4C 2A 1
-text6 0 6C26 6C26 26 1
-text2 0 6C12 6C12 14 1
-text3 0 6C00 6C00 12 1
-text11 0 6BF4 6BF4 C 1
-text7 0 6BEA 6BEA A 1
-text10 0 6BE6 6BE6 4 1
+text0 0 6D8C 6D8C 4E6 1
+text9 0 6D34 6D34 58 1
+text5 0 6CDE 6CDE 56 1
+text8 0 6C90 6C90 4E 1
+text1 0 6C5C 6C5C 34 1
+cinit 0 6C32 6C32 2A 1
+text6 0 6C0C 6C0C 26 1
+text2 0 6BF8 6BF8 14 1
+text3 0 6BE6 6BE6 12 1
+text11 0 6BDA 6BDA C 1
+text7 0 6BD0 6BD0 A 1
+text10 0 6BCC 6BCC 4 1

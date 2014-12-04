@@ -10,7 +10,7 @@
 
 /* CONFIGURATION */
 #pragma config WDTEN = OFF
-#pragma config FOSC = ECHPIO6
+#pragma config FOSC = INTIO7
 #pragma config PLLCFG = OFF
 #pragma config PRICLKEN = OFF
 #pragma config PBADEN = ON
@@ -19,15 +19,15 @@
 // FFT
 short imaginaryNumbers[64];
 short realNumbers[64];
-#define _XTAL_FREQ 20000000 // set frequency here
-#define baud_rate 31
+#define _XTAL_FREQ 4000000 // set frequency here
+//define baud_rate 48
 // END FFT
 
 // RS 232
 char input;
 int i;
 char data[5];
-//int baud_rate;
+long baud_rate;
 void sendString(char *);
 void sendChar(char);
 void sendCharArray(char *, unsigned int);
@@ -37,6 +37,7 @@ void sendIntArray(short *, unsigned int);
 
 void main(void) {
     unsigned int adc_value;
+    TRISAbits.RA7 = 1;
     TRISC = 0x00;
     LATC = 0x00;
     ANSELC = 0x00;
@@ -47,7 +48,7 @@ void main(void) {
     OSCCONbits.SCS = 0b11;
     OSCTUNEbits.TUN = 0b01111;
      // IMPORTANT: Set Baud Rate on Terminal to 9600
-    //baud_rate = (_XTAL_FREQ / 9600 / 64 - 1);
+    baud_rate = (_XTAL_FREQ / 9600 / 16 - 1);
     OpenADC(ADC_FOSC_RC &
             ADC_RIGHT_JUST &
             ADC_0_TAD,
