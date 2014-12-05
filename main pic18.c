@@ -45,11 +45,6 @@ void main(void) {
     TRISCbits.TRISC6 = 1;
     TRISCbits.TRISC7 = 1;
 
-    // FFT
-    TRISBbits.TRISB0 = 1;
-    ANSELBbits.ANSB0 = 0;
-    // END FFT
-
     OSCCONbits.IRCF = 0b111;
     OSCCONbits.SCS = 0b11;
     OSCTUNEbits.TUN = 0b01111;
@@ -72,38 +67,30 @@ void main(void) {
                 USART_EIGHT_BIT     &
                 USART_CONT_RX       &
                 USART_BRGH_LOW,
-                baud_rate                  );
+                baud_rate           );
 
     while(1){
         short i = 0;
         for (i = 0; i < 64; i++) {
-
             ConvertADC();
 
             // Wait for the ADC conversion to complete
-//            LATBbits.LATB0 = 1;
             while(BusyADC());
-//            LATBbits.LATB0 = 0;
 
-            // Get the 10-bit ADC result and shift by 2
-//            adc_value = ReadADC();// >> 2;
+            // Get the 10-bit ADC result
             adc_value = ((short)(ADRESH << 8) + (short)ADRESL) - 512;
             realNumbers[i] = adc_value;
 
-            // just put in the counter to test
-//            realNumbers[i] = i;
-
             // Set the imaginary number to zero
             imaginaryNumbers[i] = 0;
-            _delay(200);
+            _delay(1000);
         }
 
         // Send in Pre-FFT data. This is directly from ADC.
 //        sendIntArray(realNumbers, 64);
 
         fix_fft(realNumbers, imaginaryNumbers, 6);
-        sendIntArray(realNumbers, 64);
-
+        
         long place, root;
         int k = 0;
         for (k=0; k < 32; k++) {
@@ -132,7 +119,7 @@ void main(void) {
         }
 
         // Send in FFT Data
-//        sendIntArray(realNumbers, 64);
+        sendIntArray(realNumbers, 32);
     }
 }
 

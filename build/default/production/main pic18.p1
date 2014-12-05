@@ -36,25 +36,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S505 . . . ]
 "8394
 [v _TRISCbits `VS505 ~T0 @X0 0 e@3988 ]
-"8152
-[s S500 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S500 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"8162
-[s S501 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S501 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"8151
-[u S499 `S500 1 `S501 1 ]
-[n S499 . . . ]
-"8173
-[v _TRISBbits `VS499 ~T0 @X0 0 e@3987 ]
-"97
-[s S4 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S4 . ANSB0 ANSB1 ANSB2 ANSB3 ANSB4 ANSB5 ]
-"96
-[u S3 `S4 1 ]
-[n S3 . . ]
-"106
-[v _ANSELBbits `VS3 ~T0 @X0 0 e@3897 ]
 "15953
 [s S1012 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
 [n S1012 . SCS HFIOFS OSTS IRCF IDLEN ]
@@ -8154,299 +8135,293 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main pic18.c: 46: TRISCbits.TRISC7 = 1;
 "46
 [e = . . _TRISCbits 0 7 -> -> 1 `i `uc ]
-[; ;main pic18.c: 49: TRISBbits.TRISB0 = 1;
-"49
-[e = . . _TRISBbits 0 0 -> -> 1 `i `uc ]
-[; ;main pic18.c: 50: ANSELBbits.ANSB0 = 0;
-"50
-[e = . . _ANSELBbits 0 0 -> -> 0 `i `uc ]
-[; ;main pic18.c: 53: OSCCONbits.IRCF = 0b111;
-"53
+[; ;main pic18.c: 48: OSCCONbits.IRCF = 0b111;
+"48
 [e = . . _OSCCONbits 0 3 -> -> 7 `i `uc ]
-[; ;main pic18.c: 54: OSCCONbits.SCS = 0b11;
-"54
+[; ;main pic18.c: 49: OSCCONbits.SCS = 0b11;
+"49
 [e = . . _OSCCONbits 0 0 -> -> 3 `i `uc ]
-[; ;main pic18.c: 55: OSCTUNEbits.TUN = 0b01111;
-"55
+[; ;main pic18.c: 50: OSCTUNEbits.TUN = 0b01111;
+"50
 [e = . . _OSCTUNEbits 0 0 -> -> 15 `i `uc ]
-[; ;main pic18.c: 58: baud_rate = (4000000 / 9600 / 16 - 1);
-"58
+[; ;main pic18.c: 53: baud_rate = (4000000 / 9600 / 16 - 1);
+"53
 [e = _baud_rate - / / -> 4000000 `l -> -> 9600 `i `l -> -> 16 `i `l -> -> 1 `i `l ]
-[; ;main pic18.c: 59: OpenADC(0b11111111 &
-[; ;main pic18.c: 60: 0b11111111 &
-[; ;main pic18.c: 61: 0b11110001,
-[; ;main pic18.c: 62: 0b10000011 &
-[; ;main pic18.c: 63: 0b01111111 &
-[; ;main pic18.c: 64: 0b11110111 &
-[; ;main pic18.c: 65: 0b11111100,
-[; ;main pic18.c: 66: 0b1110);
-"66
+[; ;main pic18.c: 54: OpenADC(0b11111111 &
+[; ;main pic18.c: 55: 0b11111111 &
+[; ;main pic18.c: 56: 0b11110001,
+[; ;main pic18.c: 57: 0b10000011 &
+[; ;main pic18.c: 58: 0b01111111 &
+[; ;main pic18.c: 59: 0b11110111 &
+[; ;main pic18.c: 60: 0b11111100,
+[; ;main pic18.c: 61: 0b1110);
+"61
 [e ( _OpenADC (3 , , -> & & -> 255 `i -> 255 `i -> 241 `i `uc -> & & & -> 131 `i -> 127 `i -> 247 `i -> 252 `i `uc -> -> 14 `i `uc ]
-[; ;main pic18.c: 68: RCSTA1&=0b01001111,TXSTA1bits.TXEN=0,PIE1&=0b11001111;
-"68
+[; ;main pic18.c: 63: RCSTA1&=0b01001111,TXSTA1bits.TXEN=0,PIE1&=0b11001111;
+"63
 [e ; ; =& _RCSTA1 -> -> 79 `i `uc = . . _TXSTA1bits 0 5 -> -> 0 `i `uc =& _PIE1 -> -> 207 `i `uc ]
-[; ;main pic18.c: 69: Open1USART( 0b01111111 &
-[; ;main pic18.c: 70: 0b10111111 &
-[; ;main pic18.c: 71: 0b11111110 &
-[; ;main pic18.c: 72: 0b11111101 &
-[; ;main pic18.c: 73: 0b11111111 &
-[; ;main pic18.c: 74: 0b11101111,
-[; ;main pic18.c: 75: baud_rate );
-"75
+[; ;main pic18.c: 64: Open1USART( 0b01111111 &
+[; ;main pic18.c: 65: 0b10111111 &
+[; ;main pic18.c: 66: 0b11111110 &
+[; ;main pic18.c: 67: 0b11111101 &
+[; ;main pic18.c: 68: 0b11111111 &
+[; ;main pic18.c: 69: 0b11101111,
+[; ;main pic18.c: 70: baud_rate );
+"70
 [e ( _Open1USART (2 , -> & & & & & -> 127 `i -> 191 `i -> 254 `i -> 253 `i -> 255 `i -> 239 `i `uc -> _baud_rate `ui ]
-[; ;main pic18.c: 77: while(1){
-"77
+[; ;main pic18.c: 72: while(1){
+"72
 [e :U 1150 ]
 {
 [v _i `s ~T0 @X0 1 a ]
-[; ;main pic18.c: 78: short i = 0;
-"78
+[; ;main pic18.c: 73: short i = 0;
+"73
 [e = _i -> -> 0 `i `s ]
-[; ;main pic18.c: 79: for (i = 0; i < 64; i++) {
-"79
+[; ;main pic18.c: 74: for (i = 0; i < 64; i++) {
+"74
 {
 [e = _i -> -> 0 `i `s ]
 [e $ < -> _i `i -> 64 `i 1152  ]
 [e $U 1153  ]
 [e :U 1152 ]
 {
-[; ;main pic18.c: 81: ConvertADC();
-"81
+[; ;main pic18.c: 76: ConvertADC();
+"76
 [e ( _ConvertADC ..  ]
-[; ;main pic18.c: 85: while(BusyADC());
-"85
+[; ;main pic18.c: 80: while(BusyADC());
+"80
 [e $U 1155  ]
 [e :U 1156 ]
 [e :U 1155 ]
 [e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 1156  ]
 [e :U 1157 ]
-[; ;main pic18.c: 90: adc_value = ((short)(ADRESH << 8) + (short)ADRESL) - 512;
-"90
+[; ;main pic18.c: 85: adc_value = ((short)(ADRESH << 8) + (short)ADRESL) - 512;
+"85
 [e = _adc_value -> - + -> -> << -> _ADRESH `i -> 8 `i `s `i -> -> _ADRESL `s `i -> 512 `i `ui ]
-[; ;main pic18.c: 91: realNumbers[i] = adc_value;
-"91
+[; ;main pic18.c: 86: realNumbers[i] = adc_value;
+"86
 [e = *U + &U _realNumbers * -> -> _i `us `ux -> -> # *U &U _realNumbers `ui `ux -> _adc_value `s ]
-[; ;main pic18.c: 97: imaginaryNumbers[i] = 0;
-"97
+[; ;main pic18.c: 92: imaginaryNumbers[i] = 0;
+"92
 [e = *U + &U _imaginaryNumbers * -> -> _i `us `ux -> -> # *U &U _imaginaryNumbers `ui `ux -> -> 0 `i `s ]
-[; ;main pic18.c: 98: _delay(200);
-"98
-[e ( __delay (1 -> -> -> 200 `i `l `ul ]
-"99
+[; ;main pic18.c: 93: _delay(1000);
+"93
+[e ( __delay (1 -> -> -> 1000 `i `l `ul ]
+"94
 }
-"79
+"74
 [e ++ _i -> -> 1 `i `s ]
 [e $ < -> _i `i -> 64 `i 1152  ]
 [e :U 1153 ]
-"99
+"94
 }
-[; ;main pic18.c: 99: }
-[; ;main pic18.c: 104: fix_fft(realNumbers, imaginaryNumbers, 6);
-"104
+[; ;main pic18.c: 94: }
+[; ;main pic18.c: 99: fix_fft(realNumbers, imaginaryNumbers, 6);
+"99
 [e ( _fix_fft (3 , , &U _realNumbers &U _imaginaryNumbers -> -> 6 `i `s ]
-[; ;main pic18.c: 105: sendIntArray(realNumbers, 64);
-"105
-[e ( _sendIntArray (2 , &U _realNumbers -> -> 64 `i `ui ]
-"107
+"101
 [v _place `l ~T0 @X0 1 a ]
 [v _root `l ~T0 @X0 1 a ]
-"108
+"102
 [v _k `i ~T0 @X0 1 a ]
-[; ;main pic18.c: 107: long place, root;
-[; ;main pic18.c: 108: int k = 0;
+[; ;main pic18.c: 101: long place, root;
+[; ;main pic18.c: 102: int k = 0;
 [e = _k -> 0 `i ]
-[; ;main pic18.c: 109: for (k=0; k < 32; k++) {
-"109
+[; ;main pic18.c: 103: for (k=0; k < 32; k++) {
+"103
 {
 [e = _k -> 0 `i ]
 [e $ < _k -> 32 `i 1158  ]
 [e $U 1159  ]
 [e :U 1158 ]
 {
-[; ;main pic18.c: 110: realNumbers[k] = (realNumbers[k] * realNumbers[k] +
-[; ;main pic18.c: 111: imaginaryNumbers[k] * imaginaryNumbers[k]);
-"111
+[; ;main pic18.c: 104: realNumbers[k] = (realNumbers[k] * realNumbers[k] +
+[; ;main pic18.c: 105: imaginaryNumbers[k] * imaginaryNumbers[k]);
+"105
 [e = *U + &U _realNumbers * -> -> _k `ui `ux -> -> # *U &U _realNumbers `ui `ux -> + * -> *U + &U _realNumbers * -> -> _k `ui `ux -> -> # *U &U _realNumbers `ui `ux `i -> *U + &U _realNumbers * -> -> _k `ui `ux -> -> # *U &U _realNumbers `ui `ux `i * -> *U + &U _imaginaryNumbers * -> -> _k `ui `ux -> -> # *U &U _imaginaryNumbers `ui `ux `i -> *U + &U _imaginaryNumbers * -> -> _k `ui `ux -> -> # *U &U _imaginaryNumbers `ui `ux `i `s ]
-[; ;main pic18.c: 113: place = 0x40000000;
-"113
+[; ;main pic18.c: 107: place = 0x40000000;
+"107
 [e = _place -> 1073741824 `l ]
-[; ;main pic18.c: 114: root = 0;
-"114
+[; ;main pic18.c: 108: root = 0;
+"108
 [e = _root -> -> 0 `i `l ]
-[; ;main pic18.c: 116: if (realNumbers[k] >= 0) {
-"116
+[; ;main pic18.c: 110: if (realNumbers[k] >= 0) {
+"110
 [e $ ! >= -> *U + &U _realNumbers * -> -> _k `ui `ux -> -> # *U &U _realNumbers `ui `ux `i -> 0 `i 1161  ]
 {
-[; ;main pic18.c: 118: while (place > realNumbers[k]) place = place >> 2;
-"118
+[; ;main pic18.c: 112: while (place > realNumbers[k]) place = place >> 2;
+"112
 [e $U 1162  ]
 [e :U 1163 ]
 [e = _place >> _place -> 2 `i ]
 [e :U 1162 ]
 [e $ > _place -> *U + &U _realNumbers * -> -> _k `ui `ux -> -> # *U &U _realNumbers `ui `ux `l 1163  ]
 [e :U 1164 ]
-[; ;main pic18.c: 120: while (place) {
-"120
+[; ;main pic18.c: 114: while (place) {
+"114
 [e $U 1165  ]
 [e :U 1166 ]
 {
-[; ;main pic18.c: 121: if (realNumbers[k] >= root + place) {
-"121
+[; ;main pic18.c: 115: if (realNumbers[k] >= root + place) {
+"115
 [e $ ! >= -> *U + &U _realNumbers * -> -> _k `ui `ux -> -> # *U &U _realNumbers `ui `ux `l + _root _place 1168  ]
 {
-[; ;main pic18.c: 122: realNumbers[k] -= root + place;
-"122
+[; ;main pic18.c: 116: realNumbers[k] -= root + place;
+"116
 [e =- *U + &U _realNumbers * -> -> _k `ui `ux -> -> # *U &U _realNumbers `ui `ux -> + _root _place `s ]
-[; ;main pic18.c: 123: root += place * 2;
-"123
+[; ;main pic18.c: 117: root += place * 2;
+"117
 [e =+ _root * _place -> -> 2 `i `l ]
-"124
+"118
 }
 [e :U 1168 ]
-[; ;main pic18.c: 124: }
-[; ;main pic18.c: 126: root = root >> 1;
-"126
+[; ;main pic18.c: 118: }
+[; ;main pic18.c: 120: root = root >> 1;
+"120
 [e = _root >> _root -> 1 `i ]
-[; ;main pic18.c: 127: place = place >> 2;
-"127
+[; ;main pic18.c: 121: place = place >> 2;
+"121
 [e = _place >> _place -> 2 `i ]
-"128
+"122
 }
 [e :U 1165 ]
-"120
+"114
 [e $ != _place -> -> 0 `i `l 1166  ]
 [e :U 1167 ]
-"129
+"123
 }
 [e :U 1161 ]
-[; ;main pic18.c: 128: }
-[; ;main pic18.c: 129: }
-[; ;main pic18.c: 131: realNumbers[k] = root;
-"131
+[; ;main pic18.c: 122: }
+[; ;main pic18.c: 123: }
+[; ;main pic18.c: 125: realNumbers[k] = root;
+"125
 [e = *U + &U _realNumbers * -> -> _k `ui `ux -> -> # *U &U _realNumbers `ui `ux -> _root `s ]
-"132
+"126
 }
-"109
+"103
 [e ++ _k -> 1 `i ]
 [e $ < _k -> 32 `i 1158  ]
 [e :U 1159 ]
-"132
+"126
 }
-"136
+[; ;main pic18.c: 126: }
+[; ;main pic18.c: 129: sendIntArray(realNumbers, 32);
+"129
+[e ( _sendIntArray (2 , &U _realNumbers -> -> 32 `i `ui ]
+"130
 }
 [e :U 1149 ]
-"77
+"72
 [e $U 1150  ]
 [e :U 1151 ]
-[; ;main pic18.c: 132: }
-[; ;main pic18.c: 136: }
-[; ;main pic18.c: 137: }
-"137
+[; ;main pic18.c: 130: }
+[; ;main pic18.c: 131: }
+"131
 [e :UE 1148 ]
 }
-"139
+"133
 [v _sendCharArray `(v ~T0 @X0 1 ef2`*uc`ui ]
 {
-[; ;main pic18.c: 139: void sendCharArray(char *array, unsigned int size) {
+[; ;main pic18.c: 133: void sendCharArray(char *array, unsigned int size) {
 [e :U _sendCharArray ]
 [v _array `*uc ~T0 @X0 1 r1 ]
 [v _size `ui ~T0 @X0 1 r2 ]
 [f ]
-[; ;main pic18.c: 140: for(i = 0; i < size; i++) {
-"140
+[; ;main pic18.c: 134: for(i = 0; i < size; i++) {
+"134
 {
 [e = _i -> 0 `i ]
 [e $U 1173  ]
 [e :U 1170 ]
 {
-[; ;main pic18.c: 141: sendChar(array[i]);
-"141
+[; ;main pic18.c: 135: sendChar(array[i]);
+"135
 [e ( _sendChar (1 *U + _array * -> _i `x -> -> # *U _array `i `x ]
-"142
+"136
 }
-"140
+"134
 [e ++ _i -> 1 `i ]
 [e :U 1173 ]
 [e $ < -> _i `ui _size 1170  ]
 [e :U 1171 ]
-"142
+"136
 }
-[; ;main pic18.c: 142: }
-[; ;main pic18.c: 143: }
-"143
+[; ;main pic18.c: 136: }
+[; ;main pic18.c: 137: }
+"137
 [e :UE 1169 ]
 }
-"146
+"140
 [v _sendString `(v ~T0 @X0 1 ef1`*uc ]
 {
-[; ;main pic18.c: 146: void sendString(char *string) {
+[; ;main pic18.c: 140: void sendString(char *string) {
 [e :U _sendString ]
 [v _string `*uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main pic18.c: 147: while((!TXSTA1bits.TRMT));
-"147
+[; ;main pic18.c: 141: while((!TXSTA1bits.TRMT));
+"141
 [e $U 1175  ]
 [e :U 1176 ]
 [e :U 1175 ]
 [e $ ! != -> . . _TXSTA1bits 0 1 `i -> -> -> 0 `i `Vuc `i 1176  ]
 [e :U 1177 ]
-[; ;main pic18.c: 148: putrs1USART(string);
-"148
+[; ;main pic18.c: 142: putrs1USART(string);
+"142
 [e ( _putrs1USART (1 -> _string `*Cuc ]
-[; ;main pic18.c: 149: }
-"149
+[; ;main pic18.c: 143: }
+"143
 [e :UE 1174 ]
 }
-"152
+"146
 [v _sendChar `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;main pic18.c: 152: void sendChar(char character) {
+[; ;main pic18.c: 146: void sendChar(char character) {
 [e :U _sendChar ]
 [v _character `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main pic18.c: 153: while((!TXSTA1bits.TRMT));
-"153
+[; ;main pic18.c: 147: while((!TXSTA1bits.TRMT));
+"147
 [e $U 1179  ]
 [e :U 1180 ]
 [e :U 1179 ]
 [e $ ! != -> . . _TXSTA1bits 0 1 `i -> -> -> 0 `i `Vuc `i 1180  ]
 [e :U 1181 ]
-[; ;main pic18.c: 154: Write1USART(character);
-"154
+[; ;main pic18.c: 148: Write1USART(character);
+"148
 [e ( _Write1USART (1 _character ]
-[; ;main pic18.c: 155: }
-"155
+[; ;main pic18.c: 149: }
+"149
 [e :UE 1178 ]
 }
-"157
+"151
 [v _sendIntArray `(v ~T0 @X0 1 ef2`*s`ui ]
 {
-[; ;main pic18.c: 157: void sendIntArray(short *array, unsigned int size) {
+[; ;main pic18.c: 151: void sendIntArray(short *array, unsigned int size) {
 [e :U _sendIntArray ]
 [v _array `*s ~T0 @X0 1 r1 ]
 [v _size `ui ~T0 @X0 1 r2 ]
 [f ]
-[; ;main pic18.c: 158: for(i = 0; i < size; i++) {
-"158
+[; ;main pic18.c: 152: for(i = 0; i < size; i++) {
+"152
 {
 [e = _i -> 0 `i ]
 [e $U 1186  ]
 [e :U 1183 ]
 {
-[; ;main pic18.c: 159: sendChar(array[i]);
-"159
+[; ;main pic18.c: 153: sendChar(array[i]);
+"153
 [e ( _sendChar (1 -> *U + _array * -> _i `x -> -> # *U _array `i `x `uc ]
-"160
+"154
 }
-"158
+"152
 [e ++ _i -> 1 `i ]
 [e :U 1186 ]
 [e $ < -> _i `ui _size 1183  ]
 [e :U 1184 ]
-"160
+"154
 }
-[; ;main pic18.c: 160: }
-[; ;main pic18.c: 161: }
-"161
+[; ;main pic18.c: 154: }
+[; ;main pic18.c: 155: }
+"155
 [e :UE 1182 ]
 }

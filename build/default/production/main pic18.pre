@@ -10162,11 +10162,6 @@ ANSELC = 0x00;
 TRISCbits.TRISC6 = 1;
 TRISCbits.TRISC7 = 1;
 
-
-TRISBbits.TRISB0 = 1;
-ANSELBbits.ANSB0 = 0;
-
-
 OSCCONbits.IRCF = 0b111;
 OSCCONbits.SCS = 0b11;
 OSCTUNEbits.TUN = 0b01111;
@@ -10207,16 +10202,15 @@ while(BusyADC());
 adc_value = ((short)(ADRESH << 8) + (short)ADRESL) - 512;
 realNumbers[i] = adc_value;
 
-# 97
+# 92
 imaginaryNumbers[i] = 0;
-_delay(200);
+_delay(1000);
 }
 
 
 
 
 fix_fft(realNumbers, imaginaryNumbers, 6);
-sendIntArray(realNumbers, 64);
 
 long place, root;
 int k = 0;
@@ -10246,7 +10240,7 @@ realNumbers[k] = root;
 }
 
 
-
+sendIntArray(realNumbers, 32);
 }
 }
 
