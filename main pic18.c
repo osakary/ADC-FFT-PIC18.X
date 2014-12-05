@@ -19,6 +19,7 @@
 // FFT
 short imaginaryNumbers[64];
 short realNumbers[64];
+short oldRealNumbers[64];
 #define _XTAL_FREQ 4000000 // set frequency here
 // END FFT
 
@@ -81,9 +82,10 @@ void main(void) {
             adc_value = ((short)(ADRESH << 8) + (short)ADRESL) - 512;
             realNumbers[i] = adc_value;
 
+
             // Set the imaginary number to zero
             imaginaryNumbers[i] = 0;
-            _delay(1000);
+            _delay(1500);
         }
 
         // Send in Pre-FFT data. This is directly from ADC.
@@ -119,7 +121,14 @@ void main(void) {
         }
 
         // Send in FFT Data
+        for(i = 0; i < 64; i++) {
+            realNumbers[i] = oldRealNumbers[i] * 10 / 16 + realNumbers[i] * 6 / 16;
+        }
+        realNumbers[0] = 255;
         sendIntArray(realNumbers, 32);
+        for (i = 0; i < 64; i++) {
+            oldRealNumbers[i] = realNumbers[i];
+        }
     }
 }
 

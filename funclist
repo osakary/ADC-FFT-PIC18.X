@@ -1,14 +1,15 @@
-_sendIntArray: CODE, 27714 0 52
+___awdiv: CODE, 27506 0 164
+_sendIntArray: CODE, 27202 0 52
 _fix_fft: CODE, 29298 0 1932
-_main: CODE, 28018 0 1280
-_BusyADC: CODE, 27590 0 12
-___lmul: CODE, 27844 0 86
-_ConvertADC: CODE, 27586 0 4
-__initialization: CODE, 27672 0 32
+_main: CODE, 27670 0 1628
+_BusyADC: CODE, 27070 0 12
+___lmul: CODE, 27332 0 86
+_ConvertADC: CODE, 27066 0 4
+__initialization: CODE, 27152 0 40
 _Sinewave: MEDIUMCONST, 31231 0 1536
-_Write1USART: CODE, 27616 0 18
-_OpenADC: CODE, 27766 0 78
-_sendChar: CODE, 27602 0 14
-___wmul: CODE, 27634 0 38
-_Open1USART: CODE, 27930 0 88
-Total: 5170
+_Write1USART: CODE, 27096 0 18
+_OpenADC: CODE, 27254 0 78
+_sendChar: CODE, 27082 0 14
+___wmul: CODE, 27114 0 38
+_Open1USART: CODE, 27418 0 88
+Total: 5690

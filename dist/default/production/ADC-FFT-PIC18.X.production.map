@@ -2,12 +2,12 @@ Microchip MPLAB XC8 Compiler V1.33 ()
 
 Linker command line:
 
---edf=/Applications/microchip/xc8/v1.33/dat/en_msgs.txt -cs \
-  -h+dist/default/production/ADC-FFT-PIC18.X.production.sym \
-  --cmf=dist/default/production/ADC-FFT-PIC18.X.production.cmf -z \
-  -Q18F25K22 -o/tmp/cgtUlZiNY \
+--edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
+  -h+dist/default/production\ADC-FFT-PIC18.X.production.sym \
+  --cmf=dist/default/production\ADC-FFT-PIC18.X.production.cmf -z \
+  -Q18F25K22 -oC:\Users\Alex\AppData\Local\Temp\s1kk.6 \
   -Mdist/default/production/ADC-FFT-PIC18.X.production.map -E1 -ver=XC8 \
-  -ASTACK=0180h-05ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
+  -ASTACK=0200h-05ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-05Fh \
   -AABS1=00h-05FFh -ABIGRAM=01h-05FFh -ARAM=060h-0FFh,0100h-01FFhx5 \
   -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
@@ -21,8 +21,9 @@ Linker command line:
   -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
-  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE /tmp/cgtVK5XK5.obj \
-  dist/default/production/ADC-FFT-PIC18.X.production.obj 
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
+  C:\Users\Alex\AppData\Local\Temp\s1kk.obj \
+  dist/default/production\ADC-FFT-PIC18.X.production.obj 
 
 Object code version is 3.11
 
@@ -34,29 +35,30 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/cgtVK5XK5.obj
+C:\Users\Alex\AppData\Local\Temp\s1kk.obj
                 end_init                              0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
-dist/default/production/ADC-FFT-PIC18.X.production.obj
+dist/default/production\ADC-FFT-PIC18.X.production.obj
                 mediumconst                        79FE     79FE      602     3CFF       0
-                text10                             6BC6     6BC6        C     35E3       0
-                text9                              6BC2     6BC2        4     35E1       0
-                text8                              6D1A     6D1A       58     368D       0
-                text7                              6C76     6C76       4E     363B       0
-                text6                              6BF2     6BF2       26     35F9       0
-                text5                              6CC4     6CC4       56     3662       0
+                text11                             69BE     69BE        C     34DF       0
+                text10                             69BA     69BA        4     34DD       0
+                text9                              6B1A     6B1A       58     358D       0
+                text8                              6A76     6A76       4E     353B       0
+                text7                              6B72     6B72       A4     35B9       0
+                text6                              69EA     69EA       26     34F5       0
+                text5                              6AC4     6AC4       56     3562       0
                 text4                              7272     7272      78C     3939       0
-                text3                              6BE0     6BE0       12     35F0       0
-                text2                              6BD2     6BD2        E     35E9       0
-                text1                              6C42     6C42       34     3621       0
-                text0                              6D72     6D72      500     36B9       0
+                text3                              69D8     69D8       12     34EC       0
+                text2                              69CA     69CA        E     34E5       0
+                text1                              6A42     6A42       34     3521       0
+                text0                              6C16     6C16      65C     360B       0
                 cstackCOMRAM                          1        1       59        1       1
                 cstackBANK0                          E5       E5        E       60       1
-                bssBANK1                            100      100       80      100       1
+                bssBANK1                            100      100      100      100       1
                 bssBANK0                             60       60       85       60       1
                 bssCOMRAM                            5A       5A        4        1       1
-                cinit                              6C18     6C18       2A     360C       0
+                cinit                              6A10     6A10       32     3508       0
                 nvBANK0                              F3       F3        4       60       1
 
 TOTAL           Name                               Link     Load   Length     Space
@@ -64,18 +66,19 @@ TOTAL           Name                               Link     Load   Length     Sp
 
         CLASS   CODE           
                 end_init                              0        0        4         0
-                text10                             6BC6     6BC6        C         0
-                text9                              6BC2     6BC2        4         0
-                text8                              6D1A     6D1A       58         0
-                text7                              6C76     6C76       4E         0
-                text6                              6BF2     6BF2       26         0
-                text5                              6CC4     6CC4       56         0
+                text11                             69BE     69BE        C         0
+                text10                             69BA     69BA        4         0
+                text9                              6B1A     6B1A       58         0
+                text8                              6A76     6A76       4E         0
+                text7                              6B72     6B72       A4         0
+                text6                              69EA     69EA       26         0
+                text5                              6AC4     6AC4       56         0
                 text4                              7272     7272      78C         0
-                text3                              6BE0     6BE0       12         0
-                text2                              6BD2     6BD2        E         0
-                text1                              6C42     6C42       34         0
-                text0                              6D72     6D72      500         0
-                cinit                              6C18     6C18       2A         0
+                text3                              69D8     69D8       12         0
+                text2                              69CA     69CA        E         0
+                text1                              6A42     6A42       34         0
+                text0                              6C16     6C16      65C         0
+                cinit                              6A10     6A10       32         0
 
         CLASS   CONST          
 
@@ -100,7 +103,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 nvBANK0                              F3       F3        4         1
 
         CLASS   BANK1          
-                bssBANK1                            100      100       80         1
+                bssBANK1                            100      100      100         1
 
         CLASS   BANK2          
 
@@ -129,18 +132,19 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 cstackCOMRAM                   000001  00005D  00005E         1       1  COMRAM  
                 bssBANK0                       000060  000097  0000F7        60       1  BANK0   
-                bssBANK1                       000100  000080  000180       100       1  BANK1   
-                text9                          006BC2  000004  006BC6      35E1       0  CODE    
-                text10                         006BC6  00000C  006BD2      35E3       0  CODE    
-                text2                          006BD2  00000E  006BE0      35E9       0  CODE    
-                text3                          006BE0  000012  006BF2      35F0       0  CODE    
-                text6                          006BF2  000026  006C18      35F9       0  CODE    
-                cinit                          006C18  00002A  006C42      360C       0  CODE    
-                text1                          006C42  000034  006C76      3621       0  CODE    
-                text7                          006C76  00004E  006CC4      363B       0  CODE    
-                text5                          006CC4  000056  006D1A      3662       0  CODE    
-                text8                          006D1A  000058  006D72      368D       0  CODE    
-                text0                          006D72  000500  007272      36B9       0  CODE    
+                bssBANK1                       000100  000100  000200       100       1  BANK1   
+                text10                         0069BA  000004  0069BE      34DD       0  CODE    
+                text11                         0069BE  00000C  0069CA      34DF       0  CODE    
+                text2                          0069CA  00000E  0069D8      34E5       0  CODE    
+                text3                          0069D8  000012  0069EA      34EC       0  CODE    
+                text6                          0069EA  000026  006A10      34F5       0  CODE    
+                cinit                          006A10  000032  006A42      3508       0  CODE    
+                text1                          006A42  000034  006A76      3521       0  CODE    
+                text8                          006A76  00004E  006AC4      353B       0  CODE    
+                text5                          006AC4  000056  006B1A      3562       0  CODE    
+                text9                          006B1A  000058  006B72      358D       0  CODE    
+                text7                          006B72  0000A4  006C16      35B9       0  CODE    
+                text0                          006C16  00065C  007272      360B       0  CODE    
                 text4                          007272  00078C  0079FE      3939       0  CODE    
                 mediumconst                    0079FE  000602  008000      3CFF       0  MEDIUMCO
                 idloc                          200000  000008  200008    200000       0  IDLOC   
@@ -151,27 +155,27 @@ UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
         BANK0            0000F7-0000FF                9
-        BANK1            000180-0001FF               80
         BANK2            000200-0002FF              100
         BANK3            000300-0003FF              100
         BANK4            000400-0004FF              100
         BANK5            000500-0005FF              100
         BIGRAM           00005E-00005F                2
                          0000F7-0000FF                9
-                         000180-0005FF              480
-        CODE             000004-006BC1             6BBE
+                         000200-0005FF              400
+        CODE             000004-0069B9             69B6
         COMRAM           00005E-00005F                2
-        CONST            000004-006BC1             6BBE
+        CONST            000004-0069B9             69B6
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      000600-006BC1             65C2
+        MEDIUMCONST      000600-0069B9             63BA
         RAM              0000F7-0000FF                9
-                         000180-0005FF              100
+                         000200-0005FF              100
         SFR              000F38-000FFF               28
-        SMALLCONST       000600-006BC1              100
-        STACK            000180-0005FF              480
+        SMALLCONST       000600-0069B9              100
+        STACK            000200-0005FF              400
 
                                   Symbol Table
 
+?___awdiv                cstackCOMRAM 000007
 ?___lmul                 cstackCOMRAM 000001
 ?___wmul                 cstackCOMRAM 000001
 Open1USART@config        cstackCOMRAM 000006
@@ -188,14 +192,14 @@ _ADRESH                  (abs)        000FC4
 _ADRESL                  (abs)        000FC3
 _ANSELAbits              (abs)        000F38
 _ANSELC                  (abs)        000F3A
-_BusyADC                 text10       006BC6
-_ConvertADC              text9        006BC2
+_BusyADC                 text11       0069BE
+_ConvertADC              text10       0069BA
 _INTCONbits              (abs)        000FF2
 _LATC                    (abs)        000F8B
 _OSCCONbits              (abs)        000FD3
 _OSCTUNEbits             (abs)        000F9B
-_Open1USART              text8        006D1A
-_OpenADC                 text7        006C76
+_Open1USART              text9        006B1A
+_OpenADC                 text8        006A76
 _PIE1                    (abs)        000F9D
 _PIE1bits                (abs)        000F9D
 _PIR1bits                (abs)        000F9E
@@ -211,7 +215,7 @@ _TXREG1                  (abs)        000FAD
 _TXSTA1                  (abs)        000FAC
 _TXSTA1bits              (abs)        000FAC
 _USART1_Status           bssCOMRAM    00005C
-_Write1USART             text3        006BE0
+_Write1USART             text3        0069D8
 __CFG_FOSC$INTIO7        (abs)        000000
 __CFG_LVP$OFF            (abs)        000000
 __CFG_PBADEN$ON          (abs)        000000
@@ -274,7 +278,7 @@ __Hrparam                rparam       000000
 __Hsfr                   sfr          000000
 __Hsmallconst            smallconst   000000
 __Hspace_0               (abs)        30000E
-__Hspace_1               (abs)        000180
+__Hspace_1               (abs)        000200
 __Hspace_2               (abs)        000000
 __Hstack                 stack        000000
 __Hstruct                struct       000000
@@ -283,6 +287,7 @@ __Htext                  text         000000
 __Htext0                 text0        000000
 __Htext1                 text1        000000
 __Htext10                text10       000000
+__Htext11                text11       000000
 __Htext2                 text2        000000
 __Htext3                 text3        000000
 __Htext4                 text4        000000
@@ -356,6 +361,7 @@ __Ltext                  text         000000
 __Ltext0                 text0        000000
 __Ltext1                 text1        000000
 __Ltext10                text10       000000
+__Ltext11                text11       000000
 __Ltext2                 text2        000000
 __Ltext3                 text3        000000
 __Ltext4                 text4        000000
@@ -365,61 +371,70 @@ __Ltext7                 text7        000000
 __Ltext8                 text8        000000
 __Ltext9                 text9        000000
 __S0                     (abs)        30000E
-__S1                     (abs)        000180
+__S1                     (abs)        000200
 __S2                     (abs)        000000
+___awdiv                 text7        006B72
+___awdiv@counter         cstackCOMRAM 00000B
+___awdiv@dividend        cstackCOMRAM 000007
+___awdiv@divisor         cstackCOMRAM 000009
+___awdiv@quotient        cstackCOMRAM 00000D
+___awdiv@sign            cstackCOMRAM 00000C
 ___inthi_sp              stack        000000
 ___intlo_sp              stack        000000
-___lmul                  text5        006CC4
+___lmul                  text5        006AC4
 ___lmul@multiplicand     cstackCOMRAM 000005
 ___lmul@multiplier       cstackCOMRAM 000001
 ___lmul@product          cstackCOMRAM 000009
 ___sp                    stack        000000
-___wmul                  text6        006BF2
+___wmul                  text6        0069EA
 ___wmul@multiplicand     cstackCOMRAM 000003
 ___wmul@multiplier       cstackCOMRAM 000001
 ___wmul@product          cstackCOMRAM 000005
 __accesstop              (abs)        000060
 __activetblptr           (abs)        000002
-__end_of_BusyADC         text10       006BD2
-__end_of_ConvertADC      text9        006BC6
-__end_of_Open1USART      text8        006D72
-__end_of_OpenADC         text7        006CC4
+__end_of_BusyADC         text11       0069CA
+__end_of_ConvertADC      text10       0069BE
+__end_of_Open1USART      text9        006B72
+__end_of_OpenADC         text8        006AC4
 __end_of_Sinewave        mediumconst  007FFF
-__end_of_Write1USART     text3        006BF2
-__end_of___lmul          text5        006D1A
-__end_of___wmul          text6        006C18
-__end_of__initialization cinit        006C38
+__end_of_Write1USART     text3        0069EA
+__end_of___awdiv         text7        006C16
+__end_of___lmul          text5        006B1A
+__end_of___wmul          text6        006A10
+__end_of__initialization cinit        006A38
 __end_of_fix_fft         text4        0079FE
 __end_of_main            text0        007272
-__end_of_sendChar        text2        006BE0
-__end_of_sendIntArray    text1        006C76
-__initialization         cinit        006C18
+__end_of_sendChar        text2        0069D8
+__end_of_sendIntArray    text1        006A76
+__initialization         cinit        006A10
 __mediumconst            mediumconst  0079FE
 __pbssBANK0              bssBANK0     000060
 __pbssBANK1              bssBANK1     000100
 __pbssCOMRAM             bssCOMRAM    00005A
-__pcinit                 cinit        006C18
+__pcinit                 cinit        006A10
 __pcstackBANK0           cstackBANK0  0000E5
 __pcstackCOMRAM          cstackCOMRAM 000001
 __pmediumconst           mediumconst  0079FE
 __pnvBANK0               nvBANK0      0000F3
-__ptext0                 text0        006D72
-__ptext1                 text1        006C42
-__ptext10                text10       006BC6
-__ptext2                 text2        006BD2
-__ptext3                 text3        006BE0
+__ptext0                 text0        006C16
+__ptext1                 text1        006A42
+__ptext10                text10       0069BA
+__ptext11                text11       0069BE
+__ptext2                 text2        0069CA
+__ptext3                 text3        0069D8
 __ptext4                 text4        007272
-__ptext5                 text5        006CC4
-__ptext6                 text6        006BF2
-__ptext7                 text7        006C76
-__ptext8                 text8        006D1A
-__ptext9                 text9        006BC2
+__ptext5                 text5        006AC4
+__ptext6                 text6        0069EA
+__ptext7                 text7        006B72
+__ptext8                 text8        006A76
+__ptext9                 text9        006B1A
 __ramtop                 ramtop       000600
 __size_of_BusyADC        (abs)        000000
 __size_of_ConvertADC     (abs)        000000
 __size_of_Open1USART     (abs)        000000
 __size_of_OpenADC        (abs)        000000
 __size_of_Write1USART    (abs)        000000
+__size_of___awdiv        (abs)        000000
 __size_of___lmul         (abs)        000000
 __size_of___wmul         (abs)        000000
 __size_of_fix_fft        (abs)        000000
@@ -431,13 +446,14 @@ _baud_rate               nvBANK0      0000F3
 _data                    bssBANK0     000060
 _fix_fft                 text4        007272
 _i                       bssCOMRAM    00005A
-_imaginaryNumbers        bssBANK1     000100
+_imaginaryNumbers        bssBANK1     000180
 _input                   bssCOMRAM    00005D
-_main                    text0        006D72
+_main                    text0        006C16
+_oldRealNumbers          bssBANK1     000100
 _realNumbers             bssBANK0     000065
-_sendChar                text2        006BD2
-_sendIntArray            text1        006C42
-end_of_initialization    cinit        006C38
+_sendChar                text2        0069CA
+_sendIntArray            text1        006A42
+end_of_initialization    cinit        006A38
 fix_fft@b                cstackCOMRAM 000037
 fix_fft@c                cstackCOMRAM 000049
 fix_fft@fi               cstackCOMRAM 00000F
@@ -462,31 +478,31 @@ intlevel1                text         000000
 intlevel2                text         000000
 intlevel3                text         000000
 main@adc_value           cstackBANK0  0000E5
-main@i                   cstackBANK0  0000EB
-main@k                   cstackBANK0  0000F1
-main@place               cstackBANK0  0000ED
+main@i                   cstackBANK0  0000F1
+main@k                   cstackBANK0  0000EF
+main@place               cstackBANK0  0000EB
 main@root                cstackBANK0  0000E7
 sendChar@character       cstackCOMRAM 000002
 sendIntArray@array       cstackCOMRAM 000003
 sendIntArray@size        cstackCOMRAM 000005
 stackhi                  (abs)        0005FF
-stacklo                  (abs)        000180
+stacklo                  (abs)        000200
 start                    init         000000
-start_initialization     cinit        006C18
+start_initialization     cinit        006A10
 
 
 FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 37 in file "main pic18.c"
+		line 38 in file "main pic18.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  place           4    8[BANK0 ] long 
+  place           4    6[BANK0 ] long 
   root            4    2[BANK0 ] long 
-  k               2   12[BANK0 ] int 
-  i               2    6[BANK0 ] short 
+  i               2   12[BANK0 ] short 
+  k               2   10[BANK0 ] int 
   adc_value       2    0[BANK0 ] unsigned int 
  Return value:  Size  Location     Type
 		None               void
@@ -508,6 +524,7 @@ Total ram usage:       27 bytes
 		_ConvertADC
 		_Open1USART
 		_OpenADC
+		___awdiv
 		___wmul
 		_fix_fft
 		_sendIntArray
@@ -518,7 +535,7 @@ Total ram usage:       27 bytes
 
  *************** function _sendIntArray *****************
  Defined at:
-		line 151 in file "main pic18.c"
+		line 153 in file "main pic18.c"
  Parameters:    Size  Location     Type
   array           2    2[COMRAM] PTR short 
 		 -> realNumbers(128), 
@@ -550,7 +567,7 @@ Total ram usage:        4 bytes
 
  *************** function _sendChar *****************
  Defined at:
-		line 146 in file "main pic18.c"
+		line 148 in file "main pic18.c"
  Parameters:    Size  Location     Type
   character       1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -581,7 +598,7 @@ Total ram usage:        1 bytes
 
  *************** function _Write1USART *****************
  Defined at:
-		line 14 in file "/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c"
+		line 14 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c"
  Parameters:    Size  Location     Type
   data            1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -659,7 +676,7 @@ Total ram usage:       64 bytes
 
  *************** function ___lmul *****************
  Defined at:
-		line 15 in file "/Applications/microchip/xc8/v1.33/sources/common/Umul32.c"
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c"
  Parameters:    Size  Location     Type
   multiplier      4    0[COMRAM] unsigned long 
   multiplicand    4    4[COMRAM] unsigned long 
@@ -689,7 +706,7 @@ Total ram usage:       12 bytes
 
  *************** function ___wmul *****************
  Defined at:
-		line 15 in file "/Applications/microchip/xc8/v1.33/sources/common/Umul16.c"
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c"
  Parameters:    Size  Location     Type
   multiplier      2    0[COMRAM] unsigned int 
   multiplicand    2    2[COMRAM] unsigned int 
@@ -717,9 +734,41 @@ Total ram usage:        6 bytes
  This function uses a non-reentrant model
 
 
+ *************** function ___awdiv *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    6[COMRAM] int 
+  divisor         2    8[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  quotient        2   12[COMRAM] int 
+  sign            1   11[COMRAM] unsigned char 
+  counter         1   10[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    6[COMRAM] int 
+ Registers used:
+		wreg, status,2, status,0, prodl
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+      Params:         4       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
  *************** function _OpenADC *****************
  Defined at:
-		line 305 in file "/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c"
+		line 305 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c"
  Parameters:    Size  Location     Type
   config          1    wreg     unsigned char 
   config2         1    0[COMRAM] unsigned char 
@@ -750,7 +799,7 @@ Total ram usage:        5 bytes
 
  *************** function _Open1USART *****************
  Defined at:
-		line 124 in file "/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c"
+		line 124 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c"
  Parameters:    Size  Location     Type
   config          1    wreg     unsigned char 
   spbrg           2    0[COMRAM] unsigned int 
@@ -780,7 +829,7 @@ Total ram usage:        6 bytes
 
  *************** function _ConvertADC *****************
  Defined at:
-		line 22 in file "/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c"
+		line 22 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -809,7 +858,7 @@ Total ram usage:        0 bytes
 
  *************** function _BusyADC *****************
  Defined at:
-		line 26 in file "/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcbusy.c"
+		line 26 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcbusy.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -840,56 +889,61 @@ Total ram usage:        0 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c
-		_Open1USART    		CODE           	6D1A	0000	88
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+		___wmul        		CODE           	69EA	0000	38
 
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c estimated size: 88
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c estimated size: 38
 
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcbusy.c
-		_BusyADC       		CODE           	6BC6	0000	12
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcbusy.c
+		_BusyADC       		CODE           	69BE	0000	12
 
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcbusy.c estimated size: 12
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcbusy.c estimated size: 12
 
-/Applications/microchip/xc8/v1.33/sources/common/Umul16.c
-		___wmul        		CODE           	6BF2	0000	38
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c
+		_OpenADC       		CODE           	6A76	0000	78
 
-/Applications/microchip/xc8/v1.33/sources/common/Umul16.c estimated size: 38
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcopen.c estimated size: 78
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c
+		_Write1USART   		CODE           	69D8	0000	18
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1write.c estimated size: 18
 
 main pic18.c
-		_sendIntArray  		CODE           	6C42	0000	52
-		_main          		CODE           	6D72	0000	1280
-		_sendChar      		CODE           	6BD2	0000	14
+		_sendIntArray  		CODE           	6A42	0000	52
+		_main          		CODE           	6C16	0000	1628
+		_sendChar      		CODE           	69CA	0000	14
 
-main pic18.c estimated size: 1346
+main pic18.c estimated size: 1694
 
-/Applications/microchip/xc8/v1.33/sources/common/Umul32.c
-		___lmul        		CODE           	6CC4	0000	86
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+		___lmul        		CODE           	6AC4	0000	86
 
-/Applications/microchip/xc8/v1.33/sources/common/Umul32.c estimated size: 86
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c estimated size: 86
 
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c
-		_ConvertADC    		CODE           	6BC2	0000	4
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c
+		_Open1USART    		CODE           	6B1A	0000	88
 
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c estimated size: 4
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\u1open.c estimated size: 88
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+		___awdiv       		CODE           	6B72	0000	164
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c estimated size: 164
 
 shared
-		__initializatio		CODE           	6C18	0000	32
+		__initializatio		CODE           	6A10	0000	40
 		_Sinewave      		MEDIUMCONST    	79FF	0000	1536
 
-shared estimated size: 1568
+shared estimated size: 1576
 
 fft.c
 		_fix_fft       		CODE           	7272	0000	1932
 
 fft.c estimated size: 1932
 
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c
-		_Write1USART   		CODE           	6BE0	0000	18
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c
+		_ConvertADC    		CODE           	69BA	0000	4
 
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c estimated size: 18
-
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c
-		_OpenADC       		CODE           	6C76	0000	78
-
-/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c estimated size: 78
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\ADC\adcconv.c estimated size: 4
 
