@@ -11,51 +11,54 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/cgtsG0kBX.obj
+$/tmp/cgtBQaEE9.obj
 end_init CODE 0 0 0 4 1
 idloc IDLOC 0 200000 200000 8 1
 config CONFIG 0 300000 300000 E 1
 $dist/default/production/ADC-FFT-PIC18.X.production.obj
 mediumconst MEDIUMCONST 0 79FE 79FE 602 1
-text8 CODE 0 77C0 77C0 C 1
-text7 CODE 0 77B2 77B2 4 1
-text6 CODE 0 789C 789C 58 1
-text5 CODE 0 784E 784E 4E 1
-text4 CODE 0 77B6 77B6 A 1
-text3 CODE 0 77DA 77DA 12 1
-text2 CODE 0 77CC 77CC E 1
-text1 CODE 0 781A 781A 34 1
-text0 CODE 0 78F4 78F4 10A 1
-cstackCOMRAM COMRAM 1 1 1 C 1
+text10 CODE 0 6BC2 6BC2 C 1
+text9 CODE 0 6BBE 6BBE 4 1
+text8 CODE 0 6D16 6D16 58 1
+text7 CODE 0 6C72 6C72 4E 1
+text6 CODE 0 6BEE 6BEE 26 1
+text5 CODE 0 6CC0 6CC0 56 1
+text4 CODE 0 7272 7272 78C 1
+text3 CODE 0 6BDC 6BDC 12 1
+text2 CODE 0 6BCE 6BCE E 1
+text1 CODE 0 6C3E 6C3E 34 1
+text0 CODE 0 6D6E 6D6E 504 1
+cstackCOMRAM COMRAM 1 1 1 59 1
+cstackBANK0 BANK0 1 E5 E5 E 1
 bssBANK1 BANK1 1 100 100 80 1
-bssBANK0 BANK0 1 60 60 80 1
-bssCOMRAM COMRAM 1 D D 9 1
-cinit CODE 0 77EC 77EC 2E 1
-nvCOMRAM COMRAM 1 16 16 4 1
+bssBANK0 BANK0 1 60 60 85 1
+bssCOMRAM COMRAM 1 5A 5A 4 1
+cinit CODE 0 6C14 6C14 2A 1
+nvBANK0 BANK0 1 F3 F3 4 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-BANK0 0000E0-0000FF 1
+BANK0 0000F7-0000FF 1
 BANK1 000180-0001FF 1
 BANK2 000200-0002FF 1
 BANK3 000300-0003FF 1
 BANK4 000400-0004FF 1
 BANK5 000500-0005FF 1
-BIGRAM 00001A-00005F 1
-BIGRAM 0000E0-0000FF 1
+BIGRAM 00005E-00005F 1
+BIGRAM 0000F7-0000FF 1
 BIGRAM 000180-0005FF 1
-CODE 000004-0077B1 1
-COMRAM 00001A-00005F 1
-CONST 000004-0077B1 1
+CODE 000004-006BBD 1
+COMRAM 00005E-00005F 1
+CONST 000004-006BBD 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 000600-0077B1 1
-RAM 0000E0-0000FF 1
+MEDIUMCONST 000600-006BBD 1
+RAM 0000F7-0000FF 1
 RAM 000180-0005FF 1
 SFR 000F38-000FFF 1
-SMALLCONST 000600-0077B1 1
+SMALLCONST 000600-006BBD 1
 STACK 000180-0005FF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -71,124 +74,217 @@ STACK 000180-0005FF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/ADC-FFT-PIC18.X.production.obj
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c":22 77B2 text7 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c":24 77B2 text7 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c":25 77B4 text7 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcread.c":24 77B6 text4 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcread.c":26 77B6 text4 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcbusy.c":26 77C0 text8 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcbusy.c":28 77C0 text8 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":136 77CC text2 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":137 77CE text2 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":138 77D2 text2 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":139 77D8 text2 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":14 77DA text3 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":16 77DC text3 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":18 77E0 text3 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":19 77E2 text3 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":20 77E4 text3 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":23 77E6 text3 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":24 77EA text3 CODE
-"/tmp/cgtXGOSbP":1989 77EC cinit CODE
-"/tmp/cgtXGOSbP":1991 77EC cinit CODE
-"/tmp/cgtXGOSbP":1994 77EC cinit CODE
-"/tmp/cgtXGOSbP":2028 77EC cinit CODE
-"/tmp/cgtXGOSbP":2029 77F0 cinit CODE
-"/tmp/cgtXGOSbP":2030 77F2 cinit CODE
-"/tmp/cgtXGOSbP":2031 77F2 cinit CODE
-"/tmp/cgtXGOSbP":2032 77F4 cinit CODE
-"/tmp/cgtXGOSbP":2033 77F6 cinit CODE
-"/tmp/cgtXGOSbP":2036 77F8 cinit CODE
-"/tmp/cgtXGOSbP":2037 77FC cinit CODE
-"/tmp/cgtXGOSbP":2038 77FE cinit CODE
-"/tmp/cgtXGOSbP":2039 77FE cinit CODE
-"/tmp/cgtXGOSbP":2040 7800 cinit CODE
-"/tmp/cgtXGOSbP":2041 7802 cinit CODE
-"/tmp/cgtXGOSbP":2044 7804 cinit CODE
-"/tmp/cgtXGOSbP":2045 7808 cinit CODE
-"/tmp/cgtXGOSbP":2046 780A cinit CODE
-"/tmp/cgtXGOSbP":2047 780A cinit CODE
-"/tmp/cgtXGOSbP":2048 780C cinit CODE
-"/tmp/cgtXGOSbP":2049 780E cinit CODE
-"/tmp/cgtXGOSbP":2055 7810 cinit CODE
-"/tmp/cgtXGOSbP":2057 7810 cinit CODE
-"/tmp/cgtXGOSbP":2058 7812 cinit CODE
-"/tmp/cgtXGOSbP":2059 7814 cinit CODE
-"/tmp/cgtXGOSbP":2060 7816 cinit CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":141 781A text1 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":142 781A text1 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":143 7824 text1 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":142 783C text1 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":145 784A text1 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":142 784C text1 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":305 784E text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":309 7850 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":310 7854 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":311 7858 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":313 785C text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":315 7862 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":319 7866 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":321 788E text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":323 7892 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":324 7894 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":325 7896 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":326 7898 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":327 7898 text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":328 789A text5 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":124 789C text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":126 789E text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":127 78A2 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":129 78A6 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":130 78A8 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":132 78AA text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":134 78AE text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":135 78B0 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":138 78B2 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":139 78B4 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":141 78B6 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":142 78BA text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":143 78BE text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":144 78BE text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":146 78C0 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":147 78C2 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":149 78C4 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":150 78C6 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":154 78C8 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":155 78CC text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":156 78D0 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":157 78D0 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":159 78D2 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":160 78D6 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":161 78DA text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":162 78DA text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":164 78DC text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":165 78E0 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":167 78EE text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":168 78F0 text6 CODE
-"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":169 78F2 text6 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":37 78F4 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":39 78F4 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":40 78F6 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":41 78FA text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":42 78FE text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":43 7904 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":44 7906 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":46 7908 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":47 790E text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":48 7912 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":51 791E text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":59 792E text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":61 793C text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":68 7946 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":71 7954 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":72 795C text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":74 7974 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":77 7978 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":80 7982 text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":82 799A text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":85 79BC text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":72 79DE text0 CODE
-"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":88 79E4 text0 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c":22 6BBE text9 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c":24 6BBE text9 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcconv.c":25 6BC0 text9 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcbusy.c":26 6BC2 text10 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcbusy.c":28 6BC2 text10 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":152 6BCE text2 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":153 6BD0 text2 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":154 6BD4 text2 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":155 6BDA text2 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":14 6BDC text3 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":16 6BDE text3 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":18 6BE2 text3 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":19 6BE4 text3 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":20 6BE6 text3 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":23 6BE8 text3 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1write.c":24 6BEC text3 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul16.c":15 6BEE text6 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul16.c":37 6BEE text6 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul16.c":38 6BFA text6 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul16.c":39 6C02 text6 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul16.c":52 6C0A text6 CODE
+"/tmp/cgtxRtb5f":1997 6C14 cinit CODE
+"/tmp/cgtxRtb5f":1999 6C14 cinit CODE
+"/tmp/cgtxRtb5f":2002 6C14 cinit CODE
+"/tmp/cgtxRtb5f":2036 6C14 cinit CODE
+"/tmp/cgtxRtb5f":2037 6C18 cinit CODE
+"/tmp/cgtxRtb5f":2038 6C1A cinit CODE
+"/tmp/cgtxRtb5f":2039 6C1A cinit CODE
+"/tmp/cgtxRtb5f":2040 6C1C cinit CODE
+"/tmp/cgtxRtb5f":2041 6C1E cinit CODE
+"/tmp/cgtxRtb5f":2044 6C20 cinit CODE
+"/tmp/cgtxRtb5f":2045 6C24 cinit CODE
+"/tmp/cgtxRtb5f":2046 6C26 cinit CODE
+"/tmp/cgtxRtb5f":2047 6C26 cinit CODE
+"/tmp/cgtxRtb5f":2048 6C28 cinit CODE
+"/tmp/cgtxRtb5f":2049 6C2A cinit CODE
+"/tmp/cgtxRtb5f":2052 6C2C cinit CODE
+"/tmp/cgtxRtb5f":2053 6C2E cinit CODE
+"/tmp/cgtxRtb5f":2054 6C30 cinit CODE
+"/tmp/cgtxRtb5f":2055 6C32 cinit CODE
+"/tmp/cgtxRtb5f":2061 6C34 cinit CODE
+"/tmp/cgtxRtb5f":2063 6C34 cinit CODE
+"/tmp/cgtxRtb5f":2064 6C36 cinit CODE
+"/tmp/cgtxRtb5f":2065 6C38 cinit CODE
+"/tmp/cgtxRtb5f":2066 6C3A cinit CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":157 6C3E text1 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":158 6C3E text1 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":159 6C48 text1 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":158 6C60 text1 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":161 6C6E text1 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":158 6C70 text1 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":305 6C72 text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":309 6C74 text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":310 6C78 text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":311 6C7C text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":313 6C80 text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":315 6C86 text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":319 6C8A text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":321 6CB2 text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":323 6CB6 text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":324 6CB8 text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":325 6CBA text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":326 6CBC text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":327 6CBC text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/ADC/adcopen.c":328 6CBE text7 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":15 6CC0 text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":119 6CC0 text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":121 6CD0 text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":122 6CD4 text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":123 6CE4 text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":124 6CEE text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":125 6CF8 text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":128 6D04 text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/common/Umul32.c":129 6D14 text5 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":124 6D16 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":126 6D18 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":127 6D1C text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":129 6D20 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":130 6D22 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":132 6D24 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":134 6D28 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":135 6D2A text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":138 6D2C text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":139 6D2E text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":141 6D30 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":142 6D34 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":143 6D38 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":144 6D38 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":146 6D3A text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":147 6D3C text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":149 6D3E text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":150 6D40 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":154 6D42 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":155 6D46 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":156 6D4A text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":157 6D4A text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":159 6D4C text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":160 6D50 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":161 6D54 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":162 6D54 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":164 6D56 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":165 6D5A text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":167 6D68 text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":168 6D6A text8 CODE
+"/Applications/microchip/xc8/v1.33/sources/pic18/plib/USART/u1open.c":169 6D6C text8 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":37 6D6E text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":39 6D6E text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":40 6D70 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":41 6D74 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":42 6D76 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":43 6D7A text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":44 6D7E text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":45 6D84 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":46 6D86 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":49 6D88 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":50 6D8A text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":53 6D8E text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":54 6D94 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":55 6D98 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":58 6DA4 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":66 6DBC text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":68 6DCA text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":75 6DD4 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":78 6DE2 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":79 6DEE text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":81 6E0C text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":85 6E10 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":90 6E1A text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":91 6E3E text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":97 6E68 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":98 6E8E text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":79 6E96 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":104 6E9E text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":105 6EC2 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":108 6EDA text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":109 6EE6 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":111 6F04 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":113 6FDA text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":114 6FF2 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":116 700A text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":118 7036 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":121 70D4 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":122 7150 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":123 718E text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":126 71C0 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":127 71F2 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":120 7232 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":131 7240 text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/main pic18.c":109 726A text0 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":155 7272 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":157 7272 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":160 7282 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":161 72AC text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":167 72C4 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":168 72CE text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":169 72CE text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":172 72DE text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":173 72E8 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":175 731C text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":176 7364 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":178 7392 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":179 73AC text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":180 73D8 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":181 73F2 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":182 740C text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":183 7438 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":167 7452 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":186 7484 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":187 7494 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":189 74A4 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":206 74A6 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":207 74B8 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":209 74C2 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":211 74EE text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":212 7524 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":214 755A text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":215 7560 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":217 7566 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":219 757A text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":227 7592 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":228 75DC text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":229 7614 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":230 761C text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":232 7642 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":233 768C text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":234 76C4 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":235 76CC text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":238 7702 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":239 774C text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":240 7784 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":241 778C text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":243 77B2 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":244 77FC text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":245 7834 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":246 783C text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":248 786A text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":249 7884 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":250 789E text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":251 78A4 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":253 78AA text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":254 78DC text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":255 790E text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":256 7938 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":217 7962 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":207 798E text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":260 79C0 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":261 79D0 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":189 79E0 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":262 79E0 text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":263 79FA text4 CODE
+"/Users/qhduong/MPLABXProjects/ADC-FFT-PIC18.X/fft.c":189 79FC text4 CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -201,21 +297,27 @@ $dist/default/production/ADC-FFT-PIC18.X.production.obj
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-_i 12 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+_i 5A 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __S0 30000E 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __S1 180 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __S2 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hintentry 0 0 ABS 0 intentry dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lintentry 0 0 ABS 0 intentry dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@i 39 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __CFG_PLLCFG$OFF 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-_USART1_Status 14 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@j 45 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+_USART1_Status 5C 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@k 1B 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 _PIE1 F9D 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@l 41 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 _LATC F8B 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-_data D 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-_main 78F4 0 CODE 0 text0 dist/default/production/ADC-FFT-PIC18.X.production.obj
-___sp 0 0 STACK 2 stack /tmp/cgtsG0kBX.obj
-start 0 0 CODE 0 init /tmp/cgtsG0kBX.obj
-__end_of_sendIntArray 784E 0 CODE 0 text1 dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@m 11 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@n 2F 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+_data 60 0 BANK0 1 bssBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+_main 6D6E 0 CODE 0 text0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/cgtBQaEE9.obj
+start 0 0 CODE 0 init /tmp/cgtBQaEE9.obj
+__end_of_sendIntArray 6C72 0 CODE 0 text1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 _TRISC F94 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hirdata 0 0 CODE 0 irdata dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -224,9 +326,10 @@ __LRAM 1 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lconfig 300000 0 CONFIG 0 config dist/default/production/ADC-FFT-PIC18.X.production.obj
 __CFG_FOSC$INTIO7 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-_sendChar 77CC 0 CODE 0 text2 dist/default/production/ADC-FFT-PIC18.X.production.obj
-main@i B 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-_ConvertADC 77B2 0 CODE 0 text7 dist/default/production/ADC-FFT-PIC18.X.production.obj
+_sendChar 6BCE 0 CODE 0 text2 dist/default/production/ADC-FFT-PIC18.X.production.obj
+main@i EB 0 BANK0 1 cstackBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+_ConvertADC 6BBE 0 CODE 0 text9 dist/default/production/ADC-FFT-PIC18.X.production.obj
+main@k F1 0 BANK0 1 cstackBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 OpenADC@config3 2 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lbigram 0 0 ABS 0 bigram dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -237,6 +340,7 @@ __Hram 0 0 ABS 0 ram dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lram 0 0 ABS 0 ram dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lcomram 0 0 ABS 0 comram dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@fi F 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hsfr 0 0 ABS 0 sfr dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lsfr 0 0 ABS 0 sfr dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hbss 0 0 RAM 1 bss dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -244,7 +348,8 @@ __Lbss 0 0 RAM 1 bss dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/ADC-FFT-PIC18.X.production.obj
 Write1USART@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-_input 15 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+_input 5D 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+main@place ED 0 BANK0 1 cstackBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 _RCSTA1 FAB 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 Open1USART@config 6 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 _TXREG1 FAD 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -256,9 +361,10 @@ _ADCON2 FC0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 _PIE1bits F9D 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/ADC-FFT-PIC18.X.production.obj
-_sendIntArray 781A 0 CODE 0 text1 dist/default/production/ADC-FFT-PIC18.X.production.obj
+_sendIntArray 6C3E 0 CODE 0 text1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 _PIR1bits F9E 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of_fix_fft 79FE 0 CODE 0 text4 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/ADC-FFT-PIC18.X.production.obj
 _ANSELC F3A 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -277,46 +383,65 @@ __Hfarbss 0 0 FARRAM 0 farbss dist/default/production/ADC-FFT-PIC18.X.production
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production/ADC-FFT-PIC18.X.production.obj
 __pmediumconst 79FE 0 MEDIUMCONST 0 mediumconst dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hintcode 0 0 CODE 0 intcode dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@qi 29 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lintcode 0 0 CODE 0 intcode dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production/ADC-FFT-PIC18.X.production.obj
 _ADRESH FC4 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production/ADC-FFT-PIC18.X.production.obj
+main@root E7 0 BANK0 1 cstackBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Habs1 0 0 ABS 0 abs1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Labs1 0 0 ABS 0 abs1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 _ADRESL FC3 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@ti 35 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __size_of_sendChar 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-__pnvCOMRAM 16 0 COMRAM 1 nvCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-_baud_rate 16 0 COMRAM 1 nvCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@wi 2D 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@fr D 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@nn 1F 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+_baud_rate F3 0 BANK0 1 nvBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hdata 0 0 ABS 0 data dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ldata 0 0 ABS 0 data dist/default/production/ADC-FFT-PIC18.X.production.obj
-stackhi 5FF 0 ABS 0 - /tmp/cgtsG0kBX.obj
+fix_fft@mr 3D 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+stackhi 5FF 0 ABS 0 - /tmp/cgtBQaEE9.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__pcstackBANK0 E5 0 BANK0 1 cstackBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htemp 0 0 COMRAM 1 temp dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltemp 0 0 COMRAM 1 temp dist/default/production/ADC-FFT-PIC18.X.production.obj
-stacklo 180 0 ABS 0 - /tmp/cgtsG0kBX.obj
+stacklo 180 0 ABS 0 - /tmp/cgtBQaEE9.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production/ADC-FFT-PIC18.X.production.obj
+___lmul 6CC0 0 CODE 0 text5 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hinit 0 0 CODE 0 init dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Linit 0 0 CODE 0 init dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production/ADC-FFT-PIC18.X.production.obj
+___wmul 6BEE 0 CODE 0 text6 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production/ADC-FFT-PIC18.X.production.obj
-__end_of_main 79FE 0 CODE 0 text0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@qr 27 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of_main 7272 0 CODE 0 text0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production/ADC-FFT-PIC18.X.production.obj
 __size_of_ConvertADC 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext 0 0 ABS 0 text dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext 0 0 ABS 0 text dist/default/production/ADC-FFT-PIC18.X.production.obj
-__end_of_BusyADC 77CC 0 CODE 0 text8 dist/default/production/ADC-FFT-PIC18.X.production.obj
-end_of_initialization 7810 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of_BusyADC 6BCE 0 CODE 0 text10 dist/default/production/ADC-FFT-PIC18.X.production.obj
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@tr 33 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+end_of_initialization 6C34 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
 _SPBRGH1 FB0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@wr 2B 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+__pnvBANK0 F3 0 BANK0 1 nvBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 _TRISAbits F92 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
+_TRISBbits F93 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 _TRISCbits F94 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-_ReadADC 77B6 0 CODE 0 text4 dist/default/production/ADC-FFT-PIC18.X.production.obj
-_OpenADC 784E 0 CODE 0 text5 dist/default/production/ADC-FFT-PIC18.X.production.obj
-_BusyADC 77C0 0 CODE 0 text8 dist/default/production/ADC-FFT-PIC18.X.production.obj
+_OpenADC 6C72 0 CODE 0 text7 dist/default/production/ADC-FFT-PIC18.X.production.obj
+_BusyADC 6BC2 0 CODE 0 text10 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production/ADC-FFT-PIC18.X.production.obj
 __size_of_Write1USART 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -333,6 +458,7 @@ __Hbank3 0 0 ABS 0 bank3 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lbank3 0 0 ABS 0 bank3 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hbank4 0 0 ABS 0 bank4 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lbank4 0 0 ABS 0 bank4 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of___lmul 6D16 0 CODE 0 text5 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hbank5 0 0 ABS 0 bank5 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lbank5 0 0 ABS 0 bank5 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -343,39 +469,42 @@ __Ltext0 0 0 ABS 0 text0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __size_of_BusyADC 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext1 0 0 ABS 0 text1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext1 0 0 ABS 0 text1 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext0 78F4 0 CODE 0 text0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext0 6D6E 0 CODE 0 text0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext2 0 0 ABS 0 text2 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext2 0 0 ABS 0 text2 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext1 781A 0 CODE 0 text1 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext1 6C3E 0 CODE 0 text1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext3 0 0 ABS 0 text3 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext3 0 0 ABS 0 text3 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext2 77CC 0 CODE 0 text2 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext2 6BCE 0 CODE 0 text2 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext4 0 0 ABS 0 text4 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext4 0 0 ABS 0 text4 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext3 77DA 0 CODE 0 text3 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext3 6BDC 0 CODE 0 text3 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext5 0 0 ABS 0 text5 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext5 0 0 ABS 0 text5 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext4 77B6 0 CODE 0 text4 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext4 7272 0 CODE 0 text4 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext6 0 0 ABS 0 text6 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext6 0 0 ABS 0 text6 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext5 784E 0 CODE 0 text5 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext5 6CC0 0 CODE 0 text5 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext7 0 0 ABS 0 text7 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext7 0 0 ABS 0 text7 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext6 789C 0 CODE 0 text6 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext6 6BEE 0 CODE 0 text6 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-__end_of_ConvertADC 77B6 0 CODE 0 text7 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of_ConvertADC 6BC2 0 CODE 0 text9 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Htext8 0 0 ABS 0 text8 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Ltext8 0 0 ABS 0 text8 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext7 77B2 0 CODE 0 text7 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__pbssCOMRAM D 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ptext8 77C0 0 CODE 0 text8 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext7 6C72 0 CODE 0 text7 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__pbssCOMRAM 5A 0 COMRAM 1 bssCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext8 6D16 0 CODE 0 text8 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext9 6BBE 0 CODE 0 text9 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production/ADC-FFT-PIC18.X.production.obj
-main@adc_value 9 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-_Open1USART 789C 0 CODE 0 text6 dist/default/production/ADC-FFT-PIC18.X.production.obj
+main@adc_value E5 0 BANK0 1 cstackBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+_Open1USART 6D16 0 CODE 0 text8 dist/default/production/ADC-FFT-PIC18.X.production.obj
 _OSCTUNEbits F9B 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-__end_of__initialization 7810 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of__initialization 6C34 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
 __CFG_PRICLKEN$OFF 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hidata 0 0 CODE 0 idata dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lidata 0 0 CODE 0 idata dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -384,7 +513,6 @@ __Lrdata 0 0 COMRAM 1 rdata dist/default/production/ADC-FFT-PIC18.X.production.o
 __size_of_sendIntArray 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hidloc 200008 0 IDLOC 0 idloc dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lidloc 200000 0 IDLOC 0 idloc dist/default/production/ADC-FFT-PIC18.X.production.obj
-__end_of_ReadADC 77C0 0 CODE 0 text4 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hstack 0 0 STACK 2 stack dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lstack 0 0 STACK 2 stack dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hparam 0 0 ABS 0 rparam dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -397,19 +525,22 @@ __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.
 _imaginaryNumbers 100 0 BANK1 1 bssBANK1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hspace_1 180 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lspace_1 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-_realNumbers 60 0 BANK0 1 bssBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
+_realNumbers 65 0 BANK0 1 bssBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production/ADC-FFT-PIC18.X.production.obj
 OpenADC@config 5 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+_fix_fft 7272 0 CODE 0 text4 dist/default/production/ADC-FFT-PIC18.X.production.obj
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hspace_2 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lspace_2 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/ADC-FFT-PIC18.X.production.obj
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hcinit 0 0 ABS 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lcinit 0 0 ABS 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
-__pcinit 77EC 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
-__ramtop 600 0 RAM 0 ramtop /tmp/cgtsG0kBX.obj
-__mediumconst 79FE 0 MEDIUMCONST 0 mediumconst /tmp/cgtsG0kBX.obj
+__pcinit 6C14 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ramtop 600 0 RAM 0 ramtop /tmp/cgtBQaEE9.obj
+__mediumconst 79FE 0 MEDIUMCONST 0 mediumconst /tmp/cgtBQaEE9.obj
 __size_of_main 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hconst 0 0 CODE 0 const dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lconst 0 0 CODE 0 const dist/default/production/ADC-FFT-PIC18.X.production.obj
@@ -419,44 +550,56 @@ __end_of_Sinewave 7FFF 0 MEDIUMCONST 0 mediumconst dist/default/production/ADC-F
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production/ADC-FFT-PIC18.X.production.obj
-__end_of_Write1USART 77EC 0 CODE 0 text3 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of_Write1USART 6BEE 0 CODE 0 text3 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__ptext10 6BC2 0 CODE 0 text10 dist/default/production/ADC-FFT-PIC18.X.production.obj
 _RCSTA1bits FAB 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 _TXSTA1bits FAC 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 _ADCON0bits FC2 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-___inthi_sp 0 0 STACK 2 stack /tmp/cgtsG0kBX.obj
+___inthi_sp 0 0 STACK 2 stack /tmp/cgtBQaEE9.obj
+fix_fft@istep 23 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 sendChar@character 2 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+_ANSELAbits F38 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
+_ANSELBbits F39 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-___intlo_sp 0 0 STACK 2 stack /tmp/cgtsG0kBX.obj
+___intlo_sp 0 0 STACK 2 stack /tmp/cgtBQaEE9.obj
 _OSCCONbits FD3 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 _INTCONbits FF2 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hend_init 4 0 CODE 0 end_init dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lend_init 0 0 CODE 0 end_init dist/default/production/ADC-FFT-PIC18.X.production.obj
-?_ReadADC 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+__size_of_fix_fft 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 OpenADC@config2 1 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst /tmp/cgtsG0kBX.obj
-__end_of_OpenADC 789C 0 CODE 0 text5 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/cgtBQaEE9.obj
+__end_of_OpenADC 6CC0 0 CODE 0 text7 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/ADC-FFT-PIC18.X.production.obj
-__accesstop 60 0 ABS 0 - /tmp/cgtsG0kBX.obj
+__accesstop 60 0 ABS 0 - /tmp/cgtBQaEE9.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/ADC-FFT-PIC18.X.production.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/ADC-FFT-PIC18.X.production.obj
 __CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-intlevel0 0 0 CODE 0 text /tmp/cgtsG0kBX.obj
-intlevel1 0 0 CODE 0 text /tmp/cgtsG0kBX.obj
-__end_of_sendChar 77DA 0 CODE 0 text2 dist/default/production/ADC-FFT-PIC18.X.production.obj
-intlevel2 0 0 CODE 0 text /tmp/cgtsG0kBX.obj
-intlevel3 0 0 CODE 0 text /tmp/cgtsG0kBX.obj
-start_initialization 77EC 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
-__end_of_Open1USART 78F4 0 CODE 0 text6 dist/default/production/ADC-FFT-PIC18.X.production.obj
+intlevel0 0 0 CODE 0 text /tmp/cgtBQaEE9.obj
+intlevel1 0 0 CODE 0 text /tmp/cgtBQaEE9.obj
+__end_of_sendChar 6BDC 0 CODE 0 text2 dist/default/production/ADC-FFT-PIC18.X.production.obj
+intlevel2 0 0 CODE 0 text /tmp/cgtBQaEE9.obj
+intlevel3 0 0 CODE 0 text /tmp/cgtBQaEE9.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of___wmul 6C14 0 CODE 0 text6 dist/default/production/ADC-FFT-PIC18.X.production.obj
+start_initialization 6C14 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
+__end_of_Open1USART 6D6E 0 CODE 0 text8 dist/default/production/ADC-FFT-PIC18.X.production.obj
 sendIntArray@size 5 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
-__size_of_ReadADC 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
-__initialization 77EC 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
-_Write1USART 77DA 0 CODE 0 text3 dist/default/production/ADC-FFT-PIC18.X.production.obj
+__initialization 6C14 0 CODE 0 cinit dist/default/production/ADC-FFT-PIC18.X.production.obj
+_Write1USART 6BDC 0 CODE 0 text3 dist/default/production/ADC-FFT-PIC18.X.production.obj
 __activetblptr 2 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@b 37 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
+fix_fft@c 49 0 COMRAM 1 cstackCOMRAM dist/default/production/ADC-FFT-PIC18.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -485,16 +628,18 @@ reset_vec 0 0 0 4 1
 mediumconst 0 79FE 79FE 602 1
 config 0 300000 300000 E 1
 idloc 0 200000 200000 8 1
-cstackCOMRAM 1 1 1 19 1
-bssBANK0 1 60 60 80 1
+cstackCOMRAM 1 1 1 5D 1
+bssBANK0 1 60 60 97 1
 bssBANK1 1 100 100 80 1
-text0 0 78F4 78F4 10A 1
-text6 0 789C 789C 58 1
-text5 0 784E 784E 4E 1
-text1 0 781A 781A 34 1
-cinit 0 77EC 77EC 2E 1
-text3 0 77DA 77DA 12 1
-text2 0 77CC 77CC E 1
-text8 0 77C0 77C0 C 1
-text4 0 77B6 77B6 A 1
-text7 0 77B2 77B2 4 1
+text4 0 7272 7272 78C 1
+text0 0 6D6E 6D6E 504 1
+text8 0 6D16 6D16 58 1
+text5 0 6CC0 6CC0 56 1
+text7 0 6C72 6C72 4E 1
+text1 0 6C3E 6C3E 34 1
+cinit 0 6C14 6C14 2A 1
+text6 0 6BEE 6BEE 26 1
+text3 0 6BDC 6BDC 12 1
+text2 0 6BCE 6BCE E 1
+text10 0 6BC2 6BC2 C 1
+text9 0 6BBE 6BBE 4 1

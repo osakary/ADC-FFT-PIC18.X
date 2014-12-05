@@ -36,13 +36,20 @@ void sendIntArray(short *, unsigned int);
 
 void main(void) {
     unsigned int adc_value;
+    TRISAbits.RA3 = 1;
+    ANSELAbits.ANSA3 = 1;
     TRISAbits.RA7 = 1;
     TRISC = 0x00;
     LATC = 0x00;
     ANSELC = 0x00;
     TRISCbits.TRISC6 = 1;
     TRISCbits.TRISC7 = 1;
-    
+
+    // FFT
+    TRISBbits.TRISB0 = 1;
+    ANSELBbits.ANSB0 = 0;
+    // END FFT
+
     OSCCONbits.IRCF = 0b111;
     OSCCONbits.SCS = 0b11;
     OSCTUNEbits.TUN = 0b01111;
@@ -74,50 +81,57 @@ void main(void) {
             ConvertADC();
 
             // Wait for the ADC conversion to complete
+//            LATBbits.LATB0 = 1;
             while(BusyADC());
+//            LATBbits.LATB0 = 0;
 
             // Get the 10-bit ADC result and shift by 2
-            adc_value = ReadADC() >> 2;
-//            realNumbers[i] = adc_value;
+//            adc_value = ReadADC();// >> 2;
+            adc_value = ((short)(ADRESH << 8) + (short)ADRESL) - 512;
+            realNumbers[i] = adc_value;
 
             // just put in the counter to test
-            realNumbers[i] = i;
+//            realNumbers[i] = i;
 
             // Set the imaginary number to zero
             imaginaryNumbers[i] = 0;
+            _delay(200);
         }
 
+        // Send in Pre-FFT data. This is directly from ADC.
+//        sendIntArray(realNumbers, 64);
+
+        fix_fft(realNumbers, imaginaryNumbers, 6);
         sendIntArray(realNumbers, 64);
 
-//        fix_fft(realNumbers, imaginaryNumbers, 6);
+        long place, root;
+        int k = 0;
+        for (k=0; k < 32; k++) {
+            realNumbers[k] = (realNumbers[k] * realNumbers[k] +
+                             imaginaryNumbers[k] * imaginaryNumbers[k]);
 
-//        long place, root;
-//        int k = 0;
-//        for (k=0; k < 32; k++) {
-//            realNumbers[k] = (realNumbers[k] * realNumbers[k] +
-//                             imaginaryNumbers[k] * imaginaryNumbers[k]);
-//
-//            place = 0x40000000;
-//            root = 0;
-//
-//            if (realNumbers[k] >= 0) { // Ensure we don't have a negative number
-//
-//                while (place > realNumbers[k]) place = place >> 2;
-//
-//                while (place) {
-//                    if (realNumbers[k] >= root + place) {
-//                        realNumbers[k] -= root + place;
-//                        root += place * 2;
-//                    }
-//
-//                    root = root >> 1;
-//                    place = place >> 2;
-//                }
-//            }
-//
-//            realNumbers[k] = root;
-//        }
-//
+            place = 0x40000000;
+            root = 0;
+
+            if (realNumbers[k] >= 0) { // Ensure we don't have a negative number
+
+                while (place > realNumbers[k]) place = place >> 2;
+
+                while (place) {
+                    if (realNumbers[k] >= root + place) {
+                        realNumbers[k] -= root + place;
+                        root += place * 2;
+                    }
+
+                    root = root >> 1;
+                    place = place >> 2;
+                }
+            }
+
+            realNumbers[k] = root;
+        }
+
+        // Send in FFT Data
 //        sendIntArray(realNumbers, 64);
     }
 }
