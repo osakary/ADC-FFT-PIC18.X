@@ -41,3 +41,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*.properties
+
+nbproject/Makefile-genesis.properties
