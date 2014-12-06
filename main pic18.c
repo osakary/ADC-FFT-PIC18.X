@@ -46,9 +46,11 @@ void main(void) {
     TRISCbits.TRISC6 = 1;
     TRISCbits.TRISC7 = 1;
 
-    OSCCONbits.IRCF = 0b111;
-    OSCCONbits.SCS = 0b11;
-    OSCTUNEbits.TUN = 0b01111;
+    OSCCONbits.SCS = 0b10;
+    //OSCTUNEbits.TUN = 0b000000;
+    OSCTUNEbits.PLLEN = 1;
+    OSCCON2bits.MFIOSEL = 0;
+    OSCTUNEbits.INTSRC = 1;
 
     // IMPORTANT: Set Baud Rate on Terminal to 9600
     baud_rate = (_XTAL_FREQ / 9600 / 16 - 1);
