@@ -10359,11 +10359,11 @@ scream_prob = scream_tally / total_tally;
 if(max_tally == alarm_tally) {
 writeGuess('A', alarm_prob, 1);
 } else if(max_tally == growl_tally) {
-writeGuess('G', growl_prob, 1);
+writeGuess('G', alarm_prob, 1);
 } else if(max_tally == horn_tally) {
-writeGuess('H', horn_prob, 1);
+writeGuess('H', alarm_prob, 1);
 } else if(max_tally == scream_tally) {
-writeGuess('S', scream_prob, 1);
+writeGuess('S', alarm_prob, 1);
 }
 
 for(i = 0; i < 10; i++) {

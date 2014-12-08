@@ -8844,9 +8844,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 1204 ]
 [e $ ! == _max_tally _growl_tally 1206  ]
 {
-[; ;main pic18.c: 228: writeGuess('G', growl_prob, 1);
+[; ;main pic18.c: 228: writeGuess('G', alarm_prob, 1);
 "228
-[e ( _writeGuess (3 , , -> -> 71 `ui `uc _growl_prob -> 1 `i ]
+[e ( _writeGuess (3 , , -> -> 71 `ui `uc _alarm_prob -> 1 `i ]
 "229
 }
 [; ;main pic18.c: 229: } else if(max_tally == horn_tally) {
@@ -8854,9 +8854,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 1206 ]
 [e $ ! == _max_tally _horn_tally 1208  ]
 {
-[; ;main pic18.c: 230: writeGuess('H', horn_prob, 1);
+[; ;main pic18.c: 230: writeGuess('H', alarm_prob, 1);
 "230
-[e ( _writeGuess (3 , , -> -> 72 `ui `uc _horn_prob -> 1 `i ]
+[e ( _writeGuess (3 , , -> -> 72 `ui `uc _alarm_prob -> 1 `i ]
 "231
 }
 [; ;main pic18.c: 231: } else if(max_tally == scream_tally) {
@@ -8864,9 +8864,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 1208 ]
 [e $ ! == _max_tally _scream_tally 1210  ]
 {
-[; ;main pic18.c: 232: writeGuess('S', scream_prob, 1);
+[; ;main pic18.c: 232: writeGuess('S', alarm_prob, 1);
 "232
-[e ( _writeGuess (3 , , -> -> 83 `ui `uc _scream_prob -> 1 `i ]
+[e ( _writeGuess (3 , , -> -> 83 `ui `uc _alarm_prob -> 1 `i ]
 "233
 }
 [e :U 1210 ]

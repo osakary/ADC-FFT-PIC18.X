@@ -3,16 +3,16 @@ Microchip MPLAB XC8 Compiler V1.33 ()
 Linker command line:
 
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
-  -h+dist/default/production\ADC-FFT-PIC18.X.production.sym \
-  --cmf=dist/default/production\ADC-FFT-PIC18.X.production.cmf -z \
-  -Q18F25K22 -oC:\Users\osaka\AppData\Local\Temp\s570.6 \
-  -Mdist/default/production/ADC-FFT-PIC18.X.production.map -E1 -ver=XC8 \
+  -h+dist/default/debug\ADC-FFT-PIC18.X.debug.sym \
+  --cmf=dist/default/debug\ADC-FFT-PIC18.X.debug.cmf -z -Q18F25K22 \
+  -oC:\Users\osaka\AppData\Local\Temp\s5do.6 \
+  -Mdist/default/debug/ADC-FFT-PIC18.X.debug.map -E1 -ver=XC8 \
   -ASTACK=046Ah-05ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-05Fh \
   -AABS1=00h-05FFh -ABIGRAM=01h-05FFh -ARAM=060h-0FFh,0100h-01FFhx5 \
   -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
   -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
-  -ASFR=0F38h-0F5Fh,0F60h-0FFFh \
+  -ASFR=0F38h-0F5Fh,0F60h-0FFCh \
   -preset_vec=00h,intcode,intcodelo,powerup,init,end_init -pramtop=0600h \
   -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
   -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
@@ -22,8 +22,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
-  C:\Users\osaka\AppData\Local\Temp\s570.obj \
-  dist/default/production\ADC-FFT-PIC18.X.production.obj 
+  C:\Users\osaka\AppData\Local\Temp\s5do.obj \
+  dist/default/debug\ADC-FFT-PIC18.X.debug.obj 
 
 Object code version is 3.11
 
@@ -35,11 +35,12 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\osaka\AppData\Local\Temp\s570.obj
-                end_init                              0        0        4        0       0
+C:\Users\osaka\AppData\Local\Temp\s5do.obj
+                end_init                              2        2        4        0       0
+                reset_vec                             0        0        2        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
-dist/default/production\ADC-FFT-PIC18.X.production.obj
+dist/default/debug\ADC-FFT-PIC18.X.debug.obj
                 mediumconst                        76BE     76BE      942     3B5F       0
                 text27                             5770     5770        C     2BB8       0
                 text26                             576C     576C        4     2BB6       0
@@ -81,7 +82,8 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   STACK          
 
         CLASS   CODE           
-                end_init                              0        0        4         0
+                end_init                              2        2        4         0
+                reset_vec                             0        0        2         0
                 text27                             5770     5770        C         0
                 text26                             576C     576C        4         0
                 text25                             5A4A     5A4A       56         0
@@ -161,7 +163,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                reset_vec                      000000  000004  000004         0       0  CODE    
+                reset_vec                      000000  000006  000006         0       0  CODE    
                 cstackCOMRAM                   000001  00005F  000060         1       1  COMRAM  
                 bssBANK0                       000060  000073  0000D3        60       1  BANK0   
                 bssBANK1                       000100  000100  000200       100       1  BANK1   
@@ -208,13 +210,13 @@ UNUSED ADDRESS RANGES
         BANK5            000500-0005FF              100
         BIGRAM           0000D3-0000FF               2D
                          00046A-0005FF              196
-        CODE             000004-005769             5766
-        CONST            000004-005769             5766
+        CODE             000006-005769             5764
+        CONST            000006-005769             5764
         EEDATA           F00000-F000FF              100
         MEDIUMCONST      000600-005769             516A
         RAM              0000D3-0000FF               2D
                          00046A-0005FF               96
-        SFR              000F38-000FFF               28
+        SFR              000F38-000FFC               28
         SMALLCONST       000600-005769              100
         STACK            00046A-0005FF              196
 
@@ -341,17 +343,17 @@ __HcstackBANK0               cstackBANK0  000000
 __HcstackCOMRAM              cstackCOMRAM 000000
 __Hdata                      data         000000
 __Heeprom_data               eeprom_data  000000
-__Hend_init                  end_init     000004
+__Hend_init                  end_init     000006
 __Hfarbss                    farbss       000000
 __Hfardata                   fardata      000000
 __Hibigdata                  ibigdata     000000
 __Hidata                     idata        000000
 __Hidloc                     idloc        200008
 __Hifardata                  ifardata     000000
-__Hinit                      init         000000
-__Hintcode                   intcode      000000
+__Hinit                      init         000002
+__Hintcode                   intcode      000002
 __Hintcode_body              intcode_body 000000
-__Hintcodelo                 intcodelo    000000
+__Hintcodelo                 intcodelo    000002
 __Hintentry                  intentry     000000
 __Hintret                    intret       000000
 __Hintsave_regs              intsave_regs 000000
@@ -361,13 +363,13 @@ __HnvFARRAM                  nvFARRAM     000000
 __Hnvbit                     nvbit        000000
 __Hnvrram                    nvrram       000000
 __Hparam                     rparam       000000
-__Hpowerup                   powerup      000000
+__Hpowerup                   powerup      000002
 __Hram                       ram          000000
 __Hramtop                    ramtop       000600
 __Hrbit                      rbit         000000
 __Hrbss                      rbss         000000
 __Hrdata                     rdata        000000
-__Hreset_vec                 reset_vec    000000
+__Hreset_vec                 reset_vec    000002
 __Hrparam                    rparam       000000
 __Hsfr                       sfr          000000
 __Hsmallconst                smallconst   000000
@@ -431,17 +433,17 @@ __LcstackBANK0               cstackBANK0  000000
 __LcstackCOMRAM              cstackCOMRAM 000000
 __Ldata                      data         000000
 __Leeprom_data               eeprom_data  000000
-__Lend_init                  end_init     000000
+__Lend_init                  end_init     000002
 __Lfarbss                    farbss       000000
 __Lfardata                   fardata      000000
 __Libigdata                  ibigdata     000000
 __Lidata                     idata        000000
 __Lidloc                     idloc        200000
 __Lifardata                  ifardata     000000
-__Linit                      init         000000
-__Lintcode                   intcode      000000
+__Linit                      init         000002
+__Lintcode                   intcode      000002
 __Lintcode_body              intcode_body 000000
-__Lintcodelo                 intcodelo    000000
+__Lintcodelo                 intcodelo    000002
 __Lintentry                  intentry     000000
 __Lintret                    intret       000000
 __Lintsave_regs              intsave_regs 000000
@@ -451,7 +453,7 @@ __LnvFARRAM                  nvFARRAM     000000
 __Lnvbit                     nvbit        000000
 __Lnvrram                    nvrram       000000
 __Lparam                     rparam       000000
-__Lpowerup                   powerup      000000
+__Lpowerup                   powerup      000002
 __Lram                       ram          000000
 __Lramtop                    ramtop       000600
 __Lrbit                      rbit         000000
@@ -704,7 +706,7 @@ sprintf@prec                 cstackCOMRAM 00001C
 sprintf@sp                   cstackCOMRAM 00000F
 stackhi                      (abs)        0005FF
 stacklo                      (abs)        00046A
-start                        init         000000
+start                        init         000002
 start_initialization         cinit        00590C
 writeGuess@guess             cstackCOMRAM 000031
 writeGuess@percent           cstackCOMRAM 000029

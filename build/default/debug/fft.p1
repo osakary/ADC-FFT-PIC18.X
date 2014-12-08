@@ -1,173 +1,4 @@
 Version 3.2 HI-TECH Software Intermediate Code
-[p mainexit ]
-"68 main pic18.c
-[v _setup `(v ~T0 @X0 0 ef ]
-"2016 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\adc.h
-[v _ConvertADC `(v ~T0 @X0 0 ef ]
-"2014
-[v _BusyADC `(uc ~T0 @X0 0 ef ]
-"13398 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f25k22.h
-[v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
-"13379
-[v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
-[v F8467 `(v ~T0 @X0 1 tf1`ul ]
-"147 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18.h
-[v __delay `JF8467 ~T0 @X0 0 e ]
-[p i __delay ]
-"32 fft.h
-[v _fix_fft `(v ~T0 @X0 0 ef3`*s`*s`s ]
-"7662 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f25k22.h
-[s S474 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S474 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"7672
-[s S475 :1 `uc 1 ]
-[n S475 . LB0 ]
-"7675
-[s S476 :1 `uc 1 :1 `uc 1 ]
-[n S476 . . LB1 ]
-"7679
-[s S477 :2 `uc 1 :1 `uc 1 ]
-[n S477 . . LB2 ]
-"7683
-[s S478 :3 `uc 1 :1 `uc 1 ]
-[n S478 . . LB3 ]
-"7687
-[s S479 :4 `uc 1 :1 `uc 1 ]
-[n S479 . . LB4 ]
-"7691
-[s S480 :5 `uc 1 :1 `uc 1 ]
-[n S480 . . LB5 ]
-"7695
-[s S481 :6 `uc 1 :1 `uc 1 ]
-[n S481 . . LB6 ]
-"7699
-[s S482 :7 `uc 1 :1 `uc 1 ]
-[n S482 . . LB7 ]
-"7661
-[u S473 `S474 1 `S475 1 `S476 1 `S477 1 `S478 1 `S479 1 `S480 1 `S481 1 `S482 1 ]
-[n S473 . . . . . . . . . . ]
-"7704
-[v _LATBbits `VS473 ~T0 @X0 0 e@3978 ]
-"69 main pic18.c
-[v _writeGuess `(v ~T0 @X0 0 ef3`uc`i`i ]
-"65
-[v _sendIntArray `(v ~T0 @X0 0 ef2`*s`ui ]
-"7931 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f25k22.h
-[s S494 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S494 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
-"7941
-[s S495 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S495 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
-"7930
-[u S493 `S494 1 `S495 1 ]
-[n S493 . . . ]
-"7952
-[v _TRISAbits `VS493 ~T0 @X0 0 e@3986 ]
-"53
-[s S2 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2 . ANSA0 ANSA1 ANSA2 ANSA3 . ANSA5 ]
-"52
-[u S1 `S2 1 ]
-[n S1 . . ]
-"62
-[v _ANSELAbits `VS1 ~T0 @X0 0 e@3896 ]
-"8362
-[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
-"7788
-[v _LATC `Vuc ~T0 @X0 0 e@3979 ]
-"140
-[v _ANSELC `Vuc ~T0 @X0 0 e@3898 ]
-"8373
-[s S506 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S506 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
-"8383
-[s S507 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S507 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
-"8372
-[u S505 `S506 1 `S507 1 ]
-[n S505 . . . ]
-"8394
-[v _TRISCbits `VS505 ~T0 @X0 0 e@3988 ]
-"8152
-[s S500 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S500 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"8162
-[s S501 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S501 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"8151
-[u S499 `S500 1 `S501 1 ]
-[n S499 . . . ]
-"8173
-[v _TRISBbits `VS499 ~T0 @X0 0 e@3987 ]
-"15953
-[s S1012 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
-[n S1012 . SCS HFIOFS OSTS IRCF IDLEN ]
-"15960
-[s S1013 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1013 . SCS0 SCS1 IOFS . IRCF0 IRCF1 IRCF2 ]
-"15952
-[u S1011 `S1012 1 `S1013 1 ]
-[n S1011 . . . ]
-"15970
-[v _OSCCONbits `VS1011 ~T0 @X0 0 e@4051 ]
-"8609
-[s S514 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S514 . TUN PLLEN INTSRC ]
-"8614
-[s S515 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S515 . TUN0 TUN1 TUN2 TUN3 TUN4 TUN5 ]
-"8608
-[u S513 `S514 1 `S515 1 ]
-[n S513 . . . ]
-"8623
-[v _OSCTUNEbits `VS513 ~T0 @X0 0 e@3995 ]
-"15897
-[s S1010 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1010 . LFIOFS MFIOFS PRISD SOSCGO MFIOSEL . SOSCRUN PLLRDY ]
-"15896
-[u S1009 `S1010 1 ]
-[n S1009 . . ]
-"15908
-[v _OSCCON2bits `VS1009 ~T0 @X0 0 e@4050 ]
-"236 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\spi.h
-[v _OpenSPI1 `(v ~T0 @X0 0 ef3`uc`uc`uc ]
-"40 lcd3310.h
-[v _LCDInit `(v ~T0 @X0 0 ef ]
-"2040 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\adc.h
-[v _OpenADC `(v ~T0 @X0 0 ef3`uc`uc`uc ]
-"9887 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f25k22.h
-[v _RCSTA1 `Vuc ~T0 @X0 0 e@4011 ]
-"10363
-[s S599 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S599 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
-"10373
-[s S600 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S600 . TX9D1 TRMT1 BRGH1 SENDB1 SYNC1 TXEN1 TX91 CSRC1 ]
-"10383
-[s S601 :6 `uc 1 :1 `uc 1 ]
-[n S601 . . TX8_9 ]
-"10387
-[s S602 :1 `uc 1 ]
-[n S602 . TXD8 ]
-"10362
-[u S598 `S599 1 `S600 1 `S601 1 `S602 1 ]
-[n S598 . . . . . ]
-"10391
-[v _TXSTA1bits `VS598 ~T0 @X0 0 e@4012 ]
-"8951
-[v _PIE1 `Vuc ~T0 @X0 0 e@3997 ]
-"214 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
-[v _Open1USART `(v ~T0 @X0 0 ef2`uc`ui ]
-"205 C:\Program Files (x86)\Microchip\xc8\v1.33\include\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"111 lcd3310.h
-[v _LCDStr `(v ~T0 @X0 0 ef3`uc`*Cuc`uc ]
-"63 main pic18.c
-[v _sendChar `(v ~T0 @X0 0 ef1`uc ]
-"248 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
-[v _putrs1USART `(v ~T0 @X0 0 ef1`*Cuc ]
-"245
-[v _Write1USART `(v ~T0 @X0 0 ef1`uc ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18f25k22.h: 47: extern volatile unsigned char ANSELA @ 0xF38;
@@ -8049,1133 +7880,1240 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 147: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 149: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
-[; ;stdarg.h: 7: typedef void * va_list[1];
-[; ;stdarg.h: 10: extern void * __va_start(void);
-[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
-[; ;stdio.h: 23: extern int errno;
-[; ;stdio.h: 54: struct __prbuf
-[; ;stdio.h: 55: {
-[; ;stdio.h: 56: char * ptr;
-[; ;stdio.h: 57: void (* func)(char);
-[; ;stdio.h: 58: };
-[; ;conio.h: 17: extern int errno;
-[; ;conio.h: 20: extern void init_uart(void);
-[; ;conio.h: 22: extern char getch(void);
-[; ;conio.h: 23: extern char getche(void);
-[; ;conio.h: 24: extern void putch(char);
-[; ;conio.h: 25: extern void ungetch(char);
-[; ;conio.h: 27: extern __bit kbhit(void);
-[; ;conio.h: 31: extern char * cgets(char *);
-[; ;conio.h: 32: extern void cputs(const char *);
-[; ;stdio.h: 99: extern int cprintf(char *, ...);
-[; ;stdio.h: 104: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-[; ;stdio.h: 194: extern char * gets(char *);
-[; ;stdio.h: 195: extern int puts(const char *);
-[; ;stdio.h: 196: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-[; ;stdio.h: 197: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-[; ;stdio.h: 198: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-[; ;stdio.h: 199: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-[; ;stdio.h: 200: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-[; ;stdio.h: 201: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-[; ;stdio.h: 205: extern int sprintf(char *, const char *, ...);
-[; ;stdio.h: 206: extern int printf(const char *, ...);
-[; ;stdlib.h: 27: typedef struct {
-[; ;stdlib.h: 28: int rem;
-[; ;stdlib.h: 29: int quot;
-[; ;stdlib.h: 30: } div_t;
-[; ;stdlib.h: 31: typedef struct {
-[; ;stdlib.h: 32: unsigned rem;
-[; ;stdlib.h: 33: unsigned quot;
-[; ;stdlib.h: 34: } udiv_t;
-[; ;stdlib.h: 35: typedef struct {
-[; ;stdlib.h: 36: long quot;
-[; ;stdlib.h: 37: long rem;
-[; ;stdlib.h: 38: } ldiv_t;
-[; ;stdlib.h: 39: typedef struct {
-[; ;stdlib.h: 40: unsigned long quot;
-[; ;stdlib.h: 41: unsigned long rem;
-[; ;stdlib.h: 42: } uldiv_t;
-[; ;stdlib.h: 65: extern double atof(const char *);
-[; ;stdlib.h: 66: extern double strtod(const char *, const char **);
-[; ;stdlib.h: 67: extern int atoi(const char *);
-[; ;stdlib.h: 68: extern unsigned xtoi(const char *);
-[; ;stdlib.h: 69: extern long atol(const char *);
-[; ;stdlib.h: 70: extern long strtol(const char *, char **, int);
-[; ;stdlib.h: 72: extern int rand(void);
-[; ;stdlib.h: 73: extern void srand(unsigned int);
-[; ;stdlib.h: 74: extern void * calloc(size_t, size_t);
-[; ;stdlib.h: 75: extern div_t div(int numer, int denom);
-[; ;stdlib.h: 76: extern udiv_t udiv(unsigned numer, unsigned denom);
-[; ;stdlib.h: 77: extern ldiv_t ldiv(long numer, long denom);
-[; ;stdlib.h: 78: extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
-[; ;stdlib.h: 79: extern unsigned long _lrotl(unsigned long value, unsigned int shift);
-[; ;stdlib.h: 80: extern unsigned long _lrotr(unsigned long value, unsigned int shift);
-[; ;stdlib.h: 81: extern unsigned int _rotl(unsigned int value, unsigned int shift);
-[; ;stdlib.h: 82: extern unsigned int _rotr(unsigned int value, unsigned int shift);
-[; ;stdlib.h: 87: extern void * malloc(size_t);
-[; ;stdlib.h: 88: extern void free(void *);
-[; ;stdlib.h: 89: extern void * realloc(void *, size_t);
-[; ;stdlib.h: 91: extern void abort(void);
-[; ;stdlib.h: 92: extern void exit(int);
-[; ;stdlib.h: 93: extern int atexit(void (*)(void));
-[; ;stdlib.h: 94: extern char * getenv(const char *);
-[; ;stdlib.h: 95: extern char ** environ;
-[; ;stdlib.h: 96: extern int system(char *);
-[; ;stdlib.h: 97: extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
-[; ;stdlib.h: 98: extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
-[; ;stdlib.h: 99: extern int abs(int);
-[; ;stdlib.h: 100: extern long labs(long);
-[; ;stdlib.h: 103: extern char * itoa(char * buf, int val, int base);
-[; ;stdlib.h: 104: extern char * utoa(char * buf, unsigned val, int base);
-[; ;stdlib.h: 109: extern char * ltoa(char * buf, long val, int base);
-[; ;stdlib.h: 110: extern char * ultoa(char * buf, unsigned long val, int base);
-[; ;stdlib.h: 112: extern char * ftoa(float f, int * status);
 [; ;fft.h: 32: void fix_fft(short fr[], short fi[], short m);
-[; ;lcd3310.h: 40: void LCDInit(void);
-[; ;lcd3310.h: 49: void LCDSend(unsigned char data, unsigned char cd);
-[; ;lcd3310.h: 58: void LCDUpdate ( void );
-[; ;lcd3310.h: 67: void LCDClear(void);
-[; ;lcd3310.h: 76: void LCDPixel (unsigned char x, unsigned char y, unsigned char mode );
-[; ;lcd3310.h: 85: void LCDChrXY (unsigned char x, unsigned char y, unsigned char ch );
-[; ;lcd3310.h: 94: void LCDChrXYInverse (unsigned char x, unsigned char y, unsigned char ch );
-[; ;lcd3310.h: 102: void LCDContrast(unsigned char contrast);
-[; ;lcd3310.h: 111: void LCDStr(unsigned char row, const unsigned char *dataPtr, unsigned char inv);
-[; ;lcd3310.h: 113: void Delay(volatile unsigned long a);
-[; ;lcd3310.h: 114: void Delayc(volatile unsigned char a);
-"14 main pic18.c
-[p x WDTEN=OFF ]
-"15
-[p x FOSC=INTIO7 ]
-"16
-[p x PLLCFG=OFF ]
-"17
-[p x PRICLKEN=OFF ]
-"18
-[p x PBADEN=ON ]
-"19
-[p x LVP=OFF ]
-"33
-[v _imaginary_numbers `s ~T0 @X0 -> 64 `i e ]
-[; ;main pic18.c: 33: short imaginary_numbers[64];
-"34
-[v _real_numbers `s ~T0 @X0 -> 64 `i e ]
-[; ;main pic18.c: 34: short real_numbers[64];
-"39
-[v _oldRealNumbers `s ~T0 @X0 -> 31 `i e ]
-[; ;main pic18.c: 39: short oldRealNumbers[31];
-"40
-[v _guesses `s ~T0 @X0 -> 5 `i e ]
-[; ;main pic18.c: 40: short guesses[5];
-"41
-[v _alarm_prob `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 41: int alarm_prob;
-"42
-[v _growl_prob `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 42: int growl_prob;
-"43
-[v _horn_prob `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 43: int horn_prob;
-"44
-[v _scream_prob `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 44: int scream_prob;
-"45
-[v _max_tally `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 45: int max_tally;
-"46
-[v _total_tally `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 46: int total_tally;
-"47
-[v _alarm_tally `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 47: int alarm_tally;
-"48
-[v _growl_tally `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 48: int growl_tally;
-"49
-[v _horn_tally `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 49: int horn_tally;
-"50
-[v _scream_tally `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 50: int scream_tally;
-"51
-[v _alarm_prob_weights `Cs ~T0 @X0 -> 31 `i e ]
-[i _alarm_prob_weights
+"56 fft.c
+[v _Sinewave `Cs ~T0 @X0 - -> 1024 `i / -> 1024 `i -> 4 `i e ]
+[i _Sinewave
 :U ..
--> -> 0 `i `s
--> -> 0 `i `s
--> -U -> 1 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -U -> 1 `i `s
--> -U -> 3 `i `s
--> -U -> 1 `i `s
--> -U -> 3 `i `s
--> -> 0 `i `s
--> -U -> 3 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 3 `i `s
--> -> 3 `i `s
--> -> 3 `i `s
--> -> 2 `i `s
--> -> 0 `i `s
--> -> 2 `i `s
--> -> 2 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
-..
-]
-[; ;main pic18.c: 51: const short alarm_prob_weights[31] = {0,0,-1,0,0,0,-1,-3,-1,-3,0,-3,0,0,0,0,0,0,0,0,0,3,3,3,2,0,2,2,0,0,0};
-"52
-[v _growl_prob_weights `Cs ~T0 @X0 -> 31 `i e ]
-[i _growl_prob_weights
-:U ..
--> -> 0 `i `s
--> -> 3 `i `s
--> -> 3 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -U -> 1 `i `s
--> -U -> 3 `i `s
--> -U -> 3 `i `s
--> -U -> 3 `i `s
--> -U -> 1 `i `s
--> -U -> 1 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 2 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 2 `i `s
--> -> 3 `i `s
--> -> 2 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
-..
-]
-[; ;main pic18.c: 52: const short growl_prob_weights[31] = {0,3,3,0,0,0,0,0,0,0,0,-1,-3,-3,-3,-1,-1,0,0,0,0,0,2,0,0,0,2,3,2,0,0};
-"53
-[v _horn_prob_weights `Cs ~T0 @X0 -> 31 `i e ]
-[i _horn_prob_weights
-:U ..
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 2 `i `s
--> -> 3 `i `s
--> -> 2 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 3 `i `s
--> -> 2 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -U -> 3 `i `s
--> -U -> 1 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 3 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -U -> 1 `i `s
--> -U -> 3 `i `s
--> -U -> 3 `i `s
--> -U -> 1 `i `s
--> -> 0 `i `s
-..
-]
-[; ;main pic18.c: 53: const short horn_prob_weights[31] = {0,0,0,0,0,0,2,3,2,0,0,0,0,0,0,3,2,0,0,-3,-1,0,0,3,0,0,-1,-3,-3,-1,0};
-"54
-[v _scream_prob_weights `Cs ~T0 @X0 -> 31 `i e ]
-[i _scream_prob_weights
-:U ..
--> -> 0 `i `s
--> -> 3 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 3 `i `s
--> -> 2 `i `s
--> -> 2 `i `s
--> -> 3 `i `s
--> -> 2 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -U -> 1 `i `s
--> -U -> 1 `i `s
--> -U -> 3 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -U -> 1 `i `s
--> -U -> 3 `i `s
--> -U -> 3 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
--> -> 0 `i `s
-..
-]
-[; ;main pic18.c: 54: const short scream_prob_weights[31] = {0,3,0,0,3,2,2,3,2,0,0,-1,-1,-3,0,0,0,0,0,-1,-3,-3,0,0,0,0,0,0,0,0,0};
+"57
+-> -> 0 `i `s
+-> -> 201 `i `s
+-> -> 402 `i `s
+-> -> 603 `i `s
+-> -> 804 `i `s
+-> -> 1005 `i `s
+-> -> 1206 `i `s
+-> -> 1406 `i `s
 "58
-[v _input `uc ~T0 @X0 1 e ]
-[; ;main pic18.c: 58: char input;
+-> -> 1607 `i `s
+-> -> 1808 `i `s
+-> -> 2009 `i `s
+-> -> 2209 `i `s
+-> -> 2410 `i `s
+-> -> 2610 `i `s
+-> -> 2811 `i `s
+-> -> 3011 `i `s
 "59
-[v _i `i ~T0 @X0 1 e ]
-[; ;main pic18.c: 59: int i;
+-> -> 3211 `i `s
+-> -> 3411 `i `s
+-> -> 3611 `i `s
+-> -> 3811 `i `s
+-> -> 4011 `i `s
+-> -> 4210 `i `s
+-> -> 4409 `i `s
+-> -> 4608 `i `s
 "60
-[v _data `uc ~T0 @X0 -> 5 `i e ]
-[; ;main pic18.c: 60: char data[5];
+-> -> 4807 `i `s
+-> -> 5006 `i `s
+-> -> 5205 `i `s
+-> -> 5403 `i `s
+-> -> 5601 `i `s
+-> -> 5799 `i `s
+-> -> 5997 `i `s
+-> -> 6195 `i `s
 "61
-[v _baud_rate `l ~T0 @X0 1 e ]
-[; ;main pic18.c: 61: long baud_rate;
-[; ;main pic18.c: 62: void sendString(char *);
-[; ;main pic18.c: 63: void sendChar(char);
-[; ;main pic18.c: 64: void sendCharArray(char *, unsigned int);
-[; ;main pic18.c: 65: void sendIntArray(short *, unsigned int);
-[; ;main pic18.c: 68: void setup(void);
-[; ;main pic18.c: 69: void writeGuess(char, int, int);
+-> -> 6392 `i `s
+-> -> 6589 `i `s
+-> -> 6786 `i `s
+-> -> 6982 `i `s
+-> -> 7179 `i `s
+-> -> 7375 `i `s
+-> -> 7571 `i `s
+-> -> 7766 `i `s
+"62
+-> -> 7961 `i `s
+-> -> 8156 `i `s
+-> -> 8351 `i `s
+-> -> 8545 `i `s
+-> -> 8739 `i `s
+-> -> 8932 `i `s
+-> -> 9126 `i `s
+-> -> 9319 `i `s
+"63
+-> -> 9511 `i `s
+-> -> 9703 `i `s
+-> -> 9895 `i `s
+-> -> 10087 `i `s
+-> -> 10278 `i `s
+-> -> 10469 `i `s
+-> -> 10659 `i `s
+-> -> 10849 `i `s
+"64
+-> -> 11038 `i `s
+-> -> 11227 `i `s
+-> -> 11416 `i `s
+-> -> 11604 `i `s
+-> -> 11792 `i `s
+-> -> 11980 `i `s
+-> -> 12166 `i `s
+-> -> 12353 `i `s
+"65
+-> -> 12539 `i `s
+-> -> 12724 `i `s
+-> -> 12909 `i `s
+-> -> 13094 `i `s
+-> -> 13278 `i `s
+-> -> 13462 `i `s
+-> -> 13645 `i `s
+-> -> 13827 `i `s
+"66
+-> -> 14009 `i `s
+-> -> 14191 `i `s
+-> -> 14372 `i `s
+-> -> 14552 `i `s
+-> -> 14732 `i `s
+-> -> 14911 `i `s
+-> -> 15090 `i `s
+-> -> 15268 `i `s
+"67
+-> -> 15446 `i `s
+-> -> 15623 `i `s
+-> -> 15799 `i `s
+-> -> 15975 `i `s
+-> -> 16150 `i `s
+-> -> 16325 `i `s
+-> -> 16499 `i `s
+-> -> 16672 `i `s
+"68
+-> -> 16845 `i `s
+-> -> 17017 `i `s
+-> -> 17189 `i `s
+-> -> 17360 `i `s
+-> -> 17530 `i `s
+-> -> 17699 `i `s
+-> -> 17868 `i `s
+-> -> 18036 `i `s
+"69
+-> -> 18204 `i `s
+-> -> 18371 `i `s
+-> -> 18537 `i `s
+-> -> 18702 `i `s
+-> -> 18867 `i `s
+-> -> 19031 `i `s
+-> -> 19194 `i `s
+-> -> 19357 `i `s
+"70
+-> -> 19519 `i `s
+-> -> 19680 `i `s
+-> -> 19840 `i `s
+-> -> 20000 `i `s
+-> -> 20159 `i `s
+-> -> 20317 `i `s
+-> -> 20474 `i `s
+-> -> 20631 `i `s
 "71
-[v _main `(v ~T0 @X0 1 ef ]
-{
-[; ;main pic18.c: 71: void main(void) {
-[e :U _main ]
-[f ]
+-> -> 20787 `i `s
+-> -> 20942 `i `s
+-> -> 21096 `i `s
+-> -> 21249 `i `s
+-> -> 21402 `i `s
+-> -> 21554 `i `s
+-> -> 21705 `i `s
+-> -> 21855 `i `s
 "72
-[v _adc_value `ui ~T0 @X0 1 a ]
-[; ;main pic18.c: 72: unsigned int adc_value;
-[; ;main pic18.c: 75: setup();
+-> -> 22004 `i `s
+-> -> 22153 `i `s
+-> -> 22301 `i `s
+-> -> 22448 `i `s
+-> -> 22594 `i `s
+-> -> 22739 `i `s
+-> -> 22883 `i `s
+-> -> 23027 `i `s
+"73
+-> -> 23169 `i `s
+-> -> 23311 `i `s
+-> -> 23452 `i `s
+-> -> 23592 `i `s
+-> -> 23731 `i `s
+-> -> 23869 `i `s
+-> -> 24006 `i `s
+-> -> 24143 `i `s
+"74
+-> -> 24278 `i `s
+-> -> 24413 `i `s
+-> -> 24546 `i `s
+-> -> 24679 `i `s
+-> -> 24811 `i `s
+-> -> 24942 `i `s
+-> -> 25072 `i `s
+-> -> 25201 `i `s
 "75
-[e ( _setup ..  ]
-[; ;main pic18.c: 77: while(1){
+-> -> 25329 `i `s
+-> -> 25456 `i `s
+-> -> 25582 `i `s
+-> -> 25707 `i `s
+-> -> 25831 `i `s
+-> -> 25954 `i `s
+-> -> 26077 `i `s
+-> -> 26198 `i `s
+"76
+-> -> 26318 `i `s
+-> -> 26437 `i `s
+-> -> 26556 `i `s
+-> -> 26673 `i `s
+-> -> 26789 `i `s
+-> -> 26905 `i `s
+-> -> 27019 `i `s
+-> -> 27132 `i `s
 "77
-[e :U 1150 ]
-{
-[v _i `s ~T0 @X0 1 a ]
-[; ;main pic18.c: 78: short i = 0;
+-> -> 27244 `i `s
+-> -> 27355 `i `s
+-> -> 27466 `i `s
+-> -> 27575 `i `s
+-> -> 27683 `i `s
+-> -> 27790 `i `s
+-> -> 27896 `i `s
+-> -> 28001 `i `s
 "78
-[e = _i -> -> 0 `i `s ]
-[; ;main pic18.c: 79: for (i = 0; i < 64; i++) {
+-> -> 28105 `i `s
+-> -> 28208 `i `s
+-> -> 28309 `i `s
+-> -> 28410 `i `s
+-> -> 28510 `i `s
+-> -> 28608 `i `s
+-> -> 28706 `i `s
+-> -> 28802 `i `s
 "79
-{
-[e = _i -> -> 0 `i `s ]
-[e $ < -> _i `i -> 64 `i 1152  ]
-[e $U 1153  ]
-[e :U 1152 ]
-{
-[; ;main pic18.c: 80: ConvertADC();
+-> -> 28897 `i `s
+-> -> 28992 `i `s
+-> -> 29085 `i `s
+-> -> 29177 `i `s
+-> -> 29268 `i `s
+-> -> 29358 `i `s
+-> -> 29446 `i `s
+-> -> 29534 `i `s
 "80
-[e ( _ConvertADC ..  ]
-[; ;main pic18.c: 83: while(BusyADC());
+-> -> 29621 `i `s
+-> -> 29706 `i `s
+-> -> 29790 `i `s
+-> -> 29873 `i `s
+-> -> 29955 `i `s
+-> -> 30036 `i `s
+-> -> 30116 `i `s
+-> -> 30195 `i `s
+"81
+-> -> 30272 `i `s
+-> -> 30349 `i `s
+-> -> 30424 `i `s
+-> -> 30498 `i `s
+-> -> 30571 `i `s
+-> -> 30643 `i `s
+-> -> 30713 `i `s
+-> -> 30783 `i `s
+"82
+-> -> 30851 `i `s
+-> -> 30918 `i `s
+-> -> 30984 `i `s
+-> -> 31049 `i `s
+-> -> 31113 `i `s
+-> -> 31175 `i `s
+-> -> 31236 `i `s
+-> -> 31297 `i `s
 "83
-[e $U 1155  ]
-[e :U 1156 ]
-[e :U 1155 ]
-[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 1156  ]
-[e :U 1157 ]
-[; ;main pic18.c: 86: adc_value = ((short)(ADRESH << 8) + (short)ADRESL) - 512;
+-> -> 31356 `i `s
+-> -> 31413 `i `s
+-> -> 31470 `i `s
+-> -> 31525 `i `s
+-> -> 31580 `i `s
+-> -> 31633 `i `s
+-> -> 31684 `i `s
+-> -> 31735 `i `s
+"84
+-> -> 31785 `i `s
+-> -> 31833 `i `s
+-> -> 31880 `i `s
+-> -> 31926 `i `s
+-> -> 31970 `i `s
+-> -> 32014 `i `s
+-> -> 32056 `i `s
+-> -> 32097 `i `s
+"85
+-> -> 32137 `i `s
+-> -> 32176 `i `s
+-> -> 32213 `i `s
+-> -> 32249 `i `s
+-> -> 32284 `i `s
+-> -> 32318 `i `s
+-> -> 32350 `i `s
+-> -> 32382 `i `s
 "86
-[e = _adc_value -> - + -> -> << -> _ADRESH `i -> 8 `i `s `i -> -> _ADRESL `s `i -> 512 `i `ui ]
-[; ;main pic18.c: 87: real_numbers[i] = adc_value;
+-> -> 32412 `i `s
+-> -> 32441 `i `s
+-> -> 32468 `i `s
+-> -> 32495 `i `s
+-> -> 32520 `i `s
+-> -> 32544 `i `s
+-> -> 32567 `i `s
+-> -> 32588 `i `s
 "87
-[e = *U + &U _real_numbers * -> -> _i `us `ux -> -> # *U &U _real_numbers `ui `ux -> _adc_value `s ]
-[; ;main pic18.c: 91: imaginary_numbers[i] = 0;
+-> -> 32609 `i `s
+-> -> 32628 `i `s
+-> -> 32646 `i `s
+-> -> 32662 `i `s
+-> -> 32678 `i `s
+-> -> 32692 `i `s
+-> -> 32705 `i `s
+-> -> 32717 `i `s
+"88
+-> -> 32727 `i `s
+-> -> 32736 `i `s
+-> -> 32744 `i `s
+-> -> 32751 `i `s
+-> -> 32757 `i `s
+-> -> 32761 `i `s
+-> -> 32764 `i `s
+-> -> 32766 `i `s
+"89
+-> -> 32767 `i `s
+-> -> 32766 `i `s
+-> -> 32764 `i `s
+-> -> 32761 `i `s
+-> -> 32757 `i `s
+-> -> 32751 `i `s
+-> -> 32744 `i `s
+-> -> 32736 `i `s
+"90
+-> -> 32727 `i `s
+-> -> 32717 `i `s
+-> -> 32705 `i `s
+-> -> 32692 `i `s
+-> -> 32678 `i `s
+-> -> 32662 `i `s
+-> -> 32646 `i `s
+-> -> 32628 `i `s
 "91
-[e = *U + &U _imaginary_numbers * -> -> _i `us `ux -> -> # *U &U _imaginary_numbers `ui `ux -> -> 0 `i `s ]
-[; ;main pic18.c: 92: _delay(1500);
+-> -> 32609 `i `s
+-> -> 32588 `i `s
+-> -> 32567 `i `s
+-> -> 32544 `i `s
+-> -> 32520 `i `s
+-> -> 32495 `i `s
+-> -> 32468 `i `s
+-> -> 32441 `i `s
 "92
-[e ( __delay (1 -> -> -> 1500 `i `l `ul ]
+-> -> 32412 `i `s
+-> -> 32382 `i `s
+-> -> 32350 `i `s
+-> -> 32318 `i `s
+-> -> 32284 `i `s
+-> -> 32249 `i `s
+-> -> 32213 `i `s
+-> -> 32176 `i `s
 "93
-}
-"79
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 64 `i 1152  ]
-[e :U 1153 ]
-"93
-}
-[; ;main pic18.c: 93: }
-[; ;main pic18.c: 98: fix_fft(real_numbers, imaginary_numbers, 6);
+-> -> 32137 `i `s
+-> -> 32097 `i `s
+-> -> 32056 `i `s
+-> -> 32014 `i `s
+-> -> 31970 `i `s
+-> -> 31926 `i `s
+-> -> 31880 `i `s
+-> -> 31833 `i `s
+"94
+-> -> 31785 `i `s
+-> -> 31735 `i `s
+-> -> 31684 `i `s
+-> -> 31633 `i `s
+-> -> 31580 `i `s
+-> -> 31525 `i `s
+-> -> 31470 `i `s
+-> -> 31413 `i `s
+"95
+-> -> 31356 `i `s
+-> -> 31297 `i `s
+-> -> 31236 `i `s
+-> -> 31175 `i `s
+-> -> 31113 `i `s
+-> -> 31049 `i `s
+-> -> 30984 `i `s
+-> -> 30918 `i `s
+"96
+-> -> 30851 `i `s
+-> -> 30783 `i `s
+-> -> 30713 `i `s
+-> -> 30643 `i `s
+-> -> 30571 `i `s
+-> -> 30498 `i `s
+-> -> 30424 `i `s
+-> -> 30349 `i `s
+"97
+-> -> 30272 `i `s
+-> -> 30195 `i `s
+-> -> 30116 `i `s
+-> -> 30036 `i `s
+-> -> 29955 `i `s
+-> -> 29873 `i `s
+-> -> 29790 `i `s
+-> -> 29706 `i `s
 "98
-[e ( _fix_fft (3 , , &U _real_numbers &U _imaginary_numbers -> -> 6 `i `s ]
+-> -> 29621 `i `s
+-> -> 29534 `i `s
+-> -> 29446 `i `s
+-> -> 29358 `i `s
+-> -> 29268 `i `s
+-> -> 29177 `i `s
+-> -> 29085 `i `s
+-> -> 28992 `i `s
+"99
+-> -> 28897 `i `s
+-> -> 28802 `i `s
+-> -> 28706 `i `s
+-> -> 28608 `i `s
+-> -> 28510 `i `s
+-> -> 28410 `i `s
+-> -> 28309 `i `s
+-> -> 28208 `i `s
 "100
-[v _place `l ~T0 @X0 1 a ]
-[v _root `l ~T0 @X0 1 a ]
+-> -> 28105 `i `s
+-> -> 28001 `i `s
+-> -> 27896 `i `s
+-> -> 27790 `i `s
+-> -> 27683 `i `s
+-> -> 27575 `i `s
+-> -> 27466 `i `s
+-> -> 27355 `i `s
 "101
-[v _k `i ~T0 @X0 1 a ]
-[; ;main pic18.c: 100: long place, root;
-[; ;main pic18.c: 101: int k = 0;
-[e = _k -> 0 `i ]
-[; ;main pic18.c: 102: for (k=0; k < 32; k++) {
+-> -> 27244 `i `s
+-> -> 27132 `i `s
+-> -> 27019 `i `s
+-> -> 26905 `i `s
+-> -> 26789 `i `s
+-> -> 26673 `i `s
+-> -> 26556 `i `s
+-> -> 26437 `i `s
 "102
-{
-[e = _k -> 0 `i ]
-[e $ < _k -> 32 `i 1158  ]
-[e $U 1159  ]
-[e :U 1158 ]
-{
-[; ;main pic18.c: 103: real_numbers[k] = (real_numbers[k] * real_numbers[k] +
-[; ;main pic18.c: 104: imaginary_numbers[k] * imaginary_numbers[k]);
+-> -> 26318 `i `s
+-> -> 26198 `i `s
+-> -> 26077 `i `s
+-> -> 25954 `i `s
+-> -> 25831 `i `s
+-> -> 25707 `i `s
+-> -> 25582 `i `s
+-> -> 25456 `i `s
+"103
+-> -> 25329 `i `s
+-> -> 25201 `i `s
+-> -> 25072 `i `s
+-> -> 24942 `i `s
+-> -> 24811 `i `s
+-> -> 24679 `i `s
+-> -> 24546 `i `s
+-> -> 24413 `i `s
 "104
-[e = *U + &U _real_numbers * -> -> _k `ui `ux -> -> # *U &U _real_numbers `ui `ux -> + * -> *U + &U _real_numbers * -> -> _k `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> _k `ui `ux -> -> # *U &U _real_numbers `ui `ux `i * -> *U + &U _imaginary_numbers * -> -> _k `ui `ux -> -> # *U &U _imaginary_numbers `ui `ux `i -> *U + &U _imaginary_numbers * -> -> _k `ui `ux -> -> # *U &U _imaginary_numbers `ui `ux `i `s ]
-[; ;main pic18.c: 106: place = 0x40000000;
+-> -> 24278 `i `s
+-> -> 24143 `i `s
+-> -> 24006 `i `s
+-> -> 23869 `i `s
+-> -> 23731 `i `s
+-> -> 23592 `i `s
+-> -> 23452 `i `s
+-> -> 23311 `i `s
+"105
+-> -> 23169 `i `s
+-> -> 23027 `i `s
+-> -> 22883 `i `s
+-> -> 22739 `i `s
+-> -> 22594 `i `s
+-> -> 22448 `i `s
+-> -> 22301 `i `s
+-> -> 22153 `i `s
 "106
-[e = _place -> 1073741824 `l ]
-[; ;main pic18.c: 107: root = 0;
+-> -> 22004 `i `s
+-> -> 21855 `i `s
+-> -> 21705 `i `s
+-> -> 21554 `i `s
+-> -> 21402 `i `s
+-> -> 21249 `i `s
+-> -> 21096 `i `s
+-> -> 20942 `i `s
 "107
-[e = _root -> -> 0 `i `l ]
-[; ;main pic18.c: 109: if (real_numbers[k] >= 0) {
+-> -> 20787 `i `s
+-> -> 20631 `i `s
+-> -> 20474 `i `s
+-> -> 20317 `i `s
+-> -> 20159 `i `s
+-> -> 20000 `i `s
+-> -> 19840 `i `s
+-> -> 19680 `i `s
+"108
+-> -> 19519 `i `s
+-> -> 19357 `i `s
+-> -> 19194 `i `s
+-> -> 19031 `i `s
+-> -> 18867 `i `s
+-> -> 18702 `i `s
+-> -> 18537 `i `s
+-> -> 18371 `i `s
 "109
-[e $ ! >= -> *U + &U _real_numbers * -> -> _k `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> 0 `i 1161  ]
-{
-[; ;main pic18.c: 111: while (place > real_numbers[k]) place = place >> 2;
+-> -> 18204 `i `s
+-> -> 18036 `i `s
+-> -> 17868 `i `s
+-> -> 17699 `i `s
+-> -> 17530 `i `s
+-> -> 17360 `i `s
+-> -> 17189 `i `s
+-> -> 17017 `i `s
+"110
+-> -> 16845 `i `s
+-> -> 16672 `i `s
+-> -> 16499 `i `s
+-> -> 16325 `i `s
+-> -> 16150 `i `s
+-> -> 15975 `i `s
+-> -> 15799 `i `s
+-> -> 15623 `i `s
 "111
-[e $U 1162  ]
-[e :U 1163 ]
-[e = _place >> _place -> 2 `i ]
-[e :U 1162 ]
-[e $ > _place -> *U + &U _real_numbers * -> -> _k `ui `ux -> -> # *U &U _real_numbers `ui `ux `l 1163  ]
-[e :U 1164 ]
-[; ;main pic18.c: 113: while (place) {
+-> -> 15446 `i `s
+-> -> 15268 `i `s
+-> -> 15090 `i `s
+-> -> 14911 `i `s
+-> -> 14732 `i `s
+-> -> 14552 `i `s
+-> -> 14372 `i `s
+-> -> 14191 `i `s
+"112
+-> -> 14009 `i `s
+-> -> 13827 `i `s
+-> -> 13645 `i `s
+-> -> 13462 `i `s
+-> -> 13278 `i `s
+-> -> 13094 `i `s
+-> -> 12909 `i `s
+-> -> 12724 `i `s
 "113
-[e $U 1165  ]
-[e :U 1166 ]
-{
-[; ;main pic18.c: 114: if (real_numbers[k] >= root + place) {
+-> -> 12539 `i `s
+-> -> 12353 `i `s
+-> -> 12166 `i `s
+-> -> 11980 `i `s
+-> -> 11792 `i `s
+-> -> 11604 `i `s
+-> -> 11416 `i `s
+-> -> 11227 `i `s
 "114
-[e $ ! >= -> *U + &U _real_numbers * -> -> _k `ui `ux -> -> # *U &U _real_numbers `ui `ux `l + _root _place 1168  ]
-{
-[; ;main pic18.c: 115: real_numbers[k] -= root + place;
+-> -> 11038 `i `s
+-> -> 10849 `i `s
+-> -> 10659 `i `s
+-> -> 10469 `i `s
+-> -> 10278 `i `s
+-> -> 10087 `i `s
+-> -> 9895 `i `s
+-> -> 9703 `i `s
 "115
-[e =- *U + &U _real_numbers * -> -> _k `ui `ux -> -> # *U &U _real_numbers `ui `ux -> + _root _place `s ]
-[; ;main pic18.c: 116: root += place * 2;
+-> -> 9511 `i `s
+-> -> 9319 `i `s
+-> -> 9126 `i `s
+-> -> 8932 `i `s
+-> -> 8739 `i `s
+-> -> 8545 `i `s
+-> -> 8351 `i `s
+-> -> 8156 `i `s
 "116
-[e =+ _root * _place -> -> 2 `i `l ]
+-> -> 7961 `i `s
+-> -> 7766 `i `s
+-> -> 7571 `i `s
+-> -> 7375 `i `s
+-> -> 7179 `i `s
+-> -> 6982 `i `s
+-> -> 6786 `i `s
+-> -> 6589 `i `s
 "117
-}
-[e :U 1168 ]
-[; ;main pic18.c: 117: }
-[; ;main pic18.c: 119: root = root >> 1;
+-> -> 6392 `i `s
+-> -> 6195 `i `s
+-> -> 5997 `i `s
+-> -> 5799 `i `s
+-> -> 5601 `i `s
+-> -> 5403 `i `s
+-> -> 5205 `i `s
+-> -> 5006 `i `s
+"118
+-> -> 4807 `i `s
+-> -> 4608 `i `s
+-> -> 4409 `i `s
+-> -> 4210 `i `s
+-> -> 4011 `i `s
+-> -> 3811 `i `s
+-> -> 3611 `i `s
+-> -> 3411 `i `s
 "119
-[e = _root >> _root -> 1 `i ]
-[; ;main pic18.c: 120: place = place >> 2;
+-> -> 3211 `i `s
+-> -> 3011 `i `s
+-> -> 2811 `i `s
+-> -> 2610 `i `s
+-> -> 2410 `i `s
+-> -> 2209 `i `s
+-> -> 2009 `i `s
+-> -> 1808 `i `s
 "120
-[e = _place >> _place -> 2 `i ]
+-> -> 1607 `i `s
+-> -> 1406 `i `s
+-> -> 1206 `i `s
+-> -> 1005 `i `s
+-> -> 804 `i `s
+-> -> 603 `i `s
+-> -> 402 `i `s
+-> -> 201 `i `s
 "121
-}
-[e :U 1165 ]
-"113
-[e $ != _place -> -> 0 `i `l 1166  ]
-[e :U 1167 ]
+-> -> 0 `i `s
+-> -U -> 201 `i `s
+-> -U -> 402 `i `s
+-> -U -> 603 `i `s
+-> -U -> 804 `i `s
+-> -U -> 1005 `i `s
+-> -U -> 1206 `i `s
+-> -U -> 1406 `i `s
 "122
-}
-[e :U 1161 ]
-[; ;main pic18.c: 121: }
-[; ;main pic18.c: 122: }
-[; ;main pic18.c: 124: real_numbers[k] = root;
+-> -U -> 1607 `i `s
+-> -U -> 1808 `i `s
+-> -U -> 2009 `i `s
+-> -U -> 2209 `i `s
+-> -U -> 2410 `i `s
+-> -U -> 2610 `i `s
+-> -U -> 2811 `i `s
+-> -U -> 3011 `i `s
+"123
+-> -U -> 3211 `i `s
+-> -U -> 3411 `i `s
+-> -U -> 3611 `i `s
+-> -U -> 3811 `i `s
+-> -U -> 4011 `i `s
+-> -U -> 4210 `i `s
+-> -U -> 4409 `i `s
+-> -U -> 4608 `i `s
 "124
-[e = *U + &U _real_numbers * -> -> _k `ui `ux -> -> # *U &U _real_numbers `ui `ux -> _root `s ]
+-> -U -> 4807 `i `s
+-> -U -> 5006 `i `s
+-> -U -> 5205 `i `s
+-> -U -> 5403 `i `s
+-> -U -> 5601 `i `s
+-> -U -> 5799 `i `s
+-> -U -> 5997 `i `s
+-> -U -> 6195 `i `s
 "125
-}
-"102
-[e ++ _k -> 1 `i ]
-[e $ < _k -> 32 `i 1158  ]
-[e :U 1159 ]
-"125
-}
-[; ;main pic18.c: 125: }
-[; ;main pic18.c: 127: for(i = 1; i < 33; i++) {
+-> -U -> 6392 `i `s
+-> -U -> 6589 `i `s
+-> -U -> 6786 `i `s
+-> -U -> 6982 `i `s
+-> -U -> 7179 `i `s
+-> -U -> 7375 `i `s
+-> -U -> 7571 `i `s
+-> -U -> 7766 `i `s
+"126
+-> -U -> 7961 `i `s
+-> -U -> 8156 `i `s
+-> -U -> 8351 `i `s
+-> -U -> 8545 `i `s
+-> -U -> 8739 `i `s
+-> -U -> 8932 `i `s
+-> -U -> 9126 `i `s
+-> -U -> 9319 `i `s
 "127
-{
-[e = _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 33 `i 1169  ]
-[e $U 1170  ]
-[e :U 1169 ]
-{
-[; ;main pic18.c: 128: real_numbers[i] = oldRealNumbers[i - 1] * 10 / 16 +
-[; ;main pic18.c: 129: real_numbers[i] * 6 / 16;
+-> -U -> 9511 `i `s
+-> -U -> 9703 `i `s
+-> -U -> 9895 `i `s
+-> -U -> 10087 `i `s
+-> -U -> 10278 `i `s
+-> -U -> 10469 `i `s
+-> -U -> 10659 `i `s
+-> -U -> 10849 `i `s
+"128
+-> -U -> 11038 `i `s
+-> -U -> 11227 `i `s
+-> -U -> 11416 `i `s
+-> -U -> 11604 `i `s
+-> -U -> 11792 `i `s
+-> -U -> 11980 `i `s
+-> -U -> 12166 `i `s
+-> -U -> 12353 `i `s
 "129
-[e = *U + &U _real_numbers * -> -> _i `us `ux -> -> # *U &U _real_numbers `ui `ux -> + / * -> *U + &U _oldRealNumbers * -> -> - -> _i `i -> 1 `i `ui `ux -> -> # *U &U _oldRealNumbers `ui `ux `i -> 10 `i -> 16 `i / * -> *U + &U _real_numbers * -> -> _i `us `ux -> -> # *U &U _real_numbers `ui `ux `i -> 6 `i -> 16 `i `s ]
+-> -U -> 12539 `i `s
+-> -U -> 12724 `i `s
+-> -U -> 12909 `i `s
+-> -U -> 13094 `i `s
+-> -U -> 13278 `i `s
+-> -U -> 13462 `i `s
+-> -U -> 13645 `i `s
+-> -U -> 13827 `i `s
 "130
-}
-"127
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 33 `i 1169  ]
-[e :U 1170 ]
-"130
-}
-[; ;main pic18.c: 130: }
-[; ;main pic18.c: 132: for (i = 1; i < 33; i++) {
+-> -U -> 14009 `i `s
+-> -U -> 14191 `i `s
+-> -U -> 14372 `i `s
+-> -U -> 14552 `i `s
+-> -U -> 14732 `i `s
+-> -U -> 14911 `i `s
+-> -U -> 15090 `i `s
+-> -U -> 15268 `i `s
+"131
+-> -U -> 15446 `i `s
+-> -U -> 15623 `i `s
+-> -U -> 15799 `i `s
+-> -U -> 15975 `i `s
+-> -U -> 16150 `i `s
+-> -U -> 16325 `i `s
+-> -U -> 16499 `i `s
+-> -U -> 16672 `i `s
 "132
-{
-[e = _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 33 `i 1172  ]
-[e $U 1173  ]
-[e :U 1172 ]
-{
-[; ;main pic18.c: 133: oldRealNumbers[i - 1] = real_numbers[i];
+-> -U -> 16845 `i `s
+-> -U -> 17017 `i `s
+-> -U -> 17189 `i `s
+-> -U -> 17360 `i `s
+-> -U -> 17530 `i `s
+-> -U -> 17699 `i `s
+-> -U -> 17868 `i `s
+-> -U -> 18036 `i `s
 "133
-[e = *U + &U _oldRealNumbers * -> -> - -> _i `i -> 1 `i `ui `ux -> -> # *U &U _oldRealNumbers `ui `ux *U + &U _real_numbers * -> -> _i `us `ux -> -> # *U &U _real_numbers `ui `ux ]
+-> -U -> 18204 `i `s
+-> -U -> 18371 `i `s
+-> -U -> 18537 `i `s
+-> -U -> 18702 `i `s
+-> -U -> 18867 `i `s
+-> -U -> 19031 `i `s
+-> -U -> 19194 `i `s
+-> -U -> 19357 `i `s
 "134
-}
-"132
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 33 `i 1172  ]
-[e :U 1173 ]
-"134
-}
-[; ;main pic18.c: 134: }
-[; ;main pic18.c: 138: alarm_tally = 0;
+-> -U -> 19519 `i `s
+-> -U -> 19680 `i `s
+-> -U -> 19840 `i `s
+-> -U -> 20000 `i `s
+-> -U -> 20159 `i `s
+-> -U -> 20317 `i `s
+-> -U -> 20474 `i `s
+-> -U -> 20631 `i `s
+"135
+-> -U -> 20787 `i `s
+-> -U -> 20942 `i `s
+-> -U -> 21096 `i `s
+-> -U -> 21249 `i `s
+-> -U -> 21402 `i `s
+-> -U -> 21554 `i `s
+-> -U -> 21705 `i `s
+-> -U -> 21855 `i `s
+"136
+-> -U -> 22004 `i `s
+-> -U -> 22153 `i `s
+-> -U -> 22301 `i `s
+-> -U -> 22448 `i `s
+-> -U -> 22594 `i `s
+-> -U -> 22739 `i `s
+-> -U -> 22883 `i `s
+-> -U -> 23027 `i `s
+"137
+-> -U -> 23169 `i `s
+-> -U -> 23311 `i `s
+-> -U -> 23452 `i `s
+-> -U -> 23592 `i `s
+-> -U -> 23731 `i `s
+-> -U -> 23869 `i `s
+-> -U -> 24006 `i `s
+-> -U -> 24143 `i `s
 "138
-[e = _alarm_tally -> 0 `i ]
-[; ;main pic18.c: 139: growl_tally = 0;
+-> -U -> 24278 `i `s
+-> -U -> 24413 `i `s
+-> -U -> 24546 `i `s
+-> -U -> 24679 `i `s
+-> -U -> 24811 `i `s
+-> -U -> 24942 `i `s
+-> -U -> 25072 `i `s
+-> -U -> 25201 `i `s
 "139
-[e = _growl_tally -> 0 `i ]
-[; ;main pic18.c: 140: horn_tally = 0;
+-> -U -> 25329 `i `s
+-> -U -> 25456 `i `s
+-> -U -> 25582 `i `s
+-> -U -> 25707 `i `s
+-> -U -> 25831 `i `s
+-> -U -> 25954 `i `s
+-> -U -> 26077 `i `s
+-> -U -> 26198 `i `s
 "140
-[e = _horn_tally -> 0 `i ]
-[; ;main pic18.c: 141: scream_tally = 0;
+-> -U -> 26318 `i `s
+-> -U -> 26437 `i `s
+-> -U -> 26556 `i `s
+-> -U -> 26673 `i `s
+-> -U -> 26789 `i `s
+-> -U -> 26905 `i `s
+-> -U -> 27019 `i `s
+-> -U -> 27132 `i `s
 "141
-[e = _scream_tally -> 0 `i ]
-[; ;main pic18.c: 144: for(i = 0; i < 31; i++) {
+-> -U -> 27244 `i `s
+-> -U -> 27355 `i `s
+-> -U -> 27466 `i `s
+-> -U -> 27575 `i `s
+-> -U -> 27683 `i `s
+-> -U -> 27790 `i `s
+-> -U -> 27896 `i `s
+-> -U -> 28001 `i `s
+"142
+-> -U -> 28105 `i `s
+-> -U -> 28208 `i `s
+-> -U -> 28309 `i `s
+-> -U -> 28410 `i `s
+-> -U -> 28510 `i `s
+-> -U -> 28608 `i `s
+-> -U -> 28706 `i `s
+-> -U -> 28802 `i `s
+"143
+-> -U -> 28897 `i `s
+-> -U -> 28992 `i `s
+-> -U -> 29085 `i `s
+-> -U -> 29177 `i `s
+-> -U -> 29268 `i `s
+-> -U -> 29358 `i `s
+-> -U -> 29446 `i `s
+-> -U -> 29534 `i `s
 "144
-{
-[e = _i -> -> 0 `i `s ]
-[e $ < -> _i `i -> 31 `i 1175  ]
-[e $U 1176  ]
-[e :U 1175 ]
-{
-[; ;main pic18.c: 145: alarm_tally += (alarm_prob_weights[i] * real_numbers[i+1]);
+-> -U -> 29621 `i `s
+-> -U -> 29706 `i `s
+-> -U -> 29790 `i `s
+-> -U -> 29873 `i `s
+-> -U -> 29955 `i `s
+-> -U -> 30036 `i `s
+-> -U -> 30116 `i `s
+-> -U -> 30195 `i `s
 "145
-[e =+ _alarm_tally * -> *U + &U _alarm_prob_weights * -> -> _i `us `ux -> -> # *U &U _alarm_prob_weights `ui `ux `i -> *U + &U _real_numbers * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i ]
+-> -U -> 30272 `i `s
+-> -U -> 30349 `i `s
+-> -U -> 30424 `i `s
+-> -U -> 30498 `i `s
+-> -U -> 30571 `i `s
+-> -U -> 30643 `i `s
+-> -U -> 30713 `i `s
+-> -U -> 30783 `i `s
 "146
-}
-"144
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 31 `i 1175  ]
-[e :U 1176 ]
-"146
-}
-[; ;main pic18.c: 146: }
-[; ;main pic18.c: 148: if(alarm_tally < 0) {
+-> -U -> 30851 `i `s
+-> -U -> 30918 `i `s
+-> -U -> 30984 `i `s
+-> -U -> 31049 `i `s
+-> -U -> 31113 `i `s
+-> -U -> 31175 `i `s
+-> -U -> 31236 `i `s
+-> -U -> 31297 `i `s
+"147
+-> -U -> 31356 `i `s
+-> -U -> 31413 `i `s
+-> -U -> 31470 `i `s
+-> -U -> 31525 `i `s
+-> -U -> 31580 `i `s
+-> -U -> 31633 `i `s
+-> -U -> 31684 `i `s
+-> -U -> 31735 `i `s
 "148
-[e $ ! < _alarm_tally -> 0 `i 1178  ]
-{
-[; ;main pic18.c: 149: alarm_tally = 0;
+-> -U -> 31785 `i `s
+-> -U -> 31833 `i `s
+-> -U -> 31880 `i `s
+-> -U -> 31926 `i `s
+-> -U -> 31970 `i `s
+-> -U -> 32014 `i `s
+-> -U -> 32056 `i `s
+-> -U -> 32097 `i `s
 "149
-[e = _alarm_tally -> 0 `i ]
+-> -U -> 32137 `i `s
+-> -U -> 32176 `i `s
+-> -U -> 32213 `i `s
+-> -U -> 32249 `i `s
+-> -U -> 32284 `i `s
+-> -U -> 32318 `i `s
+-> -U -> 32350 `i `s
+-> -U -> 32382 `i `s
 "150
-}
-[; ;main pic18.c: 150: } else if(real_numbers[16] > real_numbers[3] &&
-[e $U 1179  ]
-[e :U 1178 ]
-[; ;main pic18.c: 151: real_numbers[13] > real_numbers[23]) {
+-> -U -> 32412 `i `s
+-> -U -> 32441 `i `s
+-> -U -> 32468 `i `s
+-> -U -> 32495 `i `s
+-> -U -> 32520 `i `s
+-> -U -> 32544 `i `s
+-> -U -> 32567 `i `s
+-> -U -> 32588 `i `s
 "151
-[e $ ! && > -> *U + &U _real_numbers * -> -> -> 16 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 3 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 13 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 23 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i 1180  ]
-{
-[; ;main pic18.c: 152: alarm_tally = alarm_tally / 4;
+-> -U -> 32609 `i `s
+-> -U -> 32628 `i `s
+-> -U -> 32646 `i `s
+-> -U -> 32662 `i `s
+-> -U -> 32678 `i `s
+-> -U -> 32692 `i `s
+-> -U -> 32705 `i `s
+-> -U -> 32717 `i `s
 "152
-[e = _alarm_tally / _alarm_tally -> 4 `i ]
-"153
-}
-[e :U 1180 ]
+-> -U -> 32727 `i `s
+-> -U -> 32736 `i `s
+-> -U -> 32744 `i `s
+-> -U -> 32751 `i `s
+-> -U -> 32757 `i `s
+-> -U -> 32761 `i `s
+-> -U -> 32764 `i `s
+-> -U -> 32766 `i `s
+..
+]
+[; ;fft.c: 56: const short Sinewave[1024-1024/4] = {
+[; ;fft.c: 57: 0, 201, 402, 603, 804, 1005, 1206, 1406,
+[; ;fft.c: 58: 1607, 1808, 2009, 2209, 2410, 2610, 2811, 3011,
+[; ;fft.c: 59: 3211, 3411, 3611, 3811, 4011, 4210, 4409, 4608,
+[; ;fft.c: 60: 4807, 5006, 5205, 5403, 5601, 5799, 5997, 6195,
+[; ;fft.c: 61: 6392, 6589, 6786, 6982, 7179, 7375, 7571, 7766,
+[; ;fft.c: 62: 7961, 8156, 8351, 8545, 8739, 8932, 9126, 9319,
+[; ;fft.c: 63: 9511, 9703, 9895, 10087, 10278, 10469, 10659, 10849,
+[; ;fft.c: 64: 11038, 11227, 11416, 11604, 11792, 11980, 12166, 12353,
+[; ;fft.c: 65: 12539, 12724, 12909, 13094, 13278, 13462, 13645, 13827,
+[; ;fft.c: 66: 14009, 14191, 14372, 14552, 14732, 14911, 15090, 15268,
+[; ;fft.c: 67: 15446, 15623, 15799, 15975, 16150, 16325, 16499, 16672,
+[; ;fft.c: 68: 16845, 17017, 17189, 17360, 17530, 17699, 17868, 18036,
+[; ;fft.c: 69: 18204, 18371, 18537, 18702, 18867, 19031, 19194, 19357,
+[; ;fft.c: 70: 19519, 19680, 19840, 20000, 20159, 20317, 20474, 20631,
+[; ;fft.c: 71: 20787, 20942, 21096, 21249, 21402, 21554, 21705, 21855,
+[; ;fft.c: 72: 22004, 22153, 22301, 22448, 22594, 22739, 22883, 23027,
+[; ;fft.c: 73: 23169, 23311, 23452, 23592, 23731, 23869, 24006, 24143,
+[; ;fft.c: 74: 24278, 24413, 24546, 24679, 24811, 24942, 25072, 25201,
+[; ;fft.c: 75: 25329, 25456, 25582, 25707, 25831, 25954, 26077, 26198,
+[; ;fft.c: 76: 26318, 26437, 26556, 26673, 26789, 26905, 27019, 27132,
+[; ;fft.c: 77: 27244, 27355, 27466, 27575, 27683, 27790, 27896, 28001,
+[; ;fft.c: 78: 28105, 28208, 28309, 28410, 28510, 28608, 28706, 28802,
+[; ;fft.c: 79: 28897, 28992, 29085, 29177, 29268, 29358, 29446, 29534,
+[; ;fft.c: 80: 29621, 29706, 29790, 29873, 29955, 30036, 30116, 30195,
+[; ;fft.c: 81: 30272, 30349, 30424, 30498, 30571, 30643, 30713, 30783,
+[; ;fft.c: 82: 30851, 30918, 30984, 31049, 31113, 31175, 31236, 31297,
+[; ;fft.c: 83: 31356, 31413, 31470, 31525, 31580, 31633, 31684, 31735,
+[; ;fft.c: 84: 31785, 31833, 31880, 31926, 31970, 32014, 32056, 32097,
+[; ;fft.c: 85: 32137, 32176, 32213, 32249, 32284, 32318, 32350, 32382,
+[; ;fft.c: 86: 32412, 32441, 32468, 32495, 32520, 32544, 32567, 32588,
+[; ;fft.c: 87: 32609, 32628, 32646, 32662, 32678, 32692, 32705, 32717,
+[; ;fft.c: 88: 32727, 32736, 32744, 32751, 32757, 32761, 32764, 32766,
+[; ;fft.c: 89: 32767, 32766, 32764, 32761, 32757, 32751, 32744, 32736,
+[; ;fft.c: 90: 32727, 32717, 32705, 32692, 32678, 32662, 32646, 32628,
+[; ;fft.c: 91: 32609, 32588, 32567, 32544, 32520, 32495, 32468, 32441,
+[; ;fft.c: 92: 32412, 32382, 32350, 32318, 32284, 32249, 32213, 32176,
+[; ;fft.c: 93: 32137, 32097, 32056, 32014, 31970, 31926, 31880, 31833,
+[; ;fft.c: 94: 31785, 31735, 31684, 31633, 31580, 31525, 31470, 31413,
+[; ;fft.c: 95: 31356, 31297, 31236, 31175, 31113, 31049, 30984, 30918,
+[; ;fft.c: 96: 30851, 30783, 30713, 30643, 30571, 30498, 30424, 30349,
+[; ;fft.c: 97: 30272, 30195, 30116, 30036, 29955, 29873, 29790, 29706,
+[; ;fft.c: 98: 29621, 29534, 29446, 29358, 29268, 29177, 29085, 28992,
+[; ;fft.c: 99: 28897, 28802, 28706, 28608, 28510, 28410, 28309, 28208,
+[; ;fft.c: 100: 28105, 28001, 27896, 27790, 27683, 27575, 27466, 27355,
+[; ;fft.c: 101: 27244, 27132, 27019, 26905, 26789, 26673, 26556, 26437,
+[; ;fft.c: 102: 26318, 26198, 26077, 25954, 25831, 25707, 25582, 25456,
+[; ;fft.c: 103: 25329, 25201, 25072, 24942, 24811, 24679, 24546, 24413,
+[; ;fft.c: 104: 24278, 24143, 24006, 23869, 23731, 23592, 23452, 23311,
+[; ;fft.c: 105: 23169, 23027, 22883, 22739, 22594, 22448, 22301, 22153,
+[; ;fft.c: 106: 22004, 21855, 21705, 21554, 21402, 21249, 21096, 20942,
+[; ;fft.c: 107: 20787, 20631, 20474, 20317, 20159, 20000, 19840, 19680,
+[; ;fft.c: 108: 19519, 19357, 19194, 19031, 18867, 18702, 18537, 18371,
+[; ;fft.c: 109: 18204, 18036, 17868, 17699, 17530, 17360, 17189, 17017,
+[; ;fft.c: 110: 16845, 16672, 16499, 16325, 16150, 15975, 15799, 15623,
+[; ;fft.c: 111: 15446, 15268, 15090, 14911, 14732, 14552, 14372, 14191,
+[; ;fft.c: 112: 14009, 13827, 13645, 13462, 13278, 13094, 12909, 12724,
+[; ;fft.c: 113: 12539, 12353, 12166, 11980, 11792, 11604, 11416, 11227,
+[; ;fft.c: 114: 11038, 10849, 10659, 10469, 10278, 10087, 9895, 9703,
+[; ;fft.c: 115: 9511, 9319, 9126, 8932, 8739, 8545, 8351, 8156,
+[; ;fft.c: 116: 7961, 7766, 7571, 7375, 7179, 6982, 6786, 6589,
+[; ;fft.c: 117: 6392, 6195, 5997, 5799, 5601, 5403, 5205, 5006,
+[; ;fft.c: 118: 4807, 4608, 4409, 4210, 4011, 3811, 3611, 3411,
+[; ;fft.c: 119: 3211, 3011, 2811, 2610, 2410, 2209, 2009, 1808,
+[; ;fft.c: 120: 1607, 1406, 1206, 1005, 804, 603, 402, 201,
+[; ;fft.c: 121: 0, -201, -402, -603, -804, -1005, -1206, -1406,
+[; ;fft.c: 122: -1607, -1808, -2009, -2209, -2410, -2610, -2811, -3011,
+[; ;fft.c: 123: -3211, -3411, -3611, -3811, -4011, -4210, -4409, -4608,
+[; ;fft.c: 124: -4807, -5006, -5205, -5403, -5601, -5799, -5997, -6195,
+[; ;fft.c: 125: -6392, -6589, -6786, -6982, -7179, -7375, -7571, -7766,
+[; ;fft.c: 126: -7961, -8156, -8351, -8545, -8739, -8932, -9126, -9319,
+[; ;fft.c: 127: -9511, -9703, -9895, -10087, -10278, -10469, -10659, -10849,
+[; ;fft.c: 128: -11038, -11227, -11416, -11604, -11792, -11980, -12166, -12353,
+[; ;fft.c: 129: -12539, -12724, -12909, -13094, -13278, -13462, -13645, -13827,
+[; ;fft.c: 130: -14009, -14191, -14372, -14552, -14732, -14911, -15090, -15268,
+[; ;fft.c: 131: -15446, -15623, -15799, -15975, -16150, -16325, -16499, -16672,
+[; ;fft.c: 132: -16845, -17017, -17189, -17360, -17530, -17699, -17868, -18036,
+[; ;fft.c: 133: -18204, -18371, -18537, -18702, -18867, -19031, -19194, -19357,
+[; ;fft.c: 134: -19519, -19680, -19840, -20000, -20159, -20317, -20474, -20631,
+[; ;fft.c: 135: -20787, -20942, -21096, -21249, -21402, -21554, -21705, -21855,
+[; ;fft.c: 136: -22004, -22153, -22301, -22448, -22594, -22739, -22883, -23027,
+[; ;fft.c: 137: -23169, -23311, -23452, -23592, -23731, -23869, -24006, -24143,
+[; ;fft.c: 138: -24278, -24413, -24546, -24679, -24811, -24942, -25072, -25201,
+[; ;fft.c: 139: -25329, -25456, -25582, -25707, -25831, -25954, -26077, -26198,
+[; ;fft.c: 140: -26318, -26437, -26556, -26673, -26789, -26905, -27019, -27132,
+[; ;fft.c: 141: -27244, -27355, -27466, -27575, -27683, -27790, -27896, -28001,
+[; ;fft.c: 142: -28105, -28208, -28309, -28410, -28510, -28608, -28706, -28802,
+[; ;fft.c: 143: -28897, -28992, -29085, -29177, -29268, -29358, -29446, -29534,
+[; ;fft.c: 144: -29621, -29706, -29790, -29873, -29955, -30036, -30116, -30195,
+[; ;fft.c: 145: -30272, -30349, -30424, -30498, -30571, -30643, -30713, -30783,
+[; ;fft.c: 146: -30851, -30918, -30984, -31049, -31113, -31175, -31236, -31297,
+[; ;fft.c: 147: -31356, -31413, -31470, -31525, -31580, -31633, -31684, -31735,
+[; ;fft.c: 148: -31785, -31833, -31880, -31926, -31970, -32014, -32056, -32097,
+[; ;fft.c: 149: -32137, -32176, -32213, -32249, -32284, -32318, -32350, -32382,
+[; ;fft.c: 150: -32412, -32441, -32468, -32495, -32520, -32544, -32567, -32588,
+[; ;fft.c: 151: -32609, -32628, -32646, -32662, -32678, -32692, -32705, -32717,
+[; ;fft.c: 152: -32727, -32736, -32744, -32751, -32757, -32761, -32764, -32766,
+[; ;fft.c: 153: };
+"155
+[v _fix_fft `(v ~T0 @X0 1 ef3`*s`*s`s ]
 "156
-[e :U 1179 ]
-[; ;main pic18.c: 153: }
-[; ;main pic18.c: 156: for(i = 0; i < 31; i++) {
 {
-[e = _i -> -> 0 `i `s ]
-[e $ < -> _i `i -> 31 `i 1181  ]
-[e $U 1182  ]
-[e :U 1181 ]
-{
-[; ;main pic18.c: 157: growl_tally += (growl_prob_weights[i] * real_numbers[i+1]);
+[; ;fft.c: 155: void fix_fft(short fr[], short fi[], short m)
+[; ;fft.c: 156: {
+[e :U _fix_fft ]
+"155
+[v _fr `*s ~T0 @X0 1 r1 ]
+[v _fi `*s ~T0 @X0 1 r2 ]
+[v _m `s ~T0 @X0 1 r3 ]
+"156
+[f ]
 "157
-[e =+ _growl_tally * -> *U + &U _growl_prob_weights * -> -> _i `us `ux -> -> # *U &U _growl_prob_weights `ui `ux `i -> *U + &U _real_numbers * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i ]
+[v _mr `l ~T0 @X0 1 a ]
+[; ;fft.c: 157: long int mr = 0, nn, i, j, l, k, istep, n;
+[e = _mr -> -> 0 `i `l ]
+[v _nn `l ~T0 @X0 1 a ]
+[v _i `l ~T0 @X0 1 a ]
+[v _j `l ~T0 @X0 1 a ]
+[v _l `l ~T0 @X0 1 a ]
+[v _k `l ~T0 @X0 1 a ]
+[v _istep `l ~T0 @X0 1 a ]
+[v _n `l ~T0 @X0 1 a ]
 "158
-}
-"156
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 31 `i 1181  ]
-[e :U 1182 ]
-"158
-}
-[; ;main pic18.c: 158: }
-[; ;main pic18.c: 160: if(growl_tally < 0) {
+[v _qr `s ~T0 @X0 1 a ]
+[v _qi `s ~T0 @X0 1 a ]
+[v _tr `s ~T0 @X0 1 a ]
+[v _ti `s ~T0 @X0 1 a ]
+[v _wr `s ~T0 @X0 1 a ]
+[v _wi `s ~T0 @X0 1 a ]
+[; ;fft.c: 158: short qr, qi, tr, ti, wr, wi;
+[; ;fft.c: 160: n = 1 << m;
 "160
-[e $ ! < _growl_tally -> 0 `i 1184  ]
-{
-[; ;main pic18.c: 161: growl_tally = 0;
+[e = _n -> << -> 1 `i _m `l ]
+[; ;fft.c: 161: nn = n - 1;
 "161
-[e = _growl_tally -> 0 `i ]
-"162
-}
-[; ;main pic18.c: 162: } else if(real_numbers[30] > real_numbers[24] &&
-[e $U 1185  ]
-[e :U 1184 ]
-[; ;main pic18.c: 163: real_numbers[15] > real_numbers[1] &&
-[; ;main pic18.c: 164: real_numbers[29] > real_numbers[8]) {
-"164
-[e $ ! && && > -> *U + &U _real_numbers * -> -> -> 30 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 24 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 15 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 1 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 29 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 8 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i 1186  ]
+[e = _nn - _n -> -> 1 `i `l ]
+[; ;fft.c: 167: for (m=1; m<=nn; ++m)
+"167
 {
-[; ;main pic18.c: 165: growl_tally = growl_tally / 4;
-"165
-[e = _growl_tally / _growl_tally -> 4 `i ]
-"166
-}
-[e :U 1186 ]
+[e = _m -> -> 1 `i `s ]
+[e $U 1147  ]
+"168
+[e :U 1144 ]
+[; ;fft.c: 168: {
+{
+[; ;fft.c: 169: l = n;
 "169
-[e :U 1185 ]
-[; ;main pic18.c: 166: }
-[; ;main pic18.c: 169: for(i = 0; i < 31; i++) {
-{
-[e = _i -> -> 0 `i `s ]
-[e $ < -> _i `i -> 31 `i 1187  ]
-[e $U 1188  ]
-[e :U 1187 ]
-{
-[; ;main pic18.c: 170: horn_tally += (horn_prob_weights[i] * real_numbers[i+1]);
+[e = _l _n ]
+[; ;fft.c: 170: do
 "170
-[e =+ _horn_tally * -> *U + &U _horn_prob_weights * -> -> _i `us `ux -> -> # *U &U _horn_prob_weights `ui `ux `i -> *U + &U _real_numbers * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i ]
+[e :U 1150 ]
+[; ;fft.c: 171: {
 "171
-}
-"169
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 31 `i 1187  ]
-[e :U 1188 ]
-"171
-}
-[; ;main pic18.c: 171: }
-[; ;main pic18.c: 173: if(horn_tally < 0) {
+{
+[; ;fft.c: 172: l >>= 1;
+"172
+[e =>> _l -> 1 `i ]
 "173
-[e $ ! < _horn_tally -> 0 `i 1190  ]
-{
-[; ;main pic18.c: 174: horn_tally = 5;
-"174
-[e = _horn_tally -> 5 `i ]
-"175
 }
-[; ;main pic18.c: 175: } else if(real_numbers[21] > real_numbers[7] &&
-[e $U 1191  ]
-[e :U 1190 ]
-[; ;main pic18.c: 176: real_numbers[16] > real_numbers[10] &&
-[; ;main pic18.c: 177: real_numbers[25] > real_numbers[1] &&
-[; ;main pic18.c: 178: real_numbers[20] > real_numbers[24] &&
-[; ;main pic18.c: 179: real_numbers[12] > real_numbers[5] &&
-[; ;main pic18.c: 180: real_numbers[27] > real_numbers[10]) {
-"180
-[e $ ! && && && && && > -> *U + &U _real_numbers * -> -> -> 21 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 7 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 16 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 10 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 25 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 1 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 20 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 24 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 12 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 5 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 27 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 10 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i 1192  ]
-{
-[; ;main pic18.c: 181: horn_tally = horn_tally / 4;
-"181
-[e = _horn_tally / _horn_tally -> 4 `i ]
-"182
-}
-[e :U 1192 ]
-"185
-[e :U 1191 ]
-[; ;main pic18.c: 182: }
-[; ;main pic18.c: 185: for(i = 0; i < 31; i++) {
-{
-[e = _i -> -> 0 `i `s ]
-[e $ < -> _i `i -> 31 `i 1193  ]
-[e $U 1194  ]
-[e :U 1193 ]
-{
-[; ;main pic18.c: 186: scream_tally += (scream_prob_weights[i] * real_numbers[i+1]);
-"186
-[e =+ _scream_tally * -> *U + &U _scream_prob_weights * -> -> _i `us `ux -> -> # *U &U _scream_prob_weights `ui `ux `i -> *U + &U _real_numbers * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i ]
-"187
-}
-"185
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 31 `i 1193  ]
-[e :U 1194 ]
-"187
-}
-[; ;main pic18.c: 187: }
-[; ;main pic18.c: 189: if(scream_tally < 0) {
-"189
-[e $ ! < _scream_tally -> 0 `i 1196  ]
-{
-[; ;main pic18.c: 190: scream_tally = 0;
-"190
-[e = _scream_tally -> 0 `i ]
-"191
-}
-[; ;main pic18.c: 191: } else if(real_numbers[28] > real_numbers[8] &&
-[e $U 1197  ]
-[e :U 1196 ]
-[; ;main pic18.c: 192: real_numbers[17] > real_numbers[27] &&
-[; ;main pic18.c: 193: real_numbers[29] > real_numbers[1] &&
-[; ;main pic18.c: 194: real_numbers[21] > real_numbers[2]) {
-"194
-[e $ ! && && && > -> *U + &U _real_numbers * -> -> -> 28 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 8 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 17 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 27 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 29 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 1 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i > -> *U + &U _real_numbers * -> -> -> 21 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i -> *U + &U _real_numbers * -> -> -> 2 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux `i 1198  ]
-{
-[; ;main pic18.c: 195: scream_tally = scream_tally / 4;
-"195
-[e = _scream_tally / _scream_tally -> 4 `i ]
-"196
-}
-[e :U 1198 ]
-"198
-[e :U 1197 ]
-[; ;main pic18.c: 196: }
-[; ;main pic18.c: 198: guesses[0] = 255;
-[e = *U + &U _guesses * -> -> -> 0 `i `ui `ux -> -> # *U &U _guesses `ui `ux -> -> 255 `i `s ]
-[; ;main pic18.c: 199: guesses[1] = alarm_tally;
-"199
-[e = *U + &U _guesses * -> -> -> 1 `i `ui `ux -> -> # *U &U _guesses `ui `ux -> _alarm_tally `s ]
-[; ;main pic18.c: 200: guesses[2] = growl_tally;
-"200
-[e = *U + &U _guesses * -> -> -> 2 `i `ui `ux -> -> # *U &U _guesses `ui `ux -> _growl_tally `s ]
-[; ;main pic18.c: 201: guesses[3] = horn_tally;
-"201
-[e = *U + &U _guesses * -> -> -> 3 `i `ui `ux -> -> # *U &U _guesses `ui `ux -> _horn_tally `s ]
-[; ;main pic18.c: 202: guesses[4] = scream_tally;
-"202
-[e = *U + &U _guesses * -> -> -> 4 `i `ui `ux -> -> # *U &U _guesses `ui `ux -> _scream_tally `s ]
-[; ;main pic18.c: 204: max_tally = 0;
-"204
-[e = _max_tally -> 0 `i ]
-[; ;main pic18.c: 205: for(i = 1; i < 5; i++) {
-"205
-{
-[e = _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 5 `i 1199  ]
-[e $U 1200  ]
-[e :U 1199 ]
-{
-[; ;main pic18.c: 206: if(guesses[i] > max_tally) {
-"206
-[e $ ! > -> *U + &U _guesses * -> -> _i `us `ux -> -> # *U &U _guesses `ui `ux `i _max_tally 1202  ]
-{
-[; ;main pic18.c: 207: max_tally = guesses[i];
-"207
-[e = _max_tally -> *U + &U _guesses * -> -> _i `us `ux -> -> # *U &U _guesses `ui `ux `i ]
-"208
-}
-[e :U 1202 ]
-"209
-}
-"205
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 5 `i 1199  ]
-[e :U 1200 ]
-"209
-}
-[; ;main pic18.c: 208: }
-[; ;main pic18.c: 209: }
-[; ;main pic18.c: 211: alarm_prob = 0;
-"211
-[e = _alarm_prob -> 0 `i ]
-[; ;main pic18.c: 212: growl_prob = 0;
-"212
-[e = _growl_prob -> 0 `i ]
-[; ;main pic18.c: 213: horn_prob = 0;
-"213
-[e = _horn_prob -> 0 `i ]
-[; ;main pic18.c: 214: scream_prob = 0;
-"214
-[e = _scream_prob -> 0 `i ]
-[; ;main pic18.c: 216: if(max_tally > 20) {
-"216
-[e $ ! > _max_tally -> 20 `i 1203  ]
-{
-[; ;main pic18.c: 217: LATBbits.LATB1 = 1;
-"217
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-[; ;main pic18.c: 218: total_tally = alarm_tally + growl_tally + horn_tally + scream_tally;
-"218
-[e = _total_tally + + + _alarm_tally _growl_tally _horn_tally _scream_tally ]
-[; ;main pic18.c: 219: alarm_prob = alarm_tally / total_tally;
-"219
-[e = _alarm_prob / _alarm_tally _total_tally ]
-[; ;main pic18.c: 220: growl_prob = growl_tally / total_tally;
-"220
-[e = _growl_prob / _growl_tally _total_tally ]
-[; ;main pic18.c: 221: horn_prob = horn_tally / total_tally;
-"221
-[e = _horn_prob / _horn_tally _total_tally ]
-[; ;main pic18.c: 222: scream_prob = scream_tally / total_tally;
-"222
-[e = _scream_prob / _scream_tally _total_tally ]
-[; ;main pic18.c: 225: if(max_tally == alarm_tally) {
-"225
-[e $ ! == _max_tally _alarm_tally 1204  ]
-{
-[; ;main pic18.c: 226: writeGuess('A', alarm_prob, 1);
-"226
-[e ( _writeGuess (3 , , -> -> 65 `ui `uc _alarm_prob -> 1 `i ]
-"227
-}
-[; ;main pic18.c: 227: } else if(max_tally == growl_tally) {
-[e $U 1205  ]
-[e :U 1204 ]
-[e $ ! == _max_tally _growl_tally 1206  ]
-{
-[; ;main pic18.c: 228: writeGuess('G', growl_prob, 1);
-"228
-[e ( _writeGuess (3 , , -> -> 71 `ui `uc _growl_prob -> 1 `i ]
-"229
-}
-[; ;main pic18.c: 229: } else if(max_tally == horn_tally) {
-[e $U 1207  ]
-[e :U 1206 ]
-[e $ ! == _max_tally _horn_tally 1208  ]
-{
-[; ;main pic18.c: 230: writeGuess('H', horn_prob, 1);
-"230
-[e ( _writeGuess (3 , , -> -> 72 `ui `uc _horn_prob -> 1 `i ]
-"231
-}
-[; ;main pic18.c: 231: } else if(max_tally == scream_tally) {
-[e $U 1209  ]
-[e :U 1208 ]
-[e $ ! == _max_tally _scream_tally 1210  ]
-{
-[; ;main pic18.c: 232: writeGuess('S', scream_prob, 1);
-"232
-[e ( _writeGuess (3 , , -> -> 83 `ui `uc _scream_prob -> 1 `i ]
-"233
-}
-[e :U 1210 ]
-"235
-[e :U 1209 ]
-[e :U 1207 ]
-[e :U 1205 ]
-[; ;main pic18.c: 233: }
-[; ;main pic18.c: 235: for(i = 0; i < 10; i++) {
-{
-[e = _i -> -> 0 `i `s ]
-[e $ < -> _i `i -> 10 `i 1211  ]
-[e $U 1212  ]
-[e :U 1211 ]
-{
-[; ;main pic18.c: 236: _delay(100000);
-"236
-[e ( __delay (1 -> -> 100000 `l `ul ]
-"237
-}
-"235
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 10 `i 1211  ]
-[e :U 1212 ]
-"237
-}
-[; ;main pic18.c: 237: }
-[; ;main pic18.c: 238: LATBbits.LATB1 = 0;
-"238
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-[; ;main pic18.c: 239: for(i = 0; i < 10; i++) {
-"239
-{
-[e = _i -> -> 0 `i `s ]
-[e $ < -> _i `i -> 10 `i 1214  ]
-[e $U 1215  ]
-[e :U 1214 ]
-{
-[; ;main pic18.c: 240: _delay(100000);
-"240
-[e ( __delay (1 -> -> 100000 `l `ul ]
-"241
-}
-"239
-[e ++ _i -> -> 1 `i `s ]
-[e $ < -> _i `i -> 10 `i 1214  ]
-[e :U 1215 ]
-"241
-}
-"242
-}
-[e :U 1203 ]
-[; ;main pic18.c: 241: }
-[; ;main pic18.c: 242: }
-[; ;main pic18.c: 244: if(0) {
-"244
-[e $ ! != -> 0 `i -> 0 `i 1217  ]
-{
-[; ;main pic18.c: 246: real_numbers[0] = 255;
-"246
-[e = *U + &U _real_numbers * -> -> -> 0 `i `ui `ux -> -> # *U &U _real_numbers `ui `ux -> -> 255 `i `s ]
-[; ;main pic18.c: 247: sendIntArray(real_numbers, 32);
-"247
-[e ( _sendIntArray (2 , &U _real_numbers -> -> 32 `i `ui ]
-"248
-}
-[; ;main pic18.c: 248: } else if(1) {
-[e $U 1218  ]
-[e :U 1217 ]
-[e $ ! != -> 1 `i -> 0 `i 1219  ]
-{
-[; ;main pic18.c: 249: sendIntArray(guesses, 5);
-"249
-[e ( _sendIntArray (2 , &U _guesses -> -> 5 `i `ui ]
-"250
-}
-[e :U 1219 ]
-"251
-[e :U 1218 ]
-}
+[; ;fft.c: 173: } while (mr+l > nn);
+[e $ > + _mr _l _nn 1150  ]
 [e :U 1149 ]
-"77
-[e $U 1150  ]
+[; ;fft.c: 175: mr = (mr & (l-1)) + l;
+"175
+[e = _mr + & _mr - _l -> -> 1 `i `l _l ]
+[; ;fft.c: 176: if (mr <= m) continue;
+"176
+[e $ ! <= _mr -> _m `l 1151  ]
+[e $U 1146  ]
 [e :U 1151 ]
-[; ;main pic18.c: 250: }
-[; ;main pic18.c: 251: }
-[; ;main pic18.c: 252: }
-"252
-[e :UE 1148 ]
+[; ;fft.c: 178: tr = fr[m];
+"178
+[e = _tr *U + _fr * -> _m `x -> -> # *U _fr `i `x ]
+[; ;fft.c: 179: fr[m] = fr[mr];
+"179
+[e = *U + _fr * -> _m `x -> -> # *U _fr `i `x *U + _fr * -> _mr `x -> -> # *U _fr `i `x ]
+[; ;fft.c: 180: fr[mr] = tr;
+"180
+[e = *U + _fr * -> _mr `x -> -> # *U _fr `i `x _tr ]
+[; ;fft.c: 181: ti = fi[m];
+"181
+[e = _ti *U + _fi * -> _m `x -> -> # *U _fi `i `x ]
+[; ;fft.c: 182: fi[m] = fi[mr];
+"182
+[e = *U + _fi * -> _m `x -> -> # *U _fi `i `x *U + _fi * -> _mr `x -> -> # *U _fi `i `x ]
+[; ;fft.c: 183: fi[mr] = ti;
+"183
+[e = *U + _fi * -> _mr `x -> -> # *U _fi `i `x _ti ]
+"184
 }
+"167
+[e :U 1146 ]
+[e =+ _m -> -> 1 `i `s ]
+[e :U 1147 ]
+[e $ <= -> _m `l _nn 1144  ]
+[e :U 1145 ]
+"184
+}
+[; ;fft.c: 184: }
+[; ;fft.c: 186: l = 1;
+"186
+[e = _l -> -> 1 `i `l ]
+[; ;fft.c: 187: k = 10-1;
+"187
+[e = _k -> - -> 10 `i -> 1 `i `l ]
+[; ;fft.c: 189: while (l < n)
+"189
+[e $U 1152  ]
+[e :U 1153 ]
+[; ;fft.c: 190: {
+"190
+{
+"203
+[v _c `l ~T0 @X0 1 a ]
+"204
+[v _b `s ~T0 @X0 1 a ]
+[; ;fft.c: 203: long int c;
+[; ;fft.c: 204: short b;
+[; ;fft.c: 206: istep = l << 1;
+"206
+[e = _istep << _l -> 1 `i ]
+[; ;fft.c: 207: for (m=0; m<l; ++m)
+"207
+{
+[e = _m -> -> 0 `i `s ]
+[e $U 1158  ]
+"208
+[e :U 1155 ]
+[; ;fft.c: 208: {
+{
+[; ;fft.c: 209: j = m << k;
+"209
+[e = _j -> << -> _m `i _k `l ]
+[; ;fft.c: 211: wr = Sinewave[j+1024/4];
+"211
+[e = _wr *U + &U _Sinewave * -> + _j -> / -> 1024 `i -> 4 `i `l `ux -> -> # *U &U _Sinewave `ui `ux ]
+[; ;fft.c: 212: wi = -Sinewave[j];
+"212
+[e = _wi -> -U -> *U + &U _Sinewave * -> _j `ux -> -> # *U &U _Sinewave `ui `ux `i `s ]
+[; ;fft.c: 214: wr >>= 1;
+"214
+[e =>> _wr -> 1 `i ]
+[; ;fft.c: 215: wi >>= 1;
+"215
+[e =>> _wi -> 1 `i ]
+[; ;fft.c: 217: for (i=m; i<n; i+=istep)
+"217
+{
+[e = _i -> _m `l ]
+[e $U 1162  ]
+"218
+[e :U 1159 ]
+[; ;fft.c: 218: {
+{
+[; ;fft.c: 219: j = i + l;
+"219
+[e = _j + _i _l ]
+[; ;fft.c: 227: c = ((long int)wr * (long int)fr[j]);
+"227
+[e = _c * -> _wr `l -> *U + _fr * -> _j `x -> -> # *U _fr `i `x `l ]
+[; ;fft.c: 228: c = c >> 14;
+"228
+[e = _c >> _c -> 14 `i ]
+[; ;fft.c: 229: b = c & 0x01;
+"229
+[e = _b -> & _c -> -> 1 `i `l `s ]
+[; ;fft.c: 230: tr = (c >> 1) + b;
+"230
+[e = _tr -> + >> _c -> 1 `i -> _b `l `s ]
+[; ;fft.c: 232: c = ((long int)wi * (long int)fi[j]);
+"232
+[e = _c * -> _wi `l -> *U + _fi * -> _j `x -> -> # *U _fi `i `x `l ]
+[; ;fft.c: 233: c = c >> 14;
+"233
+[e = _c >> _c -> 14 `i ]
+[; ;fft.c: 234: b = c & 0x01;
+"234
+[e = _b -> & _c -> -> 1 `i `l `s ]
+[; ;fft.c: 235: tr = tr - ((c >> 1) + b);
+"235
+[e = _tr -> - -> _tr `l + >> _c -> 1 `i -> _b `l `s ]
+[; ;fft.c: 238: c = ((long int)wr * (long int)fi[j]);
+"238
+[e = _c * -> _wr `l -> *U + _fi * -> _j `x -> -> # *U _fi `i `x `l ]
+[; ;fft.c: 239: c = c >> 14;
+"239
+[e = _c >> _c -> 14 `i ]
+[; ;fft.c: 240: b = c & 0x01;
+"240
+[e = _b -> & _c -> -> 1 `i `l `s ]
+[; ;fft.c: 241: ti = (c >> 1) + b;
+"241
+[e = _ti -> + >> _c -> 1 `i -> _b `l `s ]
+[; ;fft.c: 243: c = ((long int)wi * (long int)fr[j]);
+"243
+[e = _c * -> _wi `l -> *U + _fr * -> _j `x -> -> # *U _fr `i `x `l ]
+[; ;fft.c: 244: c = c >> 14;
+"244
+[e = _c >> _c -> 14 `i ]
+[; ;fft.c: 245: b = c & 0x01;
+"245
+[e = _b -> & _c -> -> 1 `i `l `s ]
+[; ;fft.c: 246: ti = ti + ((c >> 1) + b);
+"246
+[e = _ti -> + -> _ti `l + >> _c -> 1 `i -> _b `l `s ]
+[; ;fft.c: 248: qr = fr[i];
+"248
+[e = _qr *U + _fr * -> _i `x -> -> # *U _fr `i `x ]
+[; ;fft.c: 249: qi = fi[i];
+"249
+[e = _qi *U + _fi * -> _i `x -> -> # *U _fi `i `x ]
+[; ;fft.c: 250: qr >>= 1;
+"250
+[e =>> _qr -> 1 `i ]
+[; ;fft.c: 251: qi >>= 1;
+"251
+[e =>> _qi -> 1 `i ]
+[; ;fft.c: 253: fr[j] = qr - tr;
+"253
+[e = *U + _fr * -> _j `x -> -> # *U _fr `i `x -> - -> _qr `i -> _tr `i `s ]
+[; ;fft.c: 254: fi[j] = qi - ti;
 "254
-[v _setup `(v ~T0 @X0 1 ef ]
-{
-[; ;main pic18.c: 254: void setup(void) {
-[e :U _setup ]
-[f ]
-[; ;main pic18.c: 255: TRISAbits.RA3 = 1;
+[e = *U + _fi * -> _j `x -> -> # *U _fi `i `x -> - -> _qi `i -> _ti `i `s ]
+[; ;fft.c: 255: fr[i] = qr + tr;
 "255
-[e = . . _TRISAbits 1 3 -> -> 1 `i `uc ]
-[; ;main pic18.c: 256: ANSELAbits.ANSA3 = 1;
+[e = *U + _fr * -> _i `x -> -> # *U _fr `i `x -> + -> _qr `i -> _tr `i `s ]
+[; ;fft.c: 256: fi[i] = qi + ti;
 "256
-[e = . . _ANSELAbits 0 3 -> -> 1 `i `uc ]
-[; ;main pic18.c: 257: TRISAbits.RA7 = 1;
+[e = *U + _fi * -> _i `x -> -> # *U _fi `i `x -> + -> _qi `i -> _ti `i `s ]
 "257
-[e = . . _TRISAbits 1 7 -> -> 1 `i `uc ]
-[; ;main pic18.c: 258: TRISC = 0x00;
+}
+"217
+[e =+ _i _istep ]
+[e :U 1162 ]
+[e $ < _i _n 1159  ]
+[e :U 1160 ]
+"257
+}
 "258
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;main pic18.c: 259: LATC = 0x00;
-"259
-[e = _LATC -> -> 0 `i `uc ]
-[; ;main pic18.c: 260: ANSELC = 0x00;
+}
+"207
+[e =+ _m -> -> 1 `i `s ]
+[e :U 1158 ]
+[e $ < -> _m `l _l 1155  ]
+[e :U 1156 ]
+"258
+}
+[; ;fft.c: 257: }
+[; ;fft.c: 258: }
+[; ;fft.c: 260: --k;
 "260
-[e = _ANSELC -> -> 0 `i `uc ]
-[; ;main pic18.c: 261: TRISCbits.TRISC6 = 1;
+[e =- _k -> -> 1 `i `l ]
+[; ;fft.c: 261: l = istep;
 "261
-[e = . . _TRISCbits 0 6 -> -> 1 `i `uc ]
-[; ;main pic18.c: 262: TRISCbits.TRISC7 = 1;
+[e = _l _istep ]
 "262
-[e = . . _TRISCbits 0 7 -> -> 1 `i `uc ]
-[; ;main pic18.c: 263: TRISBbits.TRISB1 = 0;
+}
+[e :U 1152 ]
+"189
+[e $ < _l _n 1153  ]
+[e :U 1154 ]
+[; ;fft.c: 262: }
+[; ;fft.c: 263: }
 "263
-[e = . . _TRISBbits 0 1 -> -> 0 `i `uc ]
-[; ;main pic18.c: 264: LATBbits.LATB1 = 0;
-"264
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-[; ;main pic18.c: 267: OSCCONbits.IRCF = 0b111;
-"267
-[e = . . _OSCCONbits 0 3 -> -> 7 `i `uc ]
-[; ;main pic18.c: 268: OSCCONbits.SCS = 0b10;
-"268
-[e = . . _OSCCONbits 0 0 -> -> 2 `i `uc ]
-[; ;main pic18.c: 269: OSCTUNEbits.TUN = 0b000000;
-"269
-[e = . . _OSCTUNEbits 0 0 -> -> 0 `i `uc ]
-[; ;main pic18.c: 270: OSCTUNEbits.PLLEN = 1;
-"270
-[e = . . _OSCTUNEbits 0 1 -> -> 1 `i `uc ]
-[; ;main pic18.c: 271: OSCCON2bits.MFIOSEL = 0;
-"271
-[e = . . _OSCCON2bits 0 4 -> -> 0 `i `uc ]
-[; ;main pic18.c: 272: OSCTUNEbits.INTSRC = 1;
-"272
-[e = . . _OSCTUNEbits 0 2 -> -> 1 `i `uc ]
-[; ;main pic18.c: 275: OpenSPI1(0b00000000,
-[; ;main pic18.c: 276: 0b00000001,
-[; ;main pic18.c: 277: 0b00000000);
-"277
-[e ( _OpenSPI1 (3 , , -> -> 0 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
-[; ;main pic18.c: 286: LCDInit();
-"286
-[e ( _LCDInit ..  ]
-[; ;main pic18.c: 289: baud_rate = (4000000 / 9600 / 16 - 1);
-"289
-[e = _baud_rate - / / -> 4000000 `l -> -> 9600 `i `l -> -> 16 `i `l -> -> 1 `i `l ]
-[; ;main pic18.c: 290: OpenADC(0b11111111 &
-[; ;main pic18.c: 291: 0b11111111 &
-[; ;main pic18.c: 292: 0b11110001,
-[; ;main pic18.c: 293: 0b10000011 &
-[; ;main pic18.c: 294: 0b01111111 &
-[; ;main pic18.c: 295: 0b11110111 &
-[; ;main pic18.c: 296: 0b11111100,
-[; ;main pic18.c: 297: 0b1110);
-"297
-[e ( _OpenADC (3 , , -> & & -> 255 `i -> 255 `i -> 241 `i `uc -> & & & -> 131 `i -> 127 `i -> 247 `i -> 252 `i `uc -> -> 14 `i `uc ]
-[; ;main pic18.c: 299: RCSTA1&=0b01001111,TXSTA1bits.TXEN=0,PIE1&=0b11001111;
-"299
-[e ; ; =& _RCSTA1 -> -> 79 `i `uc = . . _TXSTA1bits 0 5 -> -> 0 `i `uc =& _PIE1 -> -> 207 `i `uc ]
-[; ;main pic18.c: 300: Open1USART( 0b01111111 &
-[; ;main pic18.c: 301: 0b10111111 &
-[; ;main pic18.c: 302: 0b11111110 &
-[; ;main pic18.c: 303: 0b11111101 &
-[; ;main pic18.c: 304: 0b11111111 &
-[; ;main pic18.c: 305: 0b11101111,
-[; ;main pic18.c: 306: baud_rate );
-"306
-[e ( _Open1USART (2 , -> & & & & & -> 127 `i -> 191 `i -> 254 `i -> 253 `i -> 255 `i -> 239 `i `uc -> _baud_rate `ui ]
-[; ;main pic18.c: 307: }
-"307
-[e :UE 1220 ]
+[e :UE 1143 ]
 }
-"309
-[v _writeGuess `(v ~T0 @X0 1 ef3`uc`i`i ]
-{
-[; ;main pic18.c: 309: void writeGuess(char guess, int prob, int row) {
-[e :U _writeGuess ]
-[v _guess `uc ~T0 @X0 1 r1 ]
-[v _prob `i ~T0 @X0 1 r2 ]
-[v _row `i ~T0 @X0 1 r3 ]
-[f ]
-"329
-[v _percent `uc ~T0 @X0 -> 8 `i a ]
-[; ;main pic18.c: 329: char percent[8];
-[; ;main pic18.c: 330: sprintf(percent, "%c %d %c", guess, prob/10, '%');
-"330
-[e ( _sprintf (1 , , , (. , &U _percent :s 1C -> _guess `i / _prob -> 10 `i -> 37 `ui ]
-[; ;main pic18.c: 331: LCDStr(1, percent, 0);
-"331
-[e ( _LCDStr (3 , , -> -> 1 `i `uc -> &U _percent `*Cuc -> -> 0 `i `uc ]
-[; ;main pic18.c: 333: }
-"333
-[e :UE 1221 ]
-}
-"335
-[v _sendCharArray `(v ~T0 @X0 1 ef2`*uc`ui ]
-{
-[; ;main pic18.c: 335: void sendCharArray(char *array, unsigned int size) {
-[e :U _sendCharArray ]
-[v _array `*uc ~T0 @X0 1 r1 ]
-[v _size `ui ~T0 @X0 1 r2 ]
-[f ]
-[; ;main pic18.c: 336: for(i = 0; i < size; i++) {
-"336
-{
-[e = _i -> 0 `i ]
-[e $U 1226  ]
-[e :U 1223 ]
-{
-[; ;main pic18.c: 337: sendChar(array[i]);
-"337
-[e ( _sendChar (1 *U + _array * -> _i `x -> -> # *U _array `i `x ]
-"338
-}
-"336
-[e ++ _i -> 1 `i ]
-[e :U 1226 ]
-[e $ < -> _i `ui _size 1223  ]
-[e :U 1224 ]
-"338
-}
-[; ;main pic18.c: 338: }
-[; ;main pic18.c: 339: }
-"339
-[e :UE 1222 ]
-}
-"342
-[v _sendString `(v ~T0 @X0 1 ef1`*uc ]
-{
-[; ;main pic18.c: 342: void sendString(char *string) {
-[e :U _sendString ]
-[v _string `*uc ~T0 @X0 1 r1 ]
-[f ]
-[; ;main pic18.c: 343: while((!TXSTA1bits.TRMT));
-"343
-[e $U 1228  ]
-[e :U 1229 ]
-[e :U 1228 ]
-[e $ ! != -> . . _TXSTA1bits 0 1 `i -> -> -> 0 `i `Vuc `i 1229  ]
-[e :U 1230 ]
-[; ;main pic18.c: 344: putrs1USART(string);
-"344
-[e ( _putrs1USART (1 -> _string `*Cuc ]
-[; ;main pic18.c: 345: }
-"345
-[e :UE 1227 ]
-}
-"348
-[v _sendChar `(v ~T0 @X0 1 ef1`uc ]
-{
-[; ;main pic18.c: 348: void sendChar(char character) {
-[e :U _sendChar ]
-[v _character `uc ~T0 @X0 1 r1 ]
-[f ]
-[; ;main pic18.c: 349: while((!TXSTA1bits.TRMT));
-"349
-[e $U 1232  ]
-[e :U 1233 ]
-[e :U 1232 ]
-[e $ ! != -> . . _TXSTA1bits 0 1 `i -> -> -> 0 `i `Vuc `i 1233  ]
-[e :U 1234 ]
-[; ;main pic18.c: 350: Write1USART(character);
-"350
-[e ( _Write1USART (1 _character ]
-[; ;main pic18.c: 351: }
-"351
-[e :UE 1231 ]
-}
-"353
-[v _sendIntArray `(v ~T0 @X0 1 ef2`*s`ui ]
-{
-[; ;main pic18.c: 353: void sendIntArray(short *array, unsigned int size) {
-[e :U _sendIntArray ]
-[v _array `*s ~T0 @X0 1 r1 ]
-[v _size `ui ~T0 @X0 1 r2 ]
-[f ]
-[; ;main pic18.c: 354: for(i = 0; i < size; i++) {
-"354
-{
-[e = _i -> 0 `i ]
-[e $U 1239  ]
-[e :U 1236 ]
-{
-[; ;main pic18.c: 355: sendChar(array[i]);
-"355
-[e ( _sendChar (1 -> *U + _array * -> _i `x -> -> # *U _array `i `x `uc ]
-"356
-}
-"354
-[e ++ _i -> 1 `i ]
-[e :U 1239 ]
-[e $ < -> _i `ui _size 1236  ]
-[e :U 1237 ]
-"356
-}
-[; ;main pic18.c: 356: }
-[; ;main pic18.c: 357: }
-"357
-[e :UE 1235 ]
-}
-[p f _sprintf 8913024 ]
-[a 1C 37 99 32 37 100 32 37 99 0 ]
-

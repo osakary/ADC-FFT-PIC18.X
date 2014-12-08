@@ -27,7 +27,7 @@ __end_of_LCDClear 585E 0 CODE 0
 _data 9E 0 BANK0 1
 _main 6828 0 CODE 0
 ___sp 0 0 STACK 2
-start 0 0 CODE 0
+start 2 0 CODE 0
 __end_of_sendIntArray 5892 0 CODE 0
 _TRISC F94 0 ABS 0
 __Hirdata 0 0 CODE 0
@@ -116,9 +116,9 @@ __Hfarbss 0 0 FARRAM 0
 __Lfarbss 0 0 FARRAM 0
 __pmediumconst 76BE 0 MEDIUMCONST 0
 writeGuess@prob 25 0 COMRAM 1
-__Hintcode 0 0 CODE 0
+__Hintcode 2 0 CODE 0
 fix_fft@qi 29 0 COMRAM 1
-__Lintcode 0 0 CODE 0
+__Lintcode 2 0 CODE 0
 __size_of_LCDSend 0 0 ABS 0
 __Hfardata 0 0 FARRAM 0
 _ADRESH FC4 0 ABS 0
@@ -158,11 +158,11 @@ stacklo 46A 0 ABS 0
 __Hrbit 0 0 COMRAM 1
 __Lrbit 0 0 COMRAM 1
 ___lmul 5A4A 0 CODE 0
-__Hinit 0 0 CODE 0
-__Linit 0 0 CODE 0
-__Hintcodelo 0 0 CODE 0
+__Hinit 2 0 CODE 0
+__Linit 2 0 CODE 0
+__Hintcodelo 2 0 CODE 0
 _LcdMemIdx 5A 0 COMRAM 1
-__Lintcodelo 0 0 CODE 0
+__Lintcodelo 2 0 CODE 0
 ___wmul 580A 0 CODE 0
 __Hrbss 0 0 COMRAM 1
 fix_fft@qr 27 0 COMRAM 1
@@ -220,8 +220,8 @@ __Lbank4 0 0 ABS 0
 __end_of___lmul 5AA0 0 CODE 0
 __Hbank5 0 0 ABS 0
 __Lbank5 0 0 ABS 0
-__Hpowerup 0 0 CODE 0
-__Lpowerup 0 0 CODE 0
+__Hpowerup 2 0 CODE 0
+__Lpowerup 2 0 CODE 0
 sendIntArray@array 3 0 COMRAM 1
 __Htext0 0 0 ABS 0
 __Ltext0 0 0 ABS 0
@@ -424,8 +424,8 @@ ___intlo_sp 0 0 STACK 2
 __size_of_WriteSPI1 0 0 ABS 0
 _OSCCONbits FD3 0 ABS 0
 _INTCONbits FF2 0 ABS 0
-__Hend_init 4 0 CODE 0
-__Lend_init 0 0 CODE 0
+__Hend_init 6 0 CODE 0
+__Lend_init 2 0 CODE 0
 __end_of_Delay 57C6 0 CODE 0
 ___awdiv@divisor 9 0 COMRAM 1
 __size_of_fix_fft 0 0 ABS 0
@@ -440,7 +440,7 @@ __smallconst 0 0 SMALLCONST 0
 __end_of_OpenADC 59A4 0 CODE 0
 _growl_tally AD 0 BANK0 1
 __size_of___wmul 0 0 ABS 0
-__Hreset_vec 0 0 CODE 0
+__Hreset_vec 2 0 CODE 0
 __Lreset_vec 0 0 CODE 0
 _writeGuess 59F6 0 CODE 0
 _FontLookup 7CBF 0 MEDIUMCONST 0
@@ -489,7 +489,7 @@ sprintf@c 24 0 COMRAM 1
 fix_fft@c 49 0 COMRAM 1
 ___awdiv@dividend 7 0 COMRAM 1
 %segments
-reset_vec 0 3 CODE 0 0
+reset_vec 0 5 CODE 0 0
 mediumconst 76BE 7FFF MEDIUMCONST 76BE 0
 config 300000 30000D CONFIG 300000 0
 idloc 200000 200007 IDLOC 200000 0
@@ -527,9 +527,9 @@ text27 5770 577B CODE 5770 0
 text26 576C 576F CODE 576C 0
 text19 576A 576B CODE 576A 0
 %locals
-dist/default/production\ADC-FFT-PIC18.X.production.obj
+dist/default/debug\ADC-FFT-PIC18.X.debug.obj
 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f25k22.h
-C:\Users\osaka\AppData\Local\Temp\s570.
+C:\Users\osaka\AppData\Local\Temp\s5do.
 3286 590C 0 CODE 0
 3288 590C 0 CODE 0
 3291 590C 0 CODE 0
