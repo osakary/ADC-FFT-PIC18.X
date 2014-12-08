@@ -33,16 +33,7 @@
 
 static void Initialize_SPI(void)
 {
-//    OpenSPI1(SPI_FOSC_4,
-//            MODE_01,
-//            SMPMID);
-//TRISCbits.RC0 = 0;
-//TRISCbits.RC1 = 0;
-//TRISCbits.RC2 = 0;
-//ANSELC = 0b0;
-//LATCbits.LATC0 = 0;
-//LATCbits.LATC1 = 0;
-//LATCbits.LATC2 = 0;
+    // nothing
 }
 
 /* END OF SECTION */
@@ -96,9 +87,6 @@ const unsigned char  FontLookup [][6] =             // 6 pixels wide
     { 0x02, 0x01, 0x51, 0x09, 0x06, 0x00 },   // ?
     { 0x32, 0x49, 0x59, 0x51, 0x3E, 0x00 },   // @
     { 0x7E, 0x11, 0x11, 0x11, 0x7E, 0x00 },   // A
- //   { 0xCC, 0xCC, 0xCC, 0xCC, 0xCC, 0x00 },   // test1 = A
-//    { 0xFD, 0xFB, 0xB7, 0x2F, 0x1F, 0x00 },   // test3 = A
-//    { 0x33, 0x33, 0x33, 0x33, 0x33, 0x00 },   // test2 = B
     { 0x7F, 0x49, 0x49, 0x49, 0x36, 0x00 },   // B
     { 0x3E, 0x41, 0x41, 0x41, 0x22, 0x00 },   // C
     { 0x7F, 0x41, 0x41, 0x22, 0x1C, 0x00 },   // D
@@ -195,18 +183,11 @@ void LCDInit(void)
 	// Send sequence of command
 	LCDSend( 0x21, SEND_CMD );  // LCD Extended Commands.
 	LCDSend( 0xc0, SEND_CMD );  // Set LCD Vop (Contrast). 0xC8
-        //LCDSend( 0x81, SEND_CMD );      // set LCD Vop (NEW contrast)
-        //LCDSend(0x45, SEND_CMD);   // New LCD Correction (Y offset +5)
-//	LCDSend( 0x04 | !!(LCD_START_LINE_ADDR&(1u<<6)), SEND_CMD );  // Set Temp S6 for start line
-//	LCDSend( 0x40 | (LCD_START_LINE_ADDR & ((1u<<6)-1)), SEND_CMD );  // Set Temp S[5:0] for start line
         LCDSend( 0x06, SEND_CMD);    // temp coef
-	//LCDSend( 0x13, SEND_CMD );  // LCD bias mode 1:48.
 	LCDSend( 0x12, SEND_CMD );  // LCD bias mode 1:68.
 	LCDSend( 0x20, SEND_CMD );  // LCD Standard Commands, Horizontal addressing mode.
-        //LCDSend( 0x22, SEND_CMD );  // LCD Standard Commands, Vertical addressing mode.
         LCDSend(0x09, SEND_CMD);  // all on (display black)
         Delay(750);
-        //LCDClear();
 	LCDSend( 0x08, SEND_CMD );  // LCD blank
         Delay(50);
 	LCDSend( 0x0C, SEND_CMD );  // LCD in normal mode.
@@ -246,7 +227,6 @@ void LCDUpdate ( void )
 	for(y=0; y<(LCD_Y_RES / 8); y++) {
 		LCDSend(0x80, SEND_CMD );
 		LCDSend(0x40 | y, SEND_CMD );	
-//		for(x=0; x < LCD_X_RES; x++) {
 		for(x=LCD_X_RES; x > 0; x--) {
 			LCDSend( LcdMemory[y * LCD_X_RES + x ], SEND_CHR );
 		}	
@@ -317,7 +297,6 @@ void LCDChrXY (unsigned char x, unsigned char y, unsigned char ch )
 	index = (((unsigned int)x*5+(unsigned int)1*LCD_X_RES+66) % LCD_CACHE_SIZE);// offset 66
 
     for ( i = 0; i < 5; i++ )
-//    for ( i = 5; i > 0; i-- )
     {
         mid_shift = index%103;
         if(mid_shift < 51){
@@ -379,13 +358,6 @@ void LCDContrast(unsigned char contrast) {
 
     //  LCD Standard Commands, horizontal addressing mode.
     LCDSend( 0x20, SEND_CMD );
-    // added
-//    LCDSend( 0x0C, SEND_CMD );  // LCD in normal mode.
-//
-//    // Clear and Update
-//    LCDClear();
-//    LCDUpdate();
-//    // end added
 }
 
 
@@ -403,13 +375,9 @@ void LCDStr(unsigned char row, const unsigned char *dataPtr, unsigned char inv )
 	
 	// loop to the and of string
 	while ( *dataPtr ) {
-//		if(inv) {
-			//LCDChrXYInverse(x, row, *dataPtr);
-//		} else {
-			LCDChrXY( x, row, *dataPtr);
-		//}
-		x++;
-		dataPtr++;
+            LCDChrXY( x, row, *dataPtr);
+            x++;
+            dataPtr++;
 	}
 	
 	LCDUpdate();

@@ -93,7 +93,6 @@ void main(void) {
         }
 
         // Send in Pre-FFT data. This is directly from ADC.
-//        sendIntArray(realNumbers, 64);
 
         fix_fft(real_numbers, imaginary_numbers, 6);
         
@@ -148,7 +147,7 @@ void main(void) {
         if(alarm_tally < 0) {
             alarm_tally = 0;
         } else if(real_numbers[16] > real_numbers[3] &&
-                real_numbers[13] > real_numbers[23]) {
+            real_numbers[13] > real_numbers[23]) {
             alarm_tally = alarm_tally / 4;
         }
 
@@ -160,8 +159,8 @@ void main(void) {
         if(growl_tally < 0) {
             growl_tally = 0;
         } else if(real_numbers[30] > real_numbers[24] &&
-                real_numbers[15] > real_numbers[1] &&
-                real_numbers[29] > real_numbers[8]) {
+            real_numbers[15] > real_numbers[1] &&
+            real_numbers[29] > real_numbers[8]) {
             growl_tally = growl_tally / 4;
         }
 
@@ -173,11 +172,11 @@ void main(void) {
         if(horn_tally < 0) {
             horn_tally = 5;
         } else if(real_numbers[21] > real_numbers[7] &&
-                real_numbers[16] > real_numbers[10] &&
-                real_numbers[25] > real_numbers[1] &&
-                real_numbers[20] > real_numbers[24] &&
-                real_numbers[12] > real_numbers[5] &&
-                real_numbers[27] > real_numbers[10]) {
+            real_numbers[16] > real_numbers[10] &&
+            real_numbers[25] > real_numbers[1] &&
+            real_numbers[20] > real_numbers[24] &&
+            real_numbers[12] > real_numbers[5] &&
+            real_numbers[27] > real_numbers[10]) {
             horn_tally = horn_tally / 4;
         }
 
@@ -189,9 +188,9 @@ void main(void) {
         if(scream_tally < 0) {
             scream_tally = 0;
         } else if(real_numbers[28] > real_numbers[8] &&
-                real_numbers[17] > real_numbers[27] &&
-                real_numbers[29] > real_numbers[1] &&
-                real_numbers[21] > real_numbers[2]) {
+            real_numbers[17] > real_numbers[27] &&
+            real_numbers[29] > real_numbers[1] &&
+            real_numbers[21] > real_numbers[2]) {
             scream_tally = scream_tally / 4;
         }
 
@@ -255,13 +254,13 @@ void setup(void) {
     TRISAbits.RA3 = 1;
     ANSELAbits.ANSA3 = 1;
     TRISAbits.RA7 = 1;
-    TRISC = 0x00;
-    LATC = 0x00;
+    TRISC = 0x00;           // port C as outputs
+    LATC = 0x00;            // set port C pins low
     ANSELC = 0x00;          // disable analog pins port c
-    TRISCbits.TRISC6 = 1;
-    TRISCbits.TRISC7 = 1;
-    TRISBbits.TRISB1 = 0;
-    LATBbits.LATB1 = 0;
+    TRISCbits.TRISC6 = 1;   // rs-232 tx output
+    TRISCbits.TRISC7 = 1;   // rs-232 rx
+    TRISBbits.TRISB1 = 0;   // haptic feedback pin
+    LATBbits.LATB1 = 0;     // set haptic feedback pin low
 
     //internal oscillator configuation
     OSCCONbits.IRCF = 0b111;
@@ -275,13 +274,6 @@ void setup(void) {
     OpenSPI1(SPI_FOSC_4,
             MODE_01,
             SMPMID);
-//    TRISCbits.RC5 = 0;      // set mosi pin as output
-//    TRISCbits.RC0 = 0;      // lcd_rst pin as output
-//    TRISCbits.RC1 = 0;      // lcd_cs pin as output
-//    TRISCbits.RC2 = 0;      // lcd_dc pin as output
-//    LATCbits.LATC0 = 0;     //
-//    LATCbits.LATC1 = 0;
-//    LATCbits.LATC2 = 0;
 
     LCDInit();          //iniialize the lcd display
 
@@ -308,9 +300,8 @@ void setup(void) {
 
 void writeGuess(char guess, int prob, int row) {
     char percent[8];
-    sprintf(percent, "%c %d %c", guess, prob, '%');
-    LCDStr(1, percent, 0);
-    //LCDStr(2,"ABCDEFGHIJKLMNOPQRS",0);
+    sprintf(percent, "%c %d %c", guess, prob, '%');     // example "H 85%": horn, 85% match
+    LCDStr(1, percent, 0);                              // sends string to lcd write function
 }
 
 void sendCharArray(char *array, unsigned int size) {
