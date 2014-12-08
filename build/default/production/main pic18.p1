@@ -8818,18 +8818,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main pic18.c: 218: total_tally = alarm_tally + growl_tally + horn_tally + scream_tally;
 "218
 [e = _total_tally + + + _alarm_tally _growl_tally _horn_tally _scream_tally ]
-[; ;main pic18.c: 219: alarm_prob = alarm_tally / total_tally;
+[; ;main pic18.c: 219: alarm_prob = 100 * alarm_tally / total_tally;
 "219
-[e = _alarm_prob / _alarm_tally _total_tally ]
-[; ;main pic18.c: 220: growl_prob = growl_tally / total_tally;
+[e = _alarm_prob / * -> 100 `i _alarm_tally _total_tally ]
+[; ;main pic18.c: 220: growl_prob = 100 * growl_tally / total_tally;
 "220
-[e = _growl_prob / _growl_tally _total_tally ]
-[; ;main pic18.c: 221: horn_prob = horn_tally / total_tally;
+[e = _growl_prob / * -> 100 `i _growl_tally _total_tally ]
+[; ;main pic18.c: 221: horn_prob = 100 * horn_tally / total_tally;
 "221
-[e = _horn_prob / _horn_tally _total_tally ]
-[; ;main pic18.c: 222: scream_prob = scream_tally / total_tally;
+[e = _horn_prob / * -> 100 `i _horn_tally _total_tally ]
+[; ;main pic18.c: 222: scream_prob = 100 * scream_tally / total_tally;
 "222
-[e = _scream_prob / _scream_tally _total_tally ]
+[e = _scream_prob / * -> 100 `i _scream_tally _total_tally ]
 [; ;main pic18.c: 225: if(max_tally == alarm_tally) {
 "225
 [e $ ! == _max_tally _alarm_tally 1204  ]
@@ -9057,123 +9057,123 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _prob `i ~T0 @X0 1 r2 ]
 [v _row `i ~T0 @X0 1 r3 ]
 [f ]
-"329
+"310
 [v _percent `uc ~T0 @X0 -> 8 `i a ]
-[; ;main pic18.c: 329: char percent[8];
-[; ;main pic18.c: 330: sprintf(percent, "%c %d %c", guess, prob/10, '%');
-"330
-[e ( _sprintf (1 , , , (. , &U _percent :s 1C -> _guess `i / _prob -> 10 `i -> 37 `ui ]
-[; ;main pic18.c: 331: LCDStr(1, percent, 0);
-"331
+[; ;main pic18.c: 310: char percent[8];
+[; ;main pic18.c: 311: sprintf(percent, "%c %d %c", guess, prob, '%');
+"311
+[e ( _sprintf (1 , , , (. , &U _percent :s 1C -> _guess `i _prob -> 37 `ui ]
+[; ;main pic18.c: 312: LCDStr(1, percent, 0);
+"312
 [e ( _LCDStr (3 , , -> -> 1 `i `uc -> &U _percent `*Cuc -> -> 0 `i `uc ]
-[; ;main pic18.c: 333: }
-"333
+[; ;main pic18.c: 314: }
+"314
 [e :UE 1221 ]
 }
-"335
+"316
 [v _sendCharArray `(v ~T0 @X0 1 ef2`*uc`ui ]
 {
-[; ;main pic18.c: 335: void sendCharArray(char *array, unsigned int size) {
+[; ;main pic18.c: 316: void sendCharArray(char *array, unsigned int size) {
 [e :U _sendCharArray ]
 [v _array `*uc ~T0 @X0 1 r1 ]
 [v _size `ui ~T0 @X0 1 r2 ]
 [f ]
-[; ;main pic18.c: 336: for(i = 0; i < size; i++) {
-"336
+[; ;main pic18.c: 317: for(i = 0; i < size; i++) {
+"317
 {
 [e = _i -> 0 `i ]
 [e $U 1226  ]
 [e :U 1223 ]
 {
-[; ;main pic18.c: 337: sendChar(array[i]);
-"337
+[; ;main pic18.c: 318: sendChar(array[i]);
+"318
 [e ( _sendChar (1 *U + _array * -> _i `x -> -> # *U _array `i `x ]
-"338
+"319
 }
-"336
+"317
 [e ++ _i -> 1 `i ]
 [e :U 1226 ]
 [e $ < -> _i `ui _size 1223  ]
 [e :U 1224 ]
-"338
+"319
 }
-[; ;main pic18.c: 338: }
-[; ;main pic18.c: 339: }
-"339
+[; ;main pic18.c: 319: }
+[; ;main pic18.c: 320: }
+"320
 [e :UE 1222 ]
 }
-"342
+"323
 [v _sendString `(v ~T0 @X0 1 ef1`*uc ]
 {
-[; ;main pic18.c: 342: void sendString(char *string) {
+[; ;main pic18.c: 323: void sendString(char *string) {
 [e :U _sendString ]
 [v _string `*uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main pic18.c: 343: while((!TXSTA1bits.TRMT));
-"343
+[; ;main pic18.c: 324: while((!TXSTA1bits.TRMT));
+"324
 [e $U 1228  ]
 [e :U 1229 ]
 [e :U 1228 ]
 [e $ ! != -> . . _TXSTA1bits 0 1 `i -> -> -> 0 `i `Vuc `i 1229  ]
 [e :U 1230 ]
-[; ;main pic18.c: 344: putrs1USART(string);
-"344
+[; ;main pic18.c: 325: putrs1USART(string);
+"325
 [e ( _putrs1USART (1 -> _string `*Cuc ]
-[; ;main pic18.c: 345: }
-"345
+[; ;main pic18.c: 326: }
+"326
 [e :UE 1227 ]
 }
-"348
+"329
 [v _sendChar `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;main pic18.c: 348: void sendChar(char character) {
+[; ;main pic18.c: 329: void sendChar(char character) {
 [e :U _sendChar ]
 [v _character `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main pic18.c: 349: while((!TXSTA1bits.TRMT));
-"349
+[; ;main pic18.c: 330: while((!TXSTA1bits.TRMT));
+"330
 [e $U 1232  ]
 [e :U 1233 ]
 [e :U 1232 ]
 [e $ ! != -> . . _TXSTA1bits 0 1 `i -> -> -> 0 `i `Vuc `i 1233  ]
 [e :U 1234 ]
-[; ;main pic18.c: 350: Write1USART(character);
-"350
+[; ;main pic18.c: 331: Write1USART(character);
+"331
 [e ( _Write1USART (1 _character ]
-[; ;main pic18.c: 351: }
-"351
+[; ;main pic18.c: 332: }
+"332
 [e :UE 1231 ]
 }
-"353
+"334
 [v _sendIntArray `(v ~T0 @X0 1 ef2`*s`ui ]
 {
-[; ;main pic18.c: 353: void sendIntArray(short *array, unsigned int size) {
+[; ;main pic18.c: 334: void sendIntArray(short *array, unsigned int size) {
 [e :U _sendIntArray ]
 [v _array `*s ~T0 @X0 1 r1 ]
 [v _size `ui ~T0 @X0 1 r2 ]
 [f ]
-[; ;main pic18.c: 354: for(i = 0; i < size; i++) {
-"354
+[; ;main pic18.c: 335: for(i = 0; i < size; i++) {
+"335
 {
 [e = _i -> 0 `i ]
 [e $U 1239  ]
 [e :U 1236 ]
 {
-[; ;main pic18.c: 355: sendChar(array[i]);
-"355
+[; ;main pic18.c: 336: sendChar(array[i]);
+"336
 [e ( _sendChar (1 -> *U + _array * -> _i `x -> -> # *U _array `i `x `uc ]
-"356
+"337
 }
-"354
+"335
 [e ++ _i -> 1 `i ]
 [e :U 1239 ]
 [e $ < -> _i `ui _size 1236  ]
 [e :U 1237 ]
-"356
+"337
 }
-[; ;main pic18.c: 356: }
-[; ;main pic18.c: 357: }
-"357
+[; ;main pic18.c: 337: }
+[; ;main pic18.c: 338: }
+"338
 [e :UE 1235 ]
 }
 [p f _sprintf 8913024 ]

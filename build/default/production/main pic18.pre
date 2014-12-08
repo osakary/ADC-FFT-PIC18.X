@@ -10350,10 +10350,10 @@ scream_prob = 0;
 if(max_tally > 20) {
 LATBbits.LATB1 = 1;
 total_tally = alarm_tally + growl_tally + horn_tally + scream_tally;
-alarm_prob = alarm_tally / total_tally;
-growl_prob = growl_tally / total_tally;
-horn_prob = horn_tally / total_tally;
-scream_prob = scream_tally / total_tally;
+alarm_prob = 100 * alarm_tally / total_tally;
+growl_prob = 100 * growl_tally / total_tally;
+horn_prob = 100 * horn_tally / total_tally;
+scream_prob = 100 * scream_tally / total_tally;
 
 
 if(max_tally == alarm_tally) {
@@ -10435,10 +10435,8 @@ baud_rate );
 }
 
 void writeGuess(char guess, int prob, int row) {
-
-# 329
 char percent[8];
-sprintf(percent, "%c %d %c", guess, prob/10, '%');
+sprintf(percent, "%c %d %c", guess, prob, '%');
 LCDStr(1, percent, 0);
 
 }
